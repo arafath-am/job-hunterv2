@@ -2,7 +2,7 @@
 
 A self-hosted job radar for H-1B sponsor & cap-exempt employers. A scheduler
 pulls postings from each company's ATS feed on a cadence, stores them, and a
-login-protected web app lets you (and your brother / friends) filter, browse,
+login-protected web app lets you filter, browse,
 track applications, and export progress to Excel.
 
 ## What's here
@@ -30,9 +30,6 @@ pip install -r requirements.txt
 export JOBHUNTER_SECRET="$(python3 -c 'import secrets;print(secrets.token_hex(32))')"
 export JOBHUNTER_DB="/path/to/jobhunter.db"      # the resolver's DB
 
-# create logins (no public signup)
-python app.py createuser arafath 'a-strong-password'
-python app.py createuser brother 'another-password'
 
 # run (starts the web app AND the scheduler)
 uvicorn app:app --host 0.0.0.0 --port 8080
