@@ -1,0 +1,894 @@
+company_name,brand,candidate_slugs,cap_exempt,sponsor,priority_tier,careers_url,ats,resolved_token,endpoint,resolve_status
+University of Michigan,University of Michigan,universityofmichigan|university-of-michigan|universitymichigan|university-michigan|michigan|university,yes,yes,hot,,,,,pending
+Johns Hopkins University,Johns Hopkins University,johnshopkinsuniversity|johns-hopkins-university|university|johns|jhu,yes,yes,hot,,,,,pending
+General Hospital Corporation,General Hospital,generalhospital|general-hospital|hospital|general|gh,yes,yes,hot,,,,,pending
+Ut Southwestern Medical Center,UT Southwestern Medical Center,utsouthwesternmedicalcenter|ut-southwestern-medical-center|center|ut|usmc,yes,yes,hot,,,,,pending
+The Leland Stanford Jr University,Leland Stanford Jr University,lelandstanfordjruniversity|leland-stanford-jr-university|university|leland|lsju,yes,yes,hot,,,,,pending
+Washington University,Washington University,washingtonuniversity|washington-university|university|washington|wu,yes,yes,hot,,,,,pending
+University of California Los Angeles,University of California Los Angeles,universityofcalifornialosangeles|university-of-california-los-angeles|universitycalifornialosangeles|university-california-los-angeles|angeles|university,yes,yes,hot,,,,,pending
+Trustees of the University of Pennsylvania,Trustees of the University of Pennsylvania,trusteesoftheuniversityofpennsylvania|trustees-of-the-university-of-pennsylvania|trusteesuniversitypennsylvania|trustees-university-pennsylvania|pennsylvania|trustees,yes,yes,hot,,,,,pending
+University of Pittsburgh,University of Pittsburgh,universityofpittsburgh|university-of-pittsburgh|universitypittsburgh|university-pittsburgh|pittsburgh|university,yes,yes,hot,,,,,pending
+Yale University,Yale University,yaleuniversity|yale-university|university|yale|yu,yes,yes,hot,,,,,pending
+Dana Farber Cancer Institute,Dana Farber Cancer Institute,danafarbercancerinstitute|dana-farber-cancer-institute|institute|dana|dfci,yes,yes,hot,,,,,pending
+University of Minnesota,University of Minnesota,universityofminnesota|university-of-minnesota|universityminnesota|university-minnesota|minnesota|university,yes,yes,hot,,,,,pending
+The Ohio State University,Ohio State University,ohiostateuniversity|ohio-state-university|university|ohio|osu,yes,yes,hot,,,,,pending
+Icahn School of Medicine at Mount Sinai,Icahn School of Medicine at Mount Sinai,icahnschoolofmedicineatmountsinai|icahn-school-of-medicine-at-mount-sinai|icahnschoolmedicinemountsinai|icahn-school-medicine-mount-sinai|sinai|icahn,yes,yes,hot,,,,,pending
+Mayo Clinic,Mayo Clinic,mayoclinic|mayo-clinic|clinic|mayo|mc,yes,yes,hot,,,,,pending
+The University of Texas at Austin,University of Texas at Austin,universityoftexasataustin|university-of-texas-at-austin|universitytexasaustin|university-texas-austin|austin|university,yes,yes,hot,,,,,pending
+Arizona State University,Arizona State University,arizonastateuniversity|arizona-state-university|university|arizona|asu,yes,yes,hot,,,,,pending
+Brigham and Womens Hospital,Brigham and Womens Hospital,brighamandwomenshospital|brigham-and-womens-hospital|brighamwomenshospital|brigham-womens-hospital|hospital|brigham,yes,yes,hot,,,,,pending
+Harvard University,Harvard University,harvarduniversity|harvard-university|university|harvard|hu,yes,yes,hot,,,,,pending
+University of California San Francisco,University of California San Francisco,universityofcaliforniasanfrancisco|university-of-california-san-francisco|universitycaliforniasanfrancisco|university-california-san-francisco|francisco|university,yes,yes,hot,,,,,pending
+Brown University,Brown University,brownuniversity|brown-university|university|brown|bu,yes,yes,hot,,,,,pending
+University of Massachusetts Chan Medical School,University of Massachusetts Chan Medical School,universityofmassachusettschanmedicalschool|university-of-massachusetts-chan-medical-school|universitymassachusettschanmedicalschool|university-massachusetts-chan-medical-school|school|university,yes,yes,hot,,,,,pending
+University of Wisconsin System,University of Wisconsin System,universityofwisconsinsystem|university-of-wisconsin-system|universitywisconsinsystem|university-wisconsin-system|system|university,yes,yes,hot,,,,,pending
+Michigan State University,Michigan State University,michiganstateuniversity|michigan-state-university|university|michigan|msu,yes,yes,hot,,,,,pending
+Louisiana Childrens Medical Center,Louisiana Childrens Medical Center,louisianachildrensmedicalcenter|louisiana-childrens-medical-center|center|louisiana|lcmc,yes,yes,hot,,,,,pending
+Columbia University,Columbia University,columbiauniversity|columbia-university|university|columbia|cu,yes,yes,hot,,,,,pending
+University of Washington,University of Washington,universityofwashington|university-of-washington|universitywashington|university-washington|washington|university,yes,yes,hot,,,,,pending
+Baylor College of Medicine,Baylor College of Medicine,baylorcollegeofmedicine|baylor-college-of-medicine|baylorcollegemedicine|baylor-college-medicine|medicine|baylor,yes,yes,hot,,,,,pending
+Northwestern University,Northwestern University,northwesternuniversity|northwestern-university|university|northwestern|nu,yes,yes,hot,,,,,pending
+The University of Chicago,University of Chicago,universityofchicago|university-of-chicago|universitychicago|university-chicago|chicago|university,yes,yes,hot,,,,,pending
+Nyu Grossman School of Medicine,NYU Grossman School of Medicine,nyugrossmanschoolofmedicine|nyu-grossman-school-of-medicine|nyugrossmanschoolmedicine|nyu-grossman-school-medicine|medicine|nyu,yes,yes,hot,,,,,pending
+Brookhaven National Laboratory,Brookhaven National Laboratory,brookhavennationallaboratory|brookhaven-national-laboratory|laboratory|brookhaven|bnl,yes,yes,hot,,,,,pending
+Indiana University Indianapolis,Indiana University Indianapolis,indianauniversityindianapolis|indiana-university-indianapolis|indianapolis|indiana|iui,yes,yes,hot,,,,,pending
+University of South Florida,University of South Florida,universityofsouthflorida|university-of-south-florida|universitysouthflorida|university-south-florida|florida|university,yes,yes,hot,,,,,pending
+The University of Texas Md Anderson Cancer Center,University of Texas Md Anderson Cancer Center,universityoftexasmdandersoncancercenter|university-of-texas-md-anderson-cancer-center|universitytexasmdandersoncancercenter|university-texas-md-anderson-cancer-center|center|university,yes,yes,hot,,,,,pending
+Weill Cornell Medical College,Weill Cornell Medical College,weillcornellmedicalcollege|weill-cornell-medical-college|college|weill|wcmc,yes,yes,hot,,,,,pending
+University of Maryland College Park,University of Maryland College Park,universityofmarylandcollegepark|university-of-maryland-college-park|universitymarylandcollegepark|university-maryland-college-park|park|university,yes,yes,hot,,,,,pending
+University of California San Diego,University of California San Diego,universityofcaliforniasandiego|university-of-california-san-diego|universitycaliforniasandiego|university-california-san-diego|diego|university,yes,yes,hot,,,,,pending
+University of Illinois,University of Illinois,universityofillinois|university-of-illinois|universityillinois|university-illinois|illinois|university,yes,yes,hot,,,,,pending
+The University of Virginia,University of Virginia,universityofvirginia|university-of-virginia|universityvirginia|university-virginia|virginia|university,yes,yes,hot,,,,,pending
+Board of Regents of the University of Nebraska,Board of Regents of the University of Nebraska,boardofregentsoftheuniversityofnebraska|board-of-regents-of-the-university-of-nebraska|boardregentsuniversitynebraska|board-regents-university-nebraska|nebraska|board,yes,yes,hot,,,,,pending
+Massachusetts Institute of Technology,Massachusetts Institute of Technology,massachusettsinstituteoftechnology|massachusetts-institute-of-technology|massachusettsinstitutetechnology|massachusetts-institute-technology|technology|massachusetts,yes,yes,hot,,,,,pending
+Embry Riddle Aeronautical University,Embry Riddle Aeronautical University,embryriddleaeronauticaluniversity|embry-riddle-aeronautical-university|university|embry|erau,yes,yes,hot,,,,,pending
+The Methodist Hospital Research Institute,Methodist Hospital Research Institute,methodisthospitalresearchinstitute|methodist-hospital-research-institute|institute|methodist|mhri,yes,yes,hot,,,,,pending
+University of Florida,University of Florida,universityofflorida|university-of-florida|universityflorida|university-florida|florida|university,yes,yes,hot,,,,,pending
+The University of Tennessee,University of Tennessee,universityoftennessee|university-of-tennessee|universitytennessee|university-tennessee|tennessee|university,yes,yes,hot,,,,,pending
+The Trustees of Princeton University,Trustees of Princeton University,trusteesofprincetonuniversity|trustees-of-princeton-university|trusteesprincetonuniversity|trustees-princeton-university|university|trustees,yes,yes,hot,,,,,pending
+The Curators of the University of Missouri,Curators of the University of Missouri,curatorsoftheuniversityofmissouri|curators-of-the-university-of-missouri|curatorsuniversitymissouri|curators-university-missouri|missouri|curators,yes,yes,hot,,,,,pending
+Texas A&M University,Texas A&M University,texasamuniversity|texas-am-university|university|texas|tau,yes,yes,hot,,,,,pending
+The Florida State University,Florida State University,floridastateuniversity|florida-state-university|university|florida|fsu,yes,yes,hot,,,,,pending
+University of Rochester,University of Rochester,universityofrochester|university-of-rochester|universityrochester|university-rochester|rochester|university,yes,yes,hot,,,,,pending
+Albert Einstein College of Medicine,Albert Einstein College of Medicine,alberteinsteincollegeofmedicine|albert-einstein-college-of-medicine|alberteinsteincollegemedicine|albert-einstein-college-medicine|medicine|albert,yes,yes,hot,,,,,pending
+The Pennsylvania State University,Pennsylvania State University,pennsylvaniastateuniversity|pennsylvania-state-university|university|pennsylvania|psu,yes,yes,hot,,,,,pending
+Trustees of Boston University,Trustees of Boston University,trusteesofbostonuniversity|trustees-of-boston-university|trusteesbostonuniversity|trustees-boston-university|university|trustees,yes,yes,hot,,,,,pending
+Rutgers the State University of New Jersey,Rutgers the State University of New Jersey,rutgersthestateuniversityofnewjersey|rutgers-the-state-university-of-new-jersey|rutgersstateuniversitynewjersey|rutgers-state-university-new-jersey|jersey|rutgers,yes,yes,hot,,,,,pending
+University of Illinois Chicago,University of Illinois Chicago,universityofillinoischicago|university-of-illinois-chicago|universityillinoischicago|university-illinois-chicago|chicago|university,yes,yes,hot,,,,,pending
+University of Colorado,University of Colorado,universityofcolorado|university-of-colorado|universitycolorado|university-colorado|colorado|university,yes,yes,hot,,,,,pending
+University of California Davis,University of California Davis,universityofcaliforniadavis|university-of-california-davis|universitycaliforniadavis|university-california-davis|davis|university,yes,yes,hot,,,,,pending
+Georgia Institute of Technology,Georgia Institute of Technology,georgiainstituteoftechnology|georgia-institute-of-technology|georgiainstitutetechnology|georgia-institute-technology|technology|georgia,yes,yes,hot,,,,,pending
+Medical College of Wisconsin INC,Medical College of Wisconsin,medicalcollegeofwisconsin|medical-college-of-wisconsin|medicalcollegewisconsin|medical-college-wisconsin|wisconsin|medical,yes,yes,hot,,,,,pending
+Virginia Polytechnic Institute & State University,Virginia Polytechnic Institute & State University,virginiapolytechnicinstitutestateuniversity|virginia-polytechnic-institute-state-university|university|virginia|vpisu,yes,yes,hot,,,,,pending
+The Broad Institute INC,Broad Institute,broadinstitute|broad-institute|institute|broad|bi,yes,yes,hot,,,,,pending
+Oregon State University,Oregon State University,oregonstateuniversity|oregon-state-university|university|oregon|osu,yes,yes,hot,,,,,pending
+Iowa State University of Science and Technology,Iowa State University of Science and Technology,iowastateuniversityofscienceandtechnology|iowa-state-university-of-science-and-technology|iowastateuniversitysciencetechnology|iowa-state-university-science-technology|technology|iowa,yes,yes,hot,,,,,pending
+Colorado State University,Colorado State University,coloradostateuniversity|colorado-state-university|university|colorado|csu,yes,yes,hot,,,,,pending
+University of Mississippi,University of Mississippi,universityofmississippi|university-of-mississippi|universitymississippi|university-mississippi|mississippi|university,yes,yes,hot,,,,,pending
+University of Nebraska Medical Center,University of Nebraska Medical Center,universityofnebraskamedicalcenter|university-of-nebraska-medical-center|universitynebraskamedicalcenter|university-nebraska-medical-center|center|university,yes,yes,hot,,,,,pending
+Emory University,Emory University,emoryuniversity|emory-university|university|emory|eu,yes,yes,hot,,,,,pending
+University of California Berkeley,University of California Berkeley,universityofcaliforniaberkeley|university-of-california-berkeley|universitycaliforniaberkeley|university-california-berkeley|berkeley|university,yes,yes,hot,,,,,pending
+Case Western Reserve University,Case Western Reserve University,casewesternreserveuniversity|case-western-reserve-university|university|case|cwru,yes,yes,hot,,,,,pending
+The Jackson Laboratory,Jackson Laboratory,jacksonlaboratory|jackson-laboratory|laboratory|jackson|jl,yes,yes,hot,,,,,pending
+Carnegie Mellon University,Carnegie Mellon University,carnegiemellonuniversity|carnegie-mellon-university|university|carnegie|cmu,yes,yes,hot,,,,,pending
+The University of Iowa,University of Iowa,universityofiowa|university-of-iowa|universityiowa|university-iowa|iowa|university,yes,yes,hot,,,,,pending
+University of Miami,University of Miami,universityofmiami|university-of-miami|universitymiami|university-miami|miami|university,yes,yes,hot,,,,,pending
+University of Texas Medical Branch,University of Texas Medical Branch,universityoftexasmedicalbranch|university-of-texas-medical-branch|universitytexasmedicalbranch|university-texas-medical-branch|branch|university,yes,yes,hot,,,,,pending
+Purdue University,Purdue University,purdueuniversity|purdue-university|university|purdue|pu,yes,yes,hot,,,,,pending
+Duke University,Duke University,dukeuniversity|duke-university|university|duke|du,yes,yes,hot,,,,,pending
+University of North Carolina at Chapel Hill,University of North Carolina at Chapel Hill,universityofnorthcarolinaatchapelhill|university-of-north-carolina-at-chapel-hill|universitynorthcarolinachapelhill|university-north-carolina-chapel-hill|hill|university,yes,yes,hot,,,,,pending
+University of Oklahoma,University of Oklahoma,universityofoklahoma|university-of-oklahoma|universityoklahoma|university-oklahoma|oklahoma|university,yes,yes,hot,,,,,pending
+Montclair State University,Montclair State University,montclairstateuniversity|montclair-state-university|university|montclair|msu,yes,yes,hot,,,,,pending
+University of North Texas,University of North Texas,universityofnorthtexas|university-of-north-texas|universitynorthtexas|university-north-texas|texas|university,yes,yes,hot,,,,,pending
+Kansas State University,Kansas State University,kansasstateuniversity|kansas-state-university|university|kansas|ksu,yes,yes,hot,,,,,pending
+Vanderbilt University,Vanderbilt University,vanderbiltuniversity|vanderbilt-university|university|vanderbilt|vu,yes,yes,hot,,,,,pending
+University of Texas Health Science Center at San Antonio,University of Texas Health Science Center at San Antonio,universityoftexashealthsciencecenteratsanantonio|university-of-texas-health-science-center-at-san-antonio|universitytexashealthsciencecentersanantonio|university-texas-health-science-center-san-antonio|antonio|university,yes,yes,hot,,,,,pending
+The University of Alabama,University of Alabama,universityofalabama|university-of-alabama|universityalabama|university-alabama|alabama|university,yes,yes,hot,,,,,pending
+University of Connecticut,University of Connecticut,universityofconnecticut|university-of-connecticut|universityconnecticut|university-connecticut|connecticut|university,yes,yes,hot,,,,,pending
+Montefiore Medical Center,Montefiore Medical Center,montefioremedicalcenter|montefiore-medical-center|center|montefiore|mmc,yes,yes,hot,,,,,pending
+Research Foundation for the State University of New York,Research Foundation for the State University of New York,researchfoundationforthestateuniversityofnewyork|research-foundation-for-the-state-university-of-new-york|researchfoundationstateuniversitynewyork|research-foundation-state-university-new-york|york|research,yes,yes,hot,,,,,pending
+Texas Tech University,Texas Tech University,texastechuniversity|texas-tech-university|university|texas|ttu,yes,yes,hot,,,,,pending
+Louisiana State University and A&M College,Louisiana State University and A&M College,louisianastateuniversityandamcollege|louisiana-state-university-and-am-college|louisianastateuniversityamcollege|louisiana-state-university-am-college|college|louisiana,yes,yes,hot,,,,,pending
+Henry Ford Health System,Henry Ford Health System,henryfordhealthsystem|henry-ford-health-system|system|henry|hfhs,yes,yes,hot,,,,,pending
+University of Maryland Baltimore,University of Maryland Baltimore,universityofmarylandbaltimore|university-of-maryland-baltimore|universitymarylandbaltimore|university-maryland-baltimore|baltimore|university,yes,yes,hot,,,,,pending
+University of Cincinnati,University of Cincinnati,universityofcincinnati|university-of-cincinnati|universitycincinnati|university-cincinnati|cincinnati|university,yes,yes,hot,,,,,pending
+The Childrens Hospital of Philadelphia,Childrens Hospital of Philadelphia,childrenshospitalofphiladelphia|childrens-hospital-of-philadelphia|childrenshospitalphiladelphia|childrens-hospital-philadelphia|philadelphia|childrens,yes,yes,hot,,,,,pending
+Old Dominion University,Old Dominion University,olddominionuniversity|old-dominion-university|university|old|odu,yes,yes,hot,,,,,pending
+Indiana University,Indiana University,indianauniversity|indiana-university|university|indiana|iu,yes,yes,hot,,,,,pending
+Cedars Sinai Medical Center,Cedars Sinai Medical Center,cedarssinaimedicalcenter|cedars-sinai-medical-center|center|cedars|csmc,yes,yes,hot,,,,,pending
+Vanderbilt University Medical Center,Vanderbilt University Medical Center,vanderbiltuniversitymedicalcenter|vanderbilt-university-medical-center|center|vanderbilt|vumc,yes,yes,hot,,,,,pending
+Virginia Commonwealth University,Virginia Commonwealth University,virginiacommonwealthuniversity|virginia-commonwealth-university|university|virginia|vcu,yes,yes,hot,,,,,pending
+California Institute of Technology,California Institute of Technology,californiainstituteoftechnology|california-institute-of-technology|californiainstitutetechnology|california-institute-technology|technology|california,yes,yes,hot,,,,,pending
+Appalachian State University,Appalachian State University,appalachianstateuniversity|appalachian-state-university|university|appalachian|asu,yes,yes,hot,,,,,pending
+State University of New York at Buffalo,State University of New York at Buffalo,stateuniversityofnewyorkatbuffalo|state-university-of-new-york-at-buffalo|stateuniversitynewyorkbuffalo|state-university-new-york-buffalo|buffalo|state,yes,yes,hot,,,,,pending
+University of West Florida,University of West Florida,universityofwestflorida|university-of-west-florida|universitywestflorida|university-west-florida|florida|university,yes,yes,hot,,,,,pending
+North Dakota State University,North Dakota State University,northdakotastateuniversity|north-dakota-state-university|university|north|ndsu,yes,yes,hot,,,,,pending
+University of Oklahoma Health Sciences Center,University of Oklahoma Health Sciences Center,universityofoklahomahealthsciencescenter|university-of-oklahoma-health-sciences-center|universityoklahomahealthsciencescenter|university-oklahoma-health-sciences-center|center|university,yes,yes,hot,,,,,pending
+Leland Stanford Jr Univslac National Accelerator Lab,Leland Stanford Jr Univslac National Accelerator Lab,lelandstanfordjrunivslacnationalacceleratorlab|leland-stanford-jr-univslac-national-accelerator-lab|lab|leland|lsjunal,yes,yes,hot,,,,,pending
+West Virginia University,West Virginia University,westvirginiauniversity|west-virginia-university|university|west|wvu,yes,yes,hot,,,,,pending
+The University of Texas El Paso,University of Texas El Paso,universityoftexaselpaso|university-of-texas-el-paso|universitytexaselpaso|university-texas-el-paso|paso|university,yes,yes,hot,,,,,pending
+The University of Vermont and State Agricultural College,University of Vermont and State Agricultural College,universityofvermontandstateagriculturalcollege|university-of-vermont-and-state-agricultural-college|universityvermontstateagriculturalcollege|university-vermont-state-agricultural-college|college|university,yes,yes,hot,,,,,pending
+Upmc Medical Education,Upmc Medical Education,upmcmedicaleducation|upmc-medical-education|education|upmc|ume,yes,yes,hot,,,,,pending
+Triad National Security LLC,Triad National Security,triadnationalsecurity|triad-national-security|security|triad|tns,yes,yes,hot,,,,,pending
+Rush University Medical Center,Rush University Medical Center,rushuniversitymedicalcenter|rush-university-medical-center|center|rush|rumc,yes,yes,hot,,,,,pending
+Texas A&M Agrilife Research,Texas A&M Agrilife Research,texasamagriliferesearch|texas-am-agrilife-research|research|texas|taar,yes,yes,hot,,,,,pending
+The J David Gladstone Institutes,J David Gladstone Institutes,jdavidgladstoneinstitutes|j-david-gladstone-institutes|institutes|j|jdgi,yes,yes,hot,,,,,pending
+Alliance for Sustainable Energy LLC,Alliance for Sustainable Energy,allianceforsustainableenergy|alliance-for-sustainable-energy|alliancesustainableenergy|alliance-sustainable-energy|energy|alliance,yes,yes,hot,,,,,pending
+Boise State University,Boise State University,boisestateuniversity|boise-state-university|university|boise|bsu,yes,yes,hot,,,,,pending
+Temple University A Commonwealth University,Temple University A Commonwealth University,templeuniversityacommonwealthuniversity|temple-university-a-commonwealth-university|university|temple|tuacu,yes,yes,hot,,,,,pending
+Adventist Health Systemsunbelt INC,Adventist Health Systemsunbelt,adventisthealthsystemsunbelt|adventist-health-systemsunbelt|systemsunbelt|adventist|ahs,yes,yes,hot,,,,,pending
+Administrators of the Tulane Educational Fund,Administrators of the Tulane Educational Fund,administratorsofthetulaneeducationalfund|administrators-of-the-tulane-educational-fund|administratorstulaneeducationalfund|administrators-tulane-educational-fund|fund|administrators,yes,yes,hot,,,,,pending
+University of Georgia Oge,University of Georgia Oge,universityofgeorgiaoge|university-of-georgia-oge|universitygeorgiaoge|university-georgia-oge|oge|university,yes,yes,hot,,,,,pending
+Gandara Mental Health Center INC,Gandara Mental Health Center,gandaramentalhealthcenter|gandara-mental-health-center|center|gandara|gmhc,yes,yes,hot,,,,,pending
+The University of Texas Rio Grande Valley,University of Texas Rio Grande Valley,universityoftexasriograndevalley|university-of-texas-rio-grande-valley|universitytexasriograndevalley|university-texas-rio-grande-valley|valley|university,yes,yes,hot,,,,,pending
+Univ of Wi Systemsuperior,Univ of Wi Systemsuperior,univofwisystemsuperior|univ-of-wi-systemsuperior|univwisystemsuperior|univ-wi-systemsuperior|systemsuperior|univ,yes,yes,hot,,,,,pending
+James Madison University,James Madison University,jamesmadisonuniversity|james-madison-university|university|james|jmu,yes,yes,hot,,,,,pending
+New Mexico State University,New Mexico State University,newmexicostateuniversity|new-mexico-state-university|university|new|nmsu,yes,yes,hot,,,,,pending
+Hampton University,Hampton University,hamptonuniversity|hampton-university|university|hampton|hu,yes,yes,hot,,,,,pending
+Massachusetts Eye and Ear Infirmary,Massachusetts Eye and Ear Infirmary,massachusettseyeandearinfirmary|massachusetts-eye-and-ear-infirmary|massachusettseyeearinfirmary|massachusetts-eye-ear-infirmary|infirmary|massachusetts,yes,yes,hot,,,,,pending
+Georgia State University,Georgia State University,georgiastateuniversity|georgia-state-university|university|georgia|gsu,yes,yes,hot,,,,,pending
+The University of Southern California,University of Southern California,universityofsoutherncalifornia|university-of-southern-california|universitysoutherncalifornia|university-southern-california|california|university,yes,yes,hot,,,,,pending
+The University of Arizona,University of Arizona,universityofarizona|university-of-arizona|universityarizona|university-arizona|arizona|university,yes,yes,hot,,,,,pending
+University of Hawaii,University of Hawaii,universityofhawaii|university-of-hawaii|universityhawaii|university-hawaii|hawaii|university,yes,yes,hot,,,,,pending
+Wm Rice University,Wm Rice University,wmriceuniversity|wm-rice-university|university|wm|wru,yes,yes,hot,,,,,pending
+North Carolina State University,North Carolina State University,northcarolinastateuniversity|north-carolina-state-university|university|north|ncsu,yes,yes,hot,,,,,pending
+Kent State University,Kent State University,kentstateuniversity|kent-state-university|university|kent|ksu,yes,yes,hot,,,,,pending
+The University of Alabama at Birmingham,University of Alabama at Birmingham,universityofalabamaatbirmingham|university-of-alabama-at-birmingham|universityalabamabirmingham|university-alabama-birmingham|birmingham|university,yes,yes,hot,,,,,pending
+Ut Battelle LLC Oak Ridge National Laboratory,UT Battelle Oak Ridge National Laboratory,utbattelleoakridgenationallaboratory|ut-battelle-oak-ridge-national-laboratory|laboratory|ut|ubornl,yes,yes,hot,,,,,pending
+University of North Carolina at Charlotte,University of North Carolina at Charlotte,universityofnorthcarolinaatcharlotte|university-of-north-carolina-at-charlotte|universitynorthcarolinacharlotte|university-north-carolina-charlotte|charlotte|university,yes,yes,hot,,,,,pending
+University of New Mexico,University of New Mexico,universityofnewmexico|university-of-new-mexico|universitynewmexico|university-new-mexico|mexico|university,yes,yes,hot,,,,,pending
+Grand Valley State University,Grand Valley State University,grandvalleystateuniversity|grand-valley-state-university|university|grand|gvsu,yes,yes,hot,,,,,pending
+Regents of the University of California at Riverside,Regents of the University of California at Riverside,regentsoftheuniversityofcaliforniaatriverside|regents-of-the-university-of-california-at-riverside|regentsuniversitycaliforniariverside|regents-university-california-riverside|riverside|regents,yes,yes,hot,,,,,pending
+The University of Kansas,University of Kansas,universityofkansas|university-of-kansas|universitykansas|university-kansas|kansas|university,yes,yes,hot,,,,,pending
+Boston College,Boston College,bostoncollege|boston-college|college|boston|bc,yes,yes,hot,,,,,pending
+Usacs Medical Group LTD,Usacs Medical,usacsmedical|usacs-medical|medical|usacs|um,yes,yes,hot,,,,,pending
+Univ of Wi Systemstout,Univ of Wi Systemstout,univofwisystemstout|univ-of-wi-systemstout|univwisystemstout|univ-wi-systemstout|systemstout|univ,yes,yes,hot,,,,,pending
+George Mason University,George Mason University,georgemasonuniversity|george-mason-university|university|george|gmu,yes,yes,hot,,,,,pending
+University of Colorado Denver Anschutz,University of Colorado Denver Anschutz,universityofcoloradodenveranschutz|university-of-colorado-denver-anschutz|universitycoloradodenveranschutz|university-colorado-denver-anschutz|anschutz|university,yes,yes,hot,,,,,pending
+Uchicago Argonne LLC,Uchicago Argonne,uchicagoargonne|uchicago-argonne|argonne|uchicago|ua,yes,yes,hot,,,,,pending
+Villanova University,Villanova University,villanovauniversity|villanova-university|university|villanova|vu,yes,yes,hot,,,,,pending
+Research Foundation of Cuny,Research Foundation of CUNY,researchfoundationofcuny|research-foundation-of-cuny|researchfoundationcuny|research-foundation-cuny|cuny|research,yes,yes,hot,,,,,pending
+Howard Hughes Medical Institute,Howard Hughes Medical Institute,howardhughesmedicalinstitute|howard-hughes-medical-institute|institute|howard|hhmi,yes,yes,hot,,,,,pending
+The University of Texas Health Science Center at Tyler,University of Texas Health Science Center at Tyler,universityoftexashealthsciencecenterattyler|university-of-texas-health-science-center-at-tyler|universitytexashealthsciencecentertyler|university-texas-health-science-center-tyler|tyler|university,yes,yes,hot,,,,,pending
+University of Nevada Las Vegas,University of Nevada Las Vegas,universityofnevadalasvegas|university-of-nevada-las-vegas|universitynevadalasvegas|university-nevada-las-vegas|vegas|university,yes,yes,hot,,,,,pending
+The Research Institute at Nationwide Childrens Hospital,Research Institute at Nationwide Childrens Hospital,researchinstituteatnationwidechildrenshospital|research-institute-at-nationwide-childrens-hospital|researchinstitutenationwidechildrenshospital|research-institute-nationwide-childrens-hospital|hospital|research,yes,yes,hot,,,,,pending
+Piedmont Medical Care Corporation,Piedmont Medical Care,piedmontmedicalcare|piedmont-medical-care|care|piedmont|pmc,yes,yes,hot,,,,,pending
+Cornell University,Cornell University,cornelluniversity|cornell-university|university|cornell|cu,yes,yes,hot,,,,,pending
+United Health Services Hospitals INC,United Health Services Hospitals,unitedhealthserviceshospitals|united-health-services-hospitals|hospitals|united|uhsh,yes,yes,hot,,,,,pending
+Puerto Rico Cardiology LLC,Puerto Rico Cardiology,puertoricocardiology|puerto-rico-cardiology|cardiology|puerto|prc,yes,yes,hot,,,,,pending
+Northeastern University,Northeastern University,northeasternuniversity|northeastern-university|university|northeastern|nu,yes,yes,hot,,,,,pending
+Texas Tech University Health Sciences Center,Texas Tech University Health Sciences Center,texastechuniversityhealthsciencescenter|texas-tech-university-health-sciences-center|center|texas|ttuhsc,yes,yes,hot,,,,,pending
+Lawrence Livermore National Security LLC,Lawrence Livermore National Security,lawrencelivermorenationalsecurity|lawrence-livermore-national-security|security|lawrence|llns,yes,yes,hot,,,,,pending
+Univ of Wi Systemla Crosse,Univ of Wi Systemla Crosse,univofwisystemlacrosse|univ-of-wi-systemla-crosse|univwisystemlacrosse|univ-wi-systemla-crosse|crosse|univ,yes,yes,hot,,,,,pending
+University of Arkansas for Medical Sciences,University of Arkansas for Medical Sciences,universityofarkansasformedicalsciences|university-of-arkansas-for-medical-sciences|universityarkansasmedicalsciences|university-arkansas-medical-sciences|sciences|university,yes,yes,hot,,,,,pending
+Whitehead Institute for Biomedical Research,Whitehead Institute for Biomedical Research,whiteheadinstituteforbiomedicalresearch|whitehead-institute-for-biomedical-research|whiteheadinstitutebiomedicalresearch|whitehead-institute-biomedical-research|research|whitehead,yes,yes,hot,,,,,pending
+New York University,New York University,newyorkuniversity|new-york-university|university|new|nyu,yes,yes,hot,,,,,pending
+Oregon Health & Science University,Oregon Health & Science University,oregonhealthscienceuniversity|oregon-health-science-university|university|oregon|ohsu,yes,yes,hot,,,,,pending
+University of Houston,University of Houston,universityofhouston|university-of-houston|universityhouston|university-houston|houston|university,yes,yes,hot,,,,,pending
+The University of Alabama in Huntsville,University of Alabama in Huntsville,universityofalabamainhuntsville|university-of-alabama-in-huntsville|universityalabamahuntsville|university-alabama-huntsville|huntsville|university,yes,yes,hot,,,,,pending
+Holy Name Medical Center INC,Holy Name Medical Center,holynamemedicalcenter|holy-name-medical-center|center|holy|hnmc,yes,yes,hot,,,,,pending
+University of Utah,University of Utah,universityofutah|university-of-utah|universityutah|university-utah|utah|university,yes,yes,hot,,,,,pending
+Childrens National Medical Center,Childrens National Medical Center,childrensnationalmedicalcenter|childrens-national-medical-center|center|childrens|cnmc,yes,yes,hot,,,,,pending
+University of North Carolina at Greensboro,University of North Carolina at Greensboro,universityofnorthcarolinaatgreensboro|university-of-north-carolina-at-greensboro|universitynorthcarolinagreensboro|university-north-carolina-greensboro|greensboro|university,yes,yes,hot,,,,,pending
+New York University Courant Institute of Mathematical Sciences,New York University Courant Institute of Mathematical Sciences,newyorkuniversitycourantinstituteofmathematicalsciences|new-york-university-courant-institute-of-mathematical-sciences|newyorkuniversitycourantinstitutemathematicalsciences|new-york-university-courant-institute-mathematical-sciences|sciences|new,yes,yes,hot,,,,,pending
+Delaware State University,Delaware State University,delawarestateuniversity|delaware-state-university|university|delaware|dsu,yes,yes,hot,,,,,pending
+Beckman Research Institute of the City of Hope,Beckman Research Institute of the City of Hope,beckmanresearchinstituteofthecityofhope|beckman-research-institute-of-the-city-of-hope|beckmanresearchinstitutecityhope|beckman-research-institute-city-hope|hope|beckman,yes,yes,hot,,,,,pending
+Arizona Kidney Disease & Hypertension Center LLC,Arizona Kidney Disease & Hypertension Center,arizonakidneydiseasehypertensioncenter|arizona-kidney-disease-hypertension-center|center|arizona|akdhc,yes,yes,hot,,,,,pending
+University of California Merced,University of California Merced,universityofcaliforniamerced|university-of-california-merced|universitycaliforniamerced|university-california-merced|merced|university,yes,yes,hot,,,,,pending
+University of Georgia,University of Georgia,universityofgeorgia|university-of-georgia|universitygeorgia|university-georgia|georgia|university,yes,yes,hot,,,,,pending
+Rti Health Solutions LLC,Rti Health Solutions,rtihealthsolutions|rti-health-solutions|solutions|rti|rhs,yes,yes,hot,,,,,pending
+Miami University,Miami University,miamiuniversity|miami-university|university|miami|mu,yes,yes,hot,,,,,pending
+Bronxcare Health System,Bronxcare Health System,bronxcarehealthsystem|bronxcare-health-system|system|bronxcare|bhs,yes,yes,hot,,,,,pending
+Lsu Agricultural Center,LSU Agricultural Center,lsuagriculturalcenter|lsu-agricultural-center|center|lsu|lac,yes,yes,hot,,,,,pending
+Seattle Childrens Hospital,Seattle Childrens Hospital,seattlechildrenshospital|seattle-childrens-hospital|hospital|seattle|sch,yes,yes,hot,,,,,pending
+Univ of Wi Systemriver Falls,Univ of Wi Systemriver Falls,univofwisystemriverfalls|univ-of-wi-systemriver-falls|univwisystemriverfalls|univ-wi-systemriver-falls|falls|univ,yes,yes,hot,,,,,pending
+University of California Irvine,University of California Irvine,universityofcaliforniairvine|university-of-california-irvine|universitycaliforniairvine|university-california-irvine|irvine|university,yes,yes,hot,,,,,pending
+Georgetown University,Georgetown University,georgetownuniversity|georgetown-university|university|georgetown|gu,yes,yes,hot,,,,,pending
+Rochester General Hospital,Rochester General Hospital,rochestergeneralhospital|rochester-general-hospital|hospital|rochester|rgh,yes,yes,hot,,,,,pending
+Southern Methodist University,Southern Methodist University,southernmethodistuniversity|southern-methodist-university|university|southern|smu,yes,yes,hot,,,,,pending
+Clemson University,Clemson University,clemsonuniversity|clemson-university|university|clemson|cu,yes,yes,hot,,,,,pending
+The University of Tampa INC,University of Tampa,universityoftampa|university-of-tampa|universitytampa|university-tampa|tampa|university,yes,yes,hot,,,,,pending
+University of Wyoming,University of Wyoming,universityofwyoming|university-of-wyoming|universitywyoming|university-wyoming|wyoming|university,yes,yes,hot,,,,,pending
+Sanford Burnham Prebys Medical Discovery Institute,Sanford Burnham Prebys Medical Discovery Institute,sanfordburnhamprebysmedicaldiscoveryinstitute|sanford-burnham-prebys-medical-discovery-institute|institute|sanford|sbpmdi,yes,yes,hot,,,,,pending
+Golden Valley Health Centers,Golden Valley Health Centers,goldenvalleyhealthcenters|golden-valley-health-centers|centers|golden|gvhc,yes,yes,hot,,,,,pending
+Robert Packer Hospital,Robert Packer Hospital,robertpackerhospital|robert-packer-hospital|hospital|robert|rph,yes,yes,hot,,,,,pending
+Mississippi State University,Mississippi State University,mississippistateuniversity|mississippi-state-university|university|mississippi|msu,yes,yes,hot,,,,,pending
+University of Maryland Baltimore County,University of Maryland Baltimore County,universityofmarylandbaltimorecounty|university-of-maryland-baltimore-county|universitymarylandbaltimorecounty|university-maryland-baltimore-county|county|university,yes,yes,hot,,,,,pending
+University of Kentucky,University of Kentucky,universityofkentucky|university-of-kentucky|universitykentucky|university-kentucky|kentucky|university,yes,yes,hot,,,,,pending
+University of South Alabama,University of South Alabama,universityofsouthalabama|university-of-south-alabama|universitysouthalabama|university-south-alabama|alabama|university,yes,yes,hot,,,,,pending
+Florida International University,Florida International University,floridainternationaluniversity|florida-international-university|university|florida|fiu,yes,yes,hot,,,,,pending
+Guthrie Lourdes Hospital,Guthrie Lourdes Hospital,guthrielourdeshospital|guthrie-lourdes-hospital|hospital|guthrie|glh,yes,yes,hot,,,,,pending
+Yuma Regional Medical Center Dba Onvida Health Medical Group,Yuma Regional Medical Center Dba Onvida Health Medical,yumaregionalmedicalcenterdbaonvidahealthmedical|yuma-regional-medical-center-dba-onvida-health-medical|medical|yuma|yrmcdohm,yes,yes,hot,,,,,pending
+Rochester Institute of Technology,Rochester Institute of Technology,rochesterinstituteoftechnology|rochester-institute-of-technology|rochesterinstitutetechnology|rochester-institute-technology|technology|rochester,yes,yes,hot,,,,,pending
+Savannah College of Art and Design,Savannah College of Art and Design,savannahcollegeofartanddesign|savannah-college-of-art-and-design|savannahcollegeartdesign|savannah-college-art-design|design|savannah,yes,yes,hot,,,,,pending
+Hendrix College,Hendrix College,hendrixcollege|hendrix-college|college|hendrix|hc,yes,yes,hot,,,,,pending
+Apogee Medical Group Ohio INC,Apogee Medical Ohio,apogeemedicalohio|apogee-medical-ohio|ohio|apogee|amo,yes,yes,hot,,,,,pending
+University of California Agriculture and Natural Resources,University of California Agriculture and Natural Resources,universityofcaliforniaagricultureandnaturalresources|university-of-california-agriculture-and-natural-resources|universitycaliforniaagriculturenaturalresources|university-california-agriculture-natural-resources|resources|university,yes,yes,hot,,,,,pending
+Nova Southeastern University,Nova Southeastern University,novasoutheasternuniversity|nova-southeastern-university|university|nova|nsu,yes,yes,hot,,,,,pending
+Florida Atlantic University,Florida Atlantic University,floridaatlanticuniversity|florida-atlantic-university|university|florida|fau,yes,yes,hot,,,,,pending
+New Jersey Institute of Technology,New Jersey Institute of Technology,newjerseyinstituteoftechnology|new-jersey-institute-of-technology|newjerseyinstitutetechnology|new-jersey-institute-technology|technology|new,yes,yes,hot,,,,,pending
+Kennedy Krieger Institute,Kennedy Krieger Institute,kennedykriegerinstitute|kennedy-krieger-institute|institute|kennedy|kki,yes,yes,hot,,,,,pending
+Mother Frances Regional Health Care Center,Mother Frances Regional Health Care Center,motherfrancesregionalhealthcarecenter|mother-frances-regional-health-care-center|center|mother|mfrhcc,yes,yes,hot,,,,,pending
+Research Corporation of the University of Hawaii,Research of the University of Hawaii,researchoftheuniversityofhawaii|research-of-the-university-of-hawaii|researchuniversityhawaii|research-university-hawaii|hawaii|research,yes,yes,hot,,,,,pending
+Rensselaer Polytechnic Institute,Rensselaer Polytechnic Institute,rensselaerpolytechnicinstitute|rensselaer-polytechnic-institute|institute|rensselaer|rpi,yes,yes,hot,,,,,pending
+University of Louisiana at Lafayette,University of Louisiana at Lafayette,universityoflouisianaatlafayette|university-of-louisiana-at-lafayette|universitylouisianalafayette|university-louisiana-lafayette|lafayette|university,yes,yes,hot,,,,,pending
+Baptist Health Medical Group INC,Baptist Health Medical,baptisthealthmedical|baptist-health-medical|medical|baptist|bhm,yes,yes,hot,,,,,pending
+Institute for Musculoskeletal Advancement,Institute for Musculoskeletal Advancement,instituteformusculoskeletaladvancement|institute-for-musculoskeletal-advancement|institutemusculoskeletaladvancement|institute-musculoskeletal-advancement|advancement|institute,yes,yes,hot,,,,,pending
+Morgan State University,Morgan State University,morganstateuniversity|morgan-state-university|university|morgan|msu,yes,yes,hot,,,,,pending
+University of Louisville,University of Louisville,universityoflouisville|university-of-louisville|universitylouisville|university-louisville|louisville|university,yes,yes,hot,,,,,pending
+Florida Polytechnic University,Florida Polytechnic University,floridapolytechnicuniversity|florida-polytechnic-university|university|florida|fpu,yes,yes,hot,,,,,pending
+Memorial Hermann Health System,Memorial Hermann Health System,memorialhermannhealthsystem|memorial-hermann-health-system|system|memorial|mhhs,yes,yes,hot,,,,,pending
+Baruch College,Baruch College,baruchcollege|baruch-college|college|baruch|bc,yes,yes,hot,,,,,pending
+University of Colorado Denver,University of Colorado Denver,universityofcoloradodenver|university-of-colorado-denver|universitycoloradodenver|university-colorado-denver|denver|university,yes,yes,hot,,,,,pending
+Metropolitan State University,Metropolitan State University,metropolitanstateuniversity|metropolitan-state-university|university|metropolitan|msu,yes,yes,hot,,,,,pending
+Wake Forest University,Wake Forest University,wakeforestuniversity|wake-forest-university|university|wake|wfu,yes,yes,hot,,,,,pending
+The University of Kansas Medical Center,University of Kansas Medical Center,universityofkansasmedicalcenter|university-of-kansas-medical-center|universitykansasmedicalcenter|university-kansas-medical-center|center|university,yes,yes,hot,,,,,pending
+Benefis Health System INC,Benefis Health System,benefishealthsystem|benefis-health-system|system|benefis|bhs,yes,yes,hot,,,,,pending
+The Unity Hospital of Rochester,Unity Hospital of Rochester,unityhospitalofrochester|unity-hospital-of-rochester|unityhospitalrochester|unity-hospital-rochester|rochester|unity,yes,yes,hot,,,,,pending
+University of California Santa Cruz,University of California Santa Cruz,universityofcaliforniasantacruz|university-of-california-santa-cruz|universitycaliforniasantacruz|university-california-santa-cruz|cruz|university,yes,yes,hot,,,,,pending
+Tract Pharmaceuticals INC,Tract Pharmaceuticals,tractpharmaceuticals|tract-pharmaceuticals|pharmaceuticals|tract|tp,yes,yes,hot,,,,,pending
+Saluja Medical Associates PA,Saluja Medical Associates PA,salujamedicalassociatespa|saluja-medical-associates-pa|pa|saluja|smap,yes,yes,hot,,,,,pending
+Rosalino Counseling Services,Rosalino Counseling Services,rosalinocounselingservices|rosalino-counseling-services|services|rosalino|rcs,yes,yes,hot,,,,,pending
+University of Mississippi Medical Center,University of Mississippi Medical Center,universityofmississippimedicalcenter|university-of-mississippi-medical-center|universitymississippimedicalcenter|university-mississippi-medical-center|center|university,yes,yes,hot,,,,,pending
+Louisiana State University Health Sciences Center New Orleans,Louisiana State University Health Sciences Center New Orleans,louisianastateuniversityhealthsciencescenterneworleans|louisiana-state-university-health-sciences-center-new-orleans|orleans|louisiana|lsuhscno,yes,yes,hot,,,,,pending
+USA Healthcare Management LLC,Healthcare Management,healthcaremanagement|healthcare-management|management|healthcare|hm,yes,yes,hot,,,,,pending
+Lsu Health Sciences Center,LSU Health Sciences Center,lsuhealthsciencescenter|lsu-health-sciences-center|center|lsu|lhsc,yes,yes,hot,,,,,pending
+The University of Tennessee Health Science Center,University of Tennessee Health Science Center,universityoftennesseehealthsciencecenter|university-of-tennessee-health-science-center|universitytennesseehealthsciencecenter|university-tennessee-health-science-center|center|university,yes,yes,hot,,,,,pending
+Florida Gulf Coast University,Florida Gulf Coast University,floridagulfcoastuniversity|florida-gulf-coast-university|university|florida|fgcu,yes,yes,hot,,,,,pending
+Touro University,Touro University,tourouniversity|touro-university|university|touro|tu,yes,yes,hot,,,,,pending
+Ut Le Bonheur Pediatric Specialists INC,UT Le Bonheur Pediatric Specialists,utlebonheurpediatricspecialists|ut-le-bonheur-pediatric-specialists|specialists|ut|ulbps,yes,yes,hot,,,,,pending
+Physician Affiliate Group of Ny PC,Physician Affiliate of Ny,physicianaffiliateofny|physician-affiliate-of-ny|physicianaffiliateny|physician-affiliate-ny|ny|physician,yes,yes,hot,,,,,pending
+The Research Foundation for Mental Hygiene INC,Research Foundation for Mental Hygiene,researchfoundationformentalhygiene|research-foundation-for-mental-hygiene|researchfoundationmentalhygiene|research-foundation-mental-hygiene|hygiene|research,yes,yes,hot,,,,,pending
+The Curators of the University of Missouriuniversity of Missouri Kansas City,Curators of the University of Missouriuniversity of Missouri Kansas City,curatorsoftheuniversityofmissouriuniversityofmissourikansascity|curators-of-the-university-of-missouriuniversity-of-missouri-kansas-city|curatorsuniversitymissouriuniversitymissourikansascity|curators-university-missouriuniversity-missouri-kansas-city|city|curators,yes,yes,hot,,,,,pending
+Montana State University,Montana State University,montanastateuniversity|montana-state-university|university|montana|msu,yes,yes,hot,,,,,pending
+St Lukes Roosevelt Hospital Center,St Lukes Roosevelt Hospital Center,stlukesroosevelthospitalcenter|st-lukes-roosevelt-hospital-center|center|st|slrhc,yes,yes,hot,,,,,pending
+South Dakota State University,South Dakota State University,southdakotastateuniversity|south-dakota-state-university|university|south|sdsu,yes,yes,hot,,,,,pending
+Loma Linda Inland Empire Consortium for Healthcare Education,Loma Linda Inland Empire Consortium for Healthcare Education,lomalindainlandempireconsortiumforhealthcareeducation|loma-linda-inland-empire-consortium-for-healthcare-education|lomalindainlandempireconsortiumhealthcareeducation|loma-linda-inland-empire-consortium-healthcare-education|education|loma,yes,yes,hot,,,,,pending
+North Suffolk Community Services INC,North Suffolk Community Services,northsuffolkcommunityservices|north-suffolk-community-services|services|north|nscs,yes,yes,hot,,,,,pending
+The Salk Institute for Biological Studies,Salk Institute for Biological Studies,salkinstituteforbiologicalstudies|salk-institute-for-biological-studies|salkinstitutebiologicalstudies|salk-institute-biological-studies|studies|salk,yes,yes,hot,,,,,pending
+The Brooklyn Hospital Center,Brooklyn Hospital Center,brooklynhospitalcenter|brooklyn-hospital-center|center|brooklyn|bhc,yes,yes,hot,,,,,pending
+Nationwide Childrens Hospital,Nationwide Childrens Hospital,nationwidechildrenshospital|nationwide-childrens-hospital|hospital|nationwide|nch,yes,yes,hot,,,,,pending
+The Scripps Research Institute,Scripps Research Institute,scrippsresearchinstitute|scripps-research-institute|institute|scripps|sri,yes,yes,hot,,,,,pending
+Western Michigan University,Western Michigan University,westernmichiganuniversity|western-michigan-university|university|western|wmu,yes,yes,hot,,,,,pending
+Wake Forest University Health Sciences,Wake Forest University Health Sciences,wakeforestuniversityhealthsciences|wake-forest-university-health-sciences|sciences|wake|wfuhs,yes,yes,hot,,,,,pending
+Northern Kentucky University,Northern Kentucky University,northernkentuckyuniversity|northern-kentucky-university|university|northern|nku,yes,yes,hot,,,,,pending
+Fisher College,Fisher College,fishercollege|fisher-college|college|fisher|fc,yes,yes,hot,,,,,pending
+Wayne State University,Wayne State University,waynestateuniversity|wayne-state-university|university|wayne|wsu,yes,yes,hot,,,,,pending
+Mary Hitchcock Memorial Hospital,Mary Hitchcock Memorial Hospital,maryhitchcockmemorialhospital|mary-hitchcock-memorial-hospital|hospital|mary|mhmh,yes,yes,hot,,,,,pending
+Cleveland Clinic,Cleveland Clinic,clevelandclinic|cleveland-clinic|clinic|cleveland|cc,yes,yes,hot,,,,,pending
+Albany Medical College,Albany Medical College,albanymedicalcollege|albany-medical-college|college|albany|amc,yes,yes,hot,,,,,pending
+Kutztown University of Pennsylvania,Kutztown University of Pennsylvania,kutztownuniversityofpennsylvania|kutztown-university-of-pennsylvania|kutztownuniversitypennsylvania|kutztown-university-pennsylvania|pennsylvania|kutztown,yes,yes,hot,,,,,pending
+Thomas Jefferson University,Thomas Jefferson University,thomasjeffersonuniversity|thomas-jefferson-university|university|thomas|tju,yes,yes,hot,,,,,pending
+The University of the South,University of the South,universityofthesouth|university-of-the-south|universitysouth|university-south|south|university,yes,yes,hot,,,,,pending
+Texas A&M University Kingsville,Texas A&M University Kingsville,texasamuniversitykingsville|texas-am-university-kingsville|kingsville|texas|tauk,yes,yes,hot,,,,,pending
+Underwriters Laboratories INC,Underwriters Laboratories,underwriterslaboratories|underwriters-laboratories|laboratories|underwriters|ul,yes,yes,hot,,,,,pending
+Long Island University,Long Island University,longislanduniversity|long-island-university|university|long|liu,yes,yes,hot,,,,,pending
+University of Puerto Rico Mayaguez Campus,University of Puerto Rico Mayaguez Campus,universityofpuertoricomayaguezcampus|university-of-puerto-rico-mayaguez-campus|universitypuertoricomayaguezcampus|university-puerto-rico-mayaguez-campus|campus|university,yes,yes,hot,,,,,pending
+Marquette University,Marquette University,marquetteuniversity|marquette-university|university|marquette|mu,yes,yes,hot,,,,,pending
+Texas State University,Texas State University,texasstateuniversity|texas-state-university|university|texas|tsu,yes,yes,hot,,,,,pending
+University of Massachusetts Boston,University of Massachusetts Boston,universityofmassachusettsboston|university-of-massachusetts-boston|universitymassachusettsboston|university-massachusetts-boston|boston|university,yes,yes,hot,,,,,pending
+Novartis Institutes for Biomedical Research INC,Novartis Institutes for Biomedical Research,novartisinstitutesforbiomedicalresearch|novartis-institutes-for-biomedical-research|novartisinstitutesbiomedicalresearch|novartis-institutes-biomedical-research|research|novartis,yes,yes,hot,,,,,pending
+Hospitalist Medicine Physicians of Texas PLLC,Hospitalist Medicine Physicians of Texas PLLC,hospitalistmedicinephysiciansoftexaspllc|hospitalist-medicine-physicians-of-texas-pllc|hospitalistmedicinephysicianstexaspllc|hospitalist-medicine-physicians-texas-pllc|pllc|hospitalist,yes,yes,hot,,,,,pending
+University of Delaware,University of Delaware,universityofdelaware|university-of-delaware|universitydelaware|university-delaware|delaware|university,yes,yes,hot,,,,,pending
+University of Maryland Eastern Shore,University of Maryland Eastern Shore,universityofmarylandeasternshore|university-of-maryland-eastern-shore|universitymarylandeasternshore|university-maryland-eastern-shore|shore|university,yes,yes,hot,,,,,pending
+University of Pittsburgh Physicians,University of Pittsburgh Physicians,universityofpittsburghphysicians|university-of-pittsburgh-physicians|universitypittsburghphysicians|university-pittsburgh-physicians|physicians|university,yes,yes,hot,,,,,pending
+Wake Forest University Baptist Medical Center,Wake Forest University Baptist Medical Center,wakeforestuniversitybaptistmedicalcenter|wake-forest-university-baptist-medical-center|center|wake|wfubmc,yes,yes,hot,,,,,pending
+Cleveland State University,Cleveland State University,clevelandstateuniversity|cleveland-state-university|university|cleveland|csu,yes,yes,hot,,,,,pending
+Northeast Ohio Medical University,Northeast Ohio Medical University,northeastohiomedicaluniversity|northeast-ohio-medical-university|university|northeast|nomu,yes,yes,hot,,,,,pending
+Ut Medical Group INC,UT Medical,utmedical|ut-medical|medical|ut|um,yes,yes,hot,,,,,pending
+University of Oregon,University of Oregon,universityoforegon|university-of-oregon|universityoregon|university-oregon|oregon|university,yes,yes,hot,,,,,pending
+The University of Texas at Tyler,University of Texas at Tyler,universityoftexasattyler|university-of-texas-at-tyler|universitytexastyler|university-texas-tyler|tyler|university,yes,yes,hot,,,,,pending
+Middle Tennessee State University,Middle Tennessee State University,middletennesseestateuniversity|middle-tennessee-state-university|university|middle|mtsu,yes,yes,hot,,,,,pending
+Sanford,Sanford,sanford,yes,yes,hot,,,,,pending
+Washington Adventist University,Washington Adventist University,washingtonadventistuniversity|washington-adventist-university|university|washington|wau,yes,yes,hot,,,,,pending
+Texas A&M University Central Texas,Texas A&M University Central Texas,texasamuniversitycentraltexas|texas-am-university-central-texas|texas|tauct,yes,yes,hot,,,,,pending
+Central Connecticut State University,Central Connecticut State University,centralconnecticutstateuniversity|central-connecticut-state-university|university|central|ccsu,yes,yes,hot,,,,,pending
+Oklahoma State University,Oklahoma State University,oklahomastateuniversity|oklahoma-state-university|university|oklahoma|osu,yes,yes,hot,,,,,pending
+Florida Hospital Medical Group INC,Florida Hospital Medical,floridahospitalmedical|florida-hospital-medical|medical|florida|fhm,yes,yes,hot,,,,,pending
+Cleveland Clinic Foundation,Cleveland Clinic Foundation,clevelandclinicfoundation|cleveland-clinic-foundation|foundation|cleveland|ccf,yes,yes,hot,,,,,pending
+Avera Marshall,Avera Marshall,averamarshall|avera-marshall|marshall|avera|am,yes,yes,hot,,,,,pending
+Eastern New Mexico University,Eastern New Mexico University,easternnewmexicouniversity|eastern-new-mexico-university|university|eastern|enmu,yes,yes,hot,,,,,pending
+Southern Utah University,Southern Utah University,southernutahuniversity|southern-utah-university|university|southern|suu,yes,yes,hot,,,,,pending
+Indiana University Health INC,Indiana University Health,indianauniversityhealth|indiana-university-health|health|indiana|iuh,yes,yes,hot,,,,,pending
+Shoals Health Group LLC,Shoals Health,shoalshealth|shoals-health|health|shoals|sh,yes,yes,hot,,,,,pending
+Tufts University,Tufts University,tuftsuniversity|tufts-university|university|tufts|tu,yes,yes,hot,,,,,pending
+Ut Methodist Physicians,UT Methodist Physicians,utmethodistphysicians|ut-methodist-physicians|physicians|ut|ump,yes,yes,hot,,,,,pending
+Western Carolina University,Western Carolina University,westerncarolinauniversity|western-carolina-university|university|western|wcu,yes,yes,hot,,,,,pending
+Berkshire Medical Center,Berkshire Medical Center,berkshiremedicalcenter|berkshire-medical-center|center|berkshire|bmc,yes,yes,hot,,,,,pending
+Wright Center for Graduate Medical Education,Wright Center for Graduate Medical Education,wrightcenterforgraduatemedicaleducation|wright-center-for-graduate-medical-education|wrightcentergraduatemedicaleducation|wright-center-graduate-medical-education|education|wright,yes,yes,hot,,,,,pending
+University of Maryland Medical System Corporation,University of Maryland Medical System,universityofmarylandmedicalsystem|university-of-maryland-medical-system|universitymarylandmedicalsystem|university-maryland-medical-system|system|university,yes,yes,hot,,,,,pending
+University of San Francisco,University of San Francisco,universityofsanfrancisco|university-of-san-francisco|universitysanfrancisco|university-san-francisco|francisco|university,yes,yes,hot,,,,,pending
+Lehigh Valley Physician Group,Lehigh Valley Physician,lehighvalleyphysician|lehigh-valley-physician|physician|lehigh|lvp,yes,yes,hot,,,,,pending
+University of Vermont Health Network Medical Group INC,University of Vermont Health Network Medical,universityofvermonthealthnetworkmedical|university-of-vermont-health-network-medical|universityvermonthealthnetworkmedical|university-vermont-health-network-medical|medical|university,yes,yes,hot,,,,,pending
+Colorado State University Pueblo,Colorado State University Pueblo,coloradostateuniversitypueblo|colorado-state-university-pueblo|pueblo|colorado|csup,yes,yes,hot,,,,,pending
+The Simons Foundation INC,Simons Foundation,simonsfoundation|simons-foundation|foundation|simons|sf,yes,yes,hot,,,,,pending
+University of South Carolina,University of South Carolina,universityofsouthcarolina|university-of-south-carolina|universitysouthcarolina|university-south-carolina|carolina|university,yes,yes,hot,,,,,pending
+Seek Laboratories INC,Seek Laboratories,seeklaboratories|seek-laboratories|laboratories|seek|sl,yes,yes,hot,,,,,pending
+Midwestern State University,Midwestern State University,midwesternstateuniversity|midwestern-state-university|university|midwestern|msu,yes,yes,hot,,,,,pending
+Saginaw Cooperative Hospitals,Saginaw Cooperative Hospitals,saginawcooperativehospitals|saginaw-cooperative-hospitals|hospitals|saginaw|sch,yes,yes,hot,,,,,pending
+Smithsonian Astrophysical Observatory,Smithsonian Astrophysical Observatory,smithsonianastrophysicalobservatory|smithsonian-astrophysical-observatory|observatory|smithsonian|sao,yes,yes,hot,,,,,pending
+Woods Hole Oceanographic Institution,Woods Hole Oceanographic Institution,woodsholeoceanographicinstitution|woods-hole-oceanographic-institution|institution|woods|whoi,yes,yes,hot,,,,,pending
+Prisma Health Medical Group Midlands,Prisma Health Medical Midlands,prismahealthmedicalmidlands|prisma-health-medical-midlands|midlands|prisma|phmm,yes,yes,hot,,,,,pending
+Creighton University,Creighton University,creightonuniversity|creighton-university|university|creighton|cu,yes,yes,hot,,,,,pending
+The University of Toledo,University of Toledo,universityoftoledo|university-of-toledo|universitytoledo|university-toledo|toledo|university,yes,yes,hot,,,,,pending
+Multicare Health System,Multicare Health System,multicarehealthsystem|multicare-health-system|system|multicare|mhs,yes,yes,hot,,,,,pending
+Dakota State University,Dakota State University,dakotastateuniversity|dakota-state-university|university|dakota|dsu,yes,yes,hot,,,,,pending
+Ithaca College,Ithaca College,ithacacollege|ithaca-college|college|ithaca|ic,yes,yes,hot,,,,,pending
+Biocytics INC,Biocytics,biocytics,yes,yes,hot,,,,,pending
+Northeast Montana Health Services,Northeast Montana Health Services,northeastmontanahealthservices|northeast-montana-health-services|services|northeast|nmhs,yes,yes,hot,,,,,pending
+Kentucky State University,Kentucky State University,kentuckystateuniversity|kentucky-state-university|university|kentucky|ksu,yes,yes,hot,,,,,pending
+Governors State University,Governors State University,governorsstateuniversity|governors-state-university|university|governors|gsu,yes,yes,hot,,,,,pending
+Deaconess Health System INC,Deaconess Health System,deaconesshealthsystem|deaconess-health-system|system|deaconess|dhs,yes,yes,hot,,,,,pending
+Tougaloo College,Tougaloo College,tougaloocollege|tougaloo-college|college|tougaloo|tc,yes,yes,hot,,,,,pending
+Coastal Medical Physicians INC,Coastal Medical Physicians,coastalmedicalphysicians|coastal-medical-physicians|physicians|coastal|cmp,yes,yes,hot,,,,,pending
+Ohiohealth CORP,Ohiohealth,ohiohealth,yes,yes,hot,,,,,pending
+Baptist Healthcare Systems INC,Baptist Healthcare Systems,baptisthealthcaresystems|baptist-healthcare-systems|systems|baptist|bhs,yes,yes,hot,,,,,pending
+Michael A Pisacano Md PC,Michael A Pisacano Md,michaelapisacanomd|michael-a-pisacano-md|md|michael|mapm,yes,yes,hot,,,,,pending
+The Permanente Medical Group INC,Permanente Medical,permanentemedical|permanente-medical|medical|permanente|pm,yes,yes,hot,,,,,pending
+Rome Gastroenterology Associates INC,Rome Gastroenterology Associates,romegastroenterologyassociates|rome-gastroenterology-associates|associates|rome|rga,yes,yes,hot,,,,,pending
+Washington Hospital Center Corporation,Washington Hospital Center,washingtonhospitalcenter|washington-hospital-center|center|washington|whc,yes,yes,hot,,,,,pending
+Albany Med Health System,Albany Med Health System,albanymedhealthsystem|albany-med-health-system|system|albany|amhs,yes,yes,hot,,,,,pending
+Englewood Hospital and Medical Center,Englewood Hospital and Medical Center,englewoodhospitalandmedicalcenter|englewood-hospital-and-medical-center|englewoodhospitalmedicalcenter|englewood-hospital-medical-center|center|englewood,yes,yes,hot,,,,,pending
+Saint Louis University,Saint Louis University,saintlouisuniversity|saint-louis-university|university|saint|slu,yes,yes,hot,,,,,pending
+State University of New York at Stony Brook,State University of New York at Stony Brook,stateuniversityofnewyorkatstonybrook|state-university-of-new-york-at-stony-brook|stateuniversitynewyorkstonybrook|state-university-new-york-stony-brook|brook|state,yes,yes,hot,,,,,pending
+Texas A&M University Corpus Christi,Texas A&M University Corpus Christi,texasamuniversitycorpuschristi|texas-am-university-corpus-christi|christi|texas|taucc,yes,yes,hot,,,,,pending
+Mercy Clinic Springfield Communities,Mercy Clinic Springfield Communities,mercyclinicspringfieldcommunities|mercy-clinic-springfield-communities|communities|mercy|mcsc,yes,yes,hot,,,,,pending
+Azenta INC,Azenta,azenta,yes,yes,hot,,,,,pending
+University at Buffalo Pediatric Associates INC,University at Buffalo Pediatric Associates,universityatbuffalopediatricassociates|university-at-buffalo-pediatric-associates|universitybuffalopediatricassociates|university-buffalo-pediatric-associates|associates|university,yes,yes,hot,,,,,pending
+Karthikeya Devireddy Md INC,Karthikeya Devireddy Md,karthikeyadevireddymd|karthikeya-devireddy-md|md|karthikeya|kdm,yes,yes,hot,,,,,pending
+Fort Lewis College,Fort Lewis College,fortlewiscollege|fort-lewis-college|college|fort|flc,yes,yes,hot,,,,,pending
+Banner University Medical Group,Banner University Medical,banneruniversitymedical|banner-university-medical|medical|banner|bum,yes,yes,hot,,,,,pending
+Cayuga Medical Associates PC,Cayuga Medical Associates,cayugamedicalassociates|cayuga-medical-associates|associates|cayuga|cma,yes,yes,hot,,,,,pending
+Southern Illinois University Carbondale,Southern Illinois University Carbondale,southernillinoisuniversitycarbondale|southern-illinois-university-carbondale|carbondale|southern|siuc,yes,yes,hot,,,,,pending
+University of North Texas Health Science Center,University of North Texas Health Science Center,universityofnorthtexashealthsciencecenter|university-of-north-texas-health-science-center|universitynorthtexashealthsciencecenter|university-north-texas-health-science-center|center|university,yes,yes,hot,,,,,pending
+Paine College,Paine College,painecollege|paine-college|college|paine|pc,yes,yes,hot,,,,,pending
+Valley Health System,Valley Health System,valleyhealthsystem|valley-health-system|system|valley|vhs,yes,yes,hot,,,,,pending
+California State University Bakersfield,California State University Bakersfield,californiastateuniversitybakersfield|california-state-university-bakersfield|bakersfield|california|csub,yes,yes,hot,,,,,pending
+Jackson State University,Jackson State University,jacksonstateuniversity|jackson-state-university|university|jackson|jsu,yes,yes,hot,,,,,pending
+University of North Florida,University of North Florida,universityofnorthflorida|university-of-north-florida|universitynorthflorida|university-north-florida|florida|university,yes,yes,hot,,,,,pending
+Pace University,Pace University,paceuniversity|pace-university|university|pace|pu,yes,yes,hot,,,,,pending
+Jackson Hospital and Clinic INC,Jackson Hospital and Clinic,jacksonhospitalandclinic|jackson-hospital-and-clinic|jacksonhospitalclinic|jackson-hospital-clinic|clinic|jackson,yes,yes,hot,,,,,pending
+University of South Dakota,University of South Dakota,universityofsouthdakota|university-of-south-dakota|universitysouthdakota|university-south-dakota|dakota|university,yes,yes,hot,,,,,pending
+Missouri State University,Missouri State University,missouristateuniversity|missouri-state-university|university|missouri|msu,yes,yes,hot,,,,,pending
+Southeastern Louisiana University,Southeastern Louisiana University,southeasternlouisianauniversity|southeastern-louisiana-university|university|southeastern|slu,yes,yes,hot,,,,,pending
+Max Planck Florida Corporation,Max Planck Florida,maxplanckflorida|max-planck-florida|florida|max|mpf,yes,yes,hot,,,,,pending
+Southeast Georgia Health System INC,Southeast Georgia Health System,southeastgeorgiahealthsystem|southeast-georgia-health-system|system|southeast|sghs,yes,yes,hot,,,,,pending
+Culver Stockton College,Culver Stockton College,culverstocktoncollege|culver-stockton-college|college|culver|csc,yes,yes,hot,,,,,pending
+Cambridge Public Health Commission,Cambridge Public Health Commission,cambridgepublichealthcommission|cambridge-public-health-commission|commission|cambridge|cphc,yes,yes,hot,,,,,pending
+Ssm Health Care Group,Ssm Health Care,ssmhealthcare|ssm-health-care|care|ssm|shc,yes,yes,hot,,,,,pending
+Abraham Baldwin Agricultural College,Abraham Baldwin Agricultural College,abrahambaldwinagriculturalcollege|abraham-baldwin-agricultural-college|college|abraham|abac,yes,yes,hot,,,,,pending
+The Ohio University,Ohio University,ohiouniversity|ohio-university|university|ohio|ou,yes,yes,hot,,,,,pending
+Promab Biotechnologies INC,Promab Biotechnologies,promabbiotechnologies|promab-biotechnologies|biotechnologies|promab|pb,yes,yes,hot,,,,,pending
+Louisiana Tech University,Louisiana Tech University,louisianatechuniversity|louisiana-tech-university|university|louisiana|ltu,yes,yes,hot,,,,,pending
+Genesis Health System,Genesis Health System,genesishealthsystem|genesis-health-system|system|genesis|ghs,yes,yes,hot,,,,,pending
+Claremont Mckenna College,Claremont Mckenna College,claremontmckennacollege|claremont-mckenna-college|college|claremont|cmc,yes,yes,hot,,,,,pending
+Vidavinci INC,Vidavinci,vidavinci,yes,yes,hot,,,,,pending
+New Mexico State University Grants Community College,New Mexico State University Grants Community College,newmexicostateuniversitygrantscommunitycollege|new-mexico-state-university-grants-community-college|college|new|nmsugcc,yes,yes,hot,,,,,pending
+Kennesaw State University,Kennesaw State University,kennesawstateuniversity|kennesaw-state-university|university|kennesaw|ksu,yes,yes,hot,,,,,pending
+Pediatrix Medical Group of Florida INC,Pediatrix Medical of Florida,pediatrixmedicalofflorida|pediatrix-medical-of-florida|pediatrixmedicalflorida|pediatrix-medical-florida|florida|pediatrix,yes,yes,hot,,,,,pending
+Coherence Neuro Global INC,Coherence Neuro Global,coherenceneuroglobal|coherence-neuro-global|global|coherence|cng,yes,yes,hot,,,,,pending
+Iroquois Nursing Home INC,Iroquois Nursing Home,iroquoisnursinghome|iroquois-nursing-home|home|iroquois|inh,yes,yes,hot,,,,,pending
+Community Health Association of Spokane,Community Health Association of Spokane,communityhealthassociationofspokane|community-health-association-of-spokane|communityhealthassociationspokane|community-health-association-spokane|spokane|community,yes,yes,hot,,,,,pending
+St Marys Healthcare,St Marys Healthcare,stmaryshealthcare|st-marys-healthcare|healthcare|st|smh,yes,yes,hot,,,,,pending
+Fayetteville State University,Fayetteville State University,fayettevillestateuniversity|fayetteville-state-university|university|fayetteville|fsu,yes,yes,hot,,,,,pending
+Veracyte INC,Veracyte,veracyte,yes,yes,hot,,,,,pending
+Colorado School of Mines,Colorado School of Mines,coloradoschoolofmines|colorado-school-of-mines|coloradoschoolmines|colorado-school-mines|mines|colorado,yes,yes,hot,,,,,pending
+Tillges Certified Orthotics Prosthetics INC,Tillges Certified Orthotics Prosthetics,tillgescertifiedorthoticsprosthetics|tillges-certified-orthotics-prosthetics|prosthetics|tillges|tcop,yes,yes,hot,,,,,pending
+Charles H Croft Md PA,Charles H Croft Md PA,charleshcroftmdpa|charles-h-croft-md-pa|pa|charles|chcmp,yes,yes,hot,,,,,pending
+Leidos Biomedical Research INC,Leidos Biomedical Research,leidosbiomedicalresearch|leidos-biomedical-research|research|leidos|lbr,yes,yes,hot,,,,,pending
+Tarleton State University,Tarleton State University,tarletonstateuniversity|tarleton-state-university|university|tarleton|tsu,yes,yes,hot,,,,,pending
+Longview Philanthropy USA INC,Longview Philanthropy,longviewphilanthropy|longview-philanthropy|philanthropy|longview|lp,yes,yes,hot,,,,,pending
+Southwestern Oklahoma State University,Southwestern Oklahoma State University,southwesternoklahomastateuniversity|southwestern-oklahoma-state-university|university|southwestern|sosu,yes,yes,hot,,,,,pending
+Baylor Research Institute,Baylor Research Institute,baylorresearchinstitute|baylor-research-institute|institute|baylor|bri,yes,yes,hot,,,,,pending
+University of Virginia Physicians Group,University of Virginia Physicians,universityofvirginiaphysicians|university-of-virginia-physicians|universityvirginiaphysicians|university-virginia-physicians|physicians|university,yes,yes,hot,,,,,pending
+Brigham and Womens Physicians Organization,Brigham and Womens Physicians Organization,brighamandwomensphysiciansorganization|brigham-and-womens-physicians-organization|brighamwomensphysiciansorganization|brigham-womens-physicians-organization|organization|brigham,yes,yes,hot,,,,,pending
+Abilene Christian University,Abilene Christian University,abilenechristianuniversity|abilene-christian-university|university|abilene|acu,yes,yes,hot,,,,,pending
+Hm Dod LLC,Hm Dod,hmdod|hm-dod|dod|hm|hd,yes,yes,hot,,,,,pending
+Southeastern Hospitalist Services PC,Southeastern Hospitalist Services,southeasternhospitalistservices|southeastern-hospitalist-services|services|southeastern|shs,yes,yes,hot,,,,,pending
+Jacksonville State University,Jacksonville State University,jacksonvillestateuniversity|jacksonville-state-university|university|jacksonville|jsu,yes,yes,hot,,,,,pending
+Rogers State University,Rogers State University,rogersstateuniversity|rogers-state-university|university|rogers|rsu,yes,yes,hot,,,,,pending
+Mercy Clinic Fort Smith Communities,Mercy Clinic Fort Smith Communities,mercyclinicfortsmithcommunities|mercy-clinic-fort-smith-communities|communities|mercy|mcfsc,yes,yes,hot,,,,,pending
+St John Fisher University,St John Fisher University,stjohnfisheruniversity|st-john-fisher-university|university|st|sjfu,yes,yes,hot,,,,,pending
+St Aloisius Hospital,St Aloisius Hospital,staloisiushospital|st-aloisius-hospital|hospital|st|sah,yes,yes,hot,,,,,pending
+San Jose State University,San Jose State University,sanjosestateuniversity|san-jose-state-university|university|san|sjsu,yes,yes,hot,,,,,pending
+University Physicians of Brooklyn INC,University Physicians of Brooklyn,universityphysiciansofbrooklyn|university-physicians-of-brooklyn|universityphysiciansbrooklyn|university-physicians-brooklyn|brooklyn|university,yes,yes,hot,,,,,pending
+David Shin & CO Cpa,David Shin & Cpa,davidshincpa|david-shin-cpa|cpa|david|dsc,yes,yes,hot,,,,,pending
+Mount Sinai Hospital,Mount Sinai Hospital,mountsinaihospital|mount-sinai-hospital|hospital|mount|msh,yes,yes,hot,,,,,pending
+Bay Area Environmental Research Institute,Bay Area Environmental Research Institute,bayareaenvironmentalresearchinstitute|bay-area-environmental-research-institute|institute|bay|baeri,yes,yes,hot,,,,,pending
+American University,American University,americanuniversity|american-university|university|american|au,yes,yes,hot,,,,,pending
+The Urban Institute,Urban Institute,urbaninstitute|urban-institute|institute|urban|ui,yes,yes,hot,,,,,pending
+Sidney Health Center,Sidney Health Center,sidneyhealthcenter|sidney-health-center|center|sidney|shc,yes,yes,hot,,,,,pending
+Wenatchee Valley Medical Group Ps,Wenatchee Valley Medical Ps,wenatcheevalleymedicalps|wenatchee-valley-medical-ps|ps|wenatchee|wvmp,yes,yes,hot,,,,,pending
+Dr Jamie A Lipeles A Professional Medical Corporation,Dr Jamie A Lipeles A Professional Medical,drjamiealipelesaprofessionalmedical|dr-jamie-a-lipeles-a-professional-medical|medical|dr|djalapm,yes,yes,hot,,,,,pending
+Lehigh Valley Hospital INC,Lehigh Valley Hospital,lehighvalleyhospital|lehigh-valley-hospital|hospital|lehigh|lvh,yes,yes,hot,,,,,pending
+Physician Groups Lc,Physician Groups Lc,physiciangroupslc|physician-groups-lc|lc|physician|pgl,yes,yes,hot,,,,,pending
+The Feinstein Institutes for Medical Research,Feinstein Institutes for Medical Research,feinsteininstitutesformedicalresearch|feinstein-institutes-for-medical-research|feinsteininstitutesmedicalresearch|feinstein-institutes-medical-research|research|feinstein,yes,yes,hot,,,,,pending
+Vita Valens Foundation INC,Vita Valens Foundation,vitavalensfoundation|vita-valens-foundation|foundation|vita|vvf,yes,yes,hot,,,,,pending
+Emporia State University,Emporia State University,emporiastateuniversity|emporia-state-university|university|emporia|esu,yes,yes,hot,,,,,pending
+National Institutes of Health Hhs,National Institutes of Health Hhs,nationalinstitutesofhealthhhs|national-institutes-of-health-hhs|nationalinstituteshealthhhs|national-institutes-health-hhs|hhs|national,yes,yes,hot,,,,,pending
+Merck Sharp & Dohme LLC,Merck Sharp & Dohme,mercksharpdohme|merck-sharp-dohme|dohme|merck|msd,yes,yes,hot,,,,,pending
+Norwich University,Norwich University,norwichuniversity|norwich-university|university|norwich|nu,yes,yes,hot,,,,,pending
+Vertex Pharmaceuticals Incorporated,Vertex Pharmaceuticals,vertexpharmaceuticals|vertex-pharmaceuticals|pharmaceuticals|vertex|vp,yes,yes,hot,,,,,pending
+Northern Illinois University,Northern Illinois University,northernillinoisuniversity|northern-illinois-university|university|northern|niu,yes,yes,hot,,,,,pending
+Presbyterian Healthcare Services,Presbyterian Healthcare Services,presbyterianhealthcareservices|presbyterian-healthcare-services|services|presbyterian|phs,yes,yes,hot,,,,,pending
+Jacobson Memorial Hospital Care Center,Jacobson Memorial Hospital Care Center,jacobsonmemorialhospitalcarecenter|jacobson-memorial-hospital-care-center|center|jacobson|jmhcc,yes,yes,hot,,,,,pending
+College of Menominee Nation,College of Menominee Nation,collegeofmenomineenation|college-of-menominee-nation|collegemenomineenation|college-menominee-nation|nation|college,yes,yes,hot,,,,,pending
+University of the Pacific,University of the Pacific,universityofthepacific|university-of-the-pacific|universitypacific|university-pacific|pacific|university,yes,yes,hot,,,,,pending
+Crouse Health Hospitals INC,Crouse Health Hospitals,crousehealthhospitals|crouse-health-hospitals|hospitals|crouse|chh,yes,yes,hot,,,,,pending
+Baylor University,Baylor University,bayloruniversity|baylor-university|university|baylor|bu,yes,yes,hot,,,,,pending
+Dallas Baptist University,Dallas Baptist University,dallasbaptistuniversity|dallas-baptist-university|university|dallas|dbu,yes,yes,hot,,,,,pending
+Medical University of South Carolina and Affiliates,Medical University of South Carolina and Affiliates,medicaluniversityofsouthcarolinaandaffiliates|medical-university-of-south-carolina-and-affiliates|medicaluniversitysouthcarolinaaffiliates|medical-university-south-carolina-affiliates|affiliates|medical,yes,yes,hot,,,,,pending
+Mainehealth,Mainehealth,mainehealth,yes,yes,hot,,,,,pending
+Commonwealth Healthcare Corporation,Commonwealth Healthcare,commonwealthhealthcare|commonwealth-healthcare|healthcare|commonwealth|ch,yes,yes,hot,,,,,pending
+Protestant Episcopal Theological Seminary in Virginia,Protestant Episcopal Theological Seminary in Virginia,protestantepiscopaltheologicalseminaryinvirginia|protestant-episcopal-theological-seminary-in-virginia|protestantepiscopaltheologicalseminaryvirginia|protestant-episcopal-theological-seminary-virginia|virginia|protestant,yes,yes,hot,,,,,pending
+Carroll Hospital Center INC,Carroll Hospital Center,carrollhospitalcenter|carroll-hospital-center|center|carroll|chc,yes,yes,hot,,,,,pending
+Minnesota State University Mankato,Minnesota State University Mankato,minnesotastateuniversitymankato|minnesota-state-university-mankato|mankato|minnesota|msum,yes,yes,hot,,,,,pending
+Grace Health INC,Grace Health,gracehealth|grace-health|health|grace|gh,yes,yes,hot,,,,,pending
+East Texas A&M University,East Texas A&M University,easttexasamuniversity|east-texas-am-university|university|east|etau,yes,yes,hot,,,,,pending
+California State University East Bay,California State University East Bay,californiastateuniversityeastbay|california-state-university-east-bay|bay|california|csueb,yes,yes,hot,,,,,pending
+Saint Vincent College,Saint Vincent College,saintvincentcollege|saint-vincent-college|college|saint|svc,yes,yes,hot,,,,,pending
+University of Central Arkansas,University of Central Arkansas,universityofcentralarkansas|university-of-central-arkansas|universitycentralarkansas|university-central-arkansas|arkansas|university,yes,yes,hot,,,,,pending
+Solid Biosciences INC,Solid Biosciences,solidbiosciences|solid-biosciences|biosciences|solid|sb,yes,yes,hot,,,,,pending
+University of Massachusetts Amherst,University of Massachusetts Amherst,universityofmassachusettsamherst|university-of-massachusetts-amherst|universitymassachusettsamherst|university-massachusetts-amherst|amherst|university,yes,yes,hot,,,,,pending
+Wellspan Medical Group,Wellspan Medical,wellspanmedical|wellspan-medical|medical|wellspan|wm,yes,yes,hot,,,,,pending
+Methodist Healthcare System of San Antonio LTD LLP,Methodist Healthcare System of San Antonio,methodisthealthcaresystemofsanantonio|methodist-healthcare-system-of-san-antonio|methodisthealthcaresystemsanantonio|methodist-healthcare-system-san-antonio|antonio|methodist,yes,yes,hot,,,,,pending
+South Texas Va Medical Center,South Texas Va Medical Center,southtexasvamedicalcenter|south-texas-va-medical-center|center|south|stvmc,yes,yes,hot,,,,,pending
+Gannon University,Gannon University,gannonuniversity|gannon-university|university|gannon|gu,yes,yes,hot,,,,,pending
+Dayton Osteopathic Hospital,Dayton Osteopathic Hospital,daytonosteopathichospital|dayton-osteopathic-hospital|hospital|dayton|doh,yes,yes,hot,,,,,pending
+Dubois Regional Medical Center,Dubois Regional Medical Center,duboisregionalmedicalcenter|dubois-regional-medical-center|center|dubois|drmc,yes,yes,hot,,,,,pending
+Oklahoma Medical Research Foundation,Oklahoma Medical Research Foundation,oklahomamedicalresearchfoundation|oklahoma-medical-research-foundation|foundation|oklahoma|omrf,yes,yes,hot,,,,,pending
+Memorial Community Health INC,Memorial Community Health,memorialcommunityhealth|memorial-community-health|health|memorial|mch,yes,yes,hot,,,,,pending
+Oklahoma Panhandle State University,Oklahoma Panhandle State University,oklahomapanhandlestateuniversity|oklahoma-panhandle-state-university|university|oklahoma|opsu,yes,yes,hot,,,,,pending
+Parkview Hospital INC,Parkview Hospital,parkviewhospital|parkview-hospital|hospital|parkview|ph,yes,yes,hot,,,,,pending
+Juniata College,Juniata College,juniatacollege|juniata-college|college|juniata|jc,yes,yes,hot,,,,,pending
+Sheridan Healthcorp INC,Sheridan Healthcorp,sheridanhealthcorp|sheridan-healthcorp|healthcorp|sheridan|sh,yes,yes,hot,,,,,pending
+Arkansas State University,Arkansas State University,arkansasstateuniversity|arkansas-state-university|university|arkansas|asu,yes,yes,hot,,,,,pending
+Lasante Health Center INC,Lasante Health Center,lasantehealthcenter|lasante-health-center|center|lasante|lhc,yes,yes,hot,,,,,pending
+Ati Holdings LLC,Ati,ati,yes,yes,hot,,,,,pending
+Professional Pathology Services,Professional Pathology Services,professionalpathologyservices|professional-pathology-services|services|professional|pps,yes,yes,hot,,,,,pending
+Metrohealth Medical Center,Metrohealth Medical Center,metrohealthmedicalcenter|metrohealth-medical-center|center|metrohealth|mmc,yes,yes,hot,,,,,pending
+Charles River Laboratories INC,Charles River Laboratories,charlesriverlaboratories|charles-river-laboratories|laboratories|charles|crl,yes,yes,hot,,,,,pending
+West Texas A&M University,West Texas A&M University,westtexasamuniversity|west-texas-am-university|university|west|wtau,yes,yes,hot,,,,,pending
+Clarity AI Research INC,Clarity AI Research,clarityairesearch|clarity-ai-research|research|clarity|car,yes,yes,hot,,,,,pending
+Westmont College,Westmont College,westmontcollege|westmont-college|college|westmont|wc,yes,yes,hot,,,,,pending
+Mercy Medical Center INC,Mercy Medical Center,mercymedicalcenter|mercy-medical-center|center|mercy|mmc,yes,yes,hot,,,,,pending
+Saint Francis Medical Partners LLC,Saint Francis Medical Partners,saintfrancismedicalpartners|saint-francis-medical-partners|partners|saint|sfmp,yes,yes,hot,,,,,pending
+Vectoria INC,Vectoria,vectoria,yes,yes,hot,,,,,pending
+Auburn University,Auburn University,auburnuniversity|auburn-university|university|auburn|au,yes,yes,hot,,,,,pending
+Blue Ridge Healthcare Medical Group INC,Blue Ridge Healthcare Medical,blueridgehealthcaremedical|blue-ridge-healthcare-medical|medical|blue|brhm,yes,yes,hot,,,,,pending
+Lakeland Hospitals at Niles and St Joseph INC,Lakeland Hospitals at Niles and St Joseph,lakelandhospitalsatnilesandstjoseph|lakeland-hospitals-at-niles-and-st-joseph|lakelandhospitalsnilesstjoseph|lakeland-hospitals-niles-st-joseph|joseph|lakeland,yes,yes,hot,,,,,pending
+Lawrence Technological University,Lawrence Technological University,lawrencetechnologicaluniversity|lawrence-technological-university|university|lawrence|ltu,yes,yes,hot,,,,,pending
+Columbia Theological Seminary,Columbia Theological Seminary,columbiatheologicalseminary|columbia-theological-seminary|seminary|columbia|cts,yes,yes,hot,,,,,pending
+Beth Israel Deaconess Medical Center INC,Beth Israel Deaconess Medical Center,bethisraeldeaconessmedicalcenter|beth-israel-deaconess-medical-center|center|beth|bidmc,yes,yes,hot,,,,,pending
+Dlp Central Carolina Medical Group LLC,Dlp Central Carolina Medical,dlpcentralcarolinamedical|dlp-central-carolina-medical|medical|dlp|dccm,yes,yes,hot,,,,,pending
+Spring Hill College,Spring Hill College,springhillcollege|spring-hill-college|college|spring|shc,yes,yes,hot,,,,,pending
+Harvard Pilgrim Health Care Institute LLC,Harvard Pilgrim Health Care Institute,harvardpilgrimhealthcareinstitute|harvard-pilgrim-health-care-institute|institute|harvard|hphci,yes,yes,hot,,,,,pending
+Windhorse Integrative Mental Health,Windhorse Integrative Mental Health,windhorseintegrativementalhealth|windhorse-integrative-mental-health|health|windhorse|wimh,yes,yes,hot,,,,,pending
+Elizabethtown College,Elizabethtown College,elizabethtowncollege|elizabethtown-college|college|elizabethtown|ec,yes,yes,hot,,,,,pending
+Chapman University,Chapman University,chapmanuniversity|chapman-university|university|chapman|cu,yes,yes,hot,,,,,pending
+Fillmore County Hospital,Fillmore County Hospital,fillmorecountyhospital|fillmore-county-hospital|hospital|fillmore|fch,yes,yes,hot,,,,,pending
+Manning Regional Healthcare Center,Manning Regional Healthcare Center,manningregionalhealthcarecenter|manning-regional-healthcare-center|center|manning|mrhc,yes,yes,hot,,,,,pending
+Indiana University Health Care Associates INC,Indiana University Health Care Associates,indianauniversityhealthcareassociates|indiana-university-health-care-associates|associates|indiana|iuhca,yes,yes,hot,,,,,pending
+Ut Regional One Physicians INC,UT Regional One Physicians,utregionalonephysicians|ut-regional-one-physicians|physicians|ut|urop,yes,yes,hot,,,,,pending
+University of Central Florida,University of Central Florida,universityofcentralflorida|university-of-central-florida|universitycentralflorida|university-central-florida|florida|university,yes,yes,hot,,,,,pending
+State University of New York Downstate Health Sciences University,State University of New York Downstate Health Sciences University,stateuniversityofnewyorkdownstatehealthsciencesuniversity|state-university-of-new-york-downstate-health-sciences-university|stateuniversitynewyorkdownstatehealthsciencesuniversity|state-university-new-york-downstate-health-sciences-university|university|state,yes,yes,hot,,,,,pending
+Far AI INC,Far AI,farai|far-ai|ai|far|fa,yes,yes,hot,,,,,pending
+Rockford Health Physicians,Rockford Health Physicians,rockfordhealthphysicians|rockford-health-physicians|physicians|rockford|rhp,yes,yes,hot,,,,,pending
+Nj Bio INC,Nj Bio,njbio|nj-bio|bio|nj|nb,yes,yes,hot,,,,,pending
+University of Rhode Island,University of Rhode Island,universityofrhodeisland|university-of-rhode-island|universityrhodeisland|university-rhode-island|island|university,yes,yes,hot,,,,,pending
+La Sierra University,La Sierra University,lasierrauniversity|la-sierra-university|university|la|lsu,yes,yes,hot,,,,,pending
+Loyola University Chicago,Loyola University Chicago,loyolauniversitychicago|loyola-university-chicago|chicago|loyola|luc,yes,yes,hot,,,,,pending
+City of Hope Medical Group INC,City of Hope Medical,cityofhopemedical|city-of-hope-medical|cityhopemedical|city-hope-medical|medical|city,yes,yes,hot,,,,,pending
+Sentara Health,Sentara Health,sentarahealth|sentara-health|health|sentara|sh,yes,yes,hot,,,,,pending
+Depaul University,Depaul University,depauluniversity|depaul-university|university|depaul|du,yes,yes,hot,,,,,pending
+Global Energy Monitor,Global Energy Monitor,globalenergymonitor|global-energy-monitor|monitor|global|gem,yes,yes,hot,,,,,pending
+Clarewood University Foundation INC,Clarewood University Foundation,clarewooduniversityfoundation|clarewood-university-foundation|foundation|clarewood|cuf,yes,yes,hot,,,,,pending
+Center for Strategic and International Studies,Center for Strategic and International Studies,centerforstrategicandinternationalstudies|center-for-strategic-and-international-studies|centerstrategicinternationalstudies|center-strategic-international-studies|studies|center,yes,yes,hot,,,,,pending
+Hunter College of the City University of New York,Hunter College of the City University of New York,huntercollegeofthecityuniversityofnewyork|hunter-college-of-the-city-university-of-new-york|huntercollegecityuniversitynewyork|hunter-college-city-university-new-york|york|hunter,yes,yes,hot,,,,,pending
+Bentley University,Bentley University,bentleyuniversity|bentley-university|university|bentley|bu,yes,yes,hot,,,,,pending
+Yale New Haven Hospital,Yale New Haven Hospital,yalenewhavenhospital|yale-new-haven-hospital|hospital|yale|ynhh,yes,yes,hot,,,,,pending
+Memorial Health Partners Foundation INC,Memorial Health Partners Foundation,memorialhealthpartnersfoundation|memorial-health-partners-foundation|foundation|memorial|mhpf,yes,yes,hot,,,,,pending
+University of Colorado Health,University of Colorado Health,universityofcoloradohealth|university-of-colorado-health|universitycoloradohealth|university-colorado-health|health|university,yes,yes,hot,,,,,pending
+Denison University,Denison University,denisonuniversity|denison-university|university|denison|du,yes,yes,hot,,,,,pending
+University of California at Santa Barbara,University of California at Santa Barbara,universityofcaliforniaatsantabarbara|university-of-california-at-santa-barbara|universitycaliforniasantabarbara|university-california-santa-barbara|barbara|university,yes,yes,hot,,,,,pending
+Saltzman Tanis Pittell Levin and Jacobson LLC,Saltzman Tanis Pittell Levin and Jacobson,saltzmantanispittelllevinandjacobson|saltzman-tanis-pittell-levin-and-jacobson|saltzmantanispittelllevinjacobson|saltzman-tanis-pittell-levin-jacobson|jacobson|saltzman,yes,yes,hot,,,,,pending
+Mount Holyoke College,Mount Holyoke College,mountholyokecollege|mount-holyoke-college|college|mount|mhc,yes,yes,hot,,,,,pending
+Pella Regional Health Center,Pella Regional Health Center,pellaregionalhealthcenter|pella-regional-health-center|center|pella|prhc,yes,yes,hot,,,,,pending
+The Brookdale Hospital Medical Center,Brookdale Hospital Medical Center,brookdalehospitalmedicalcenter|brookdale-hospital-medical-center|center|brookdale|bhmc,yes,yes,hot,,,,,pending
+College of Staten Island of the City University of New York,College of Staten Island of the City University of New York,collegeofstatenislandofthecityuniversityofnewyork|college-of-staten-island-of-the-city-university-of-new-york|collegestatenislandcityuniversitynewyork|college-staten-island-city-university-new-york|york|college,yes,yes,hot,,,,,pending
+Cameron University,Cameron University,cameronuniversity|cameron-university|university|cameron|cu,yes,yes,hot,,,,,pending
+St Bonaventure University,St Bonaventure University,stbonaventureuniversity|st-bonaventure-university|university|st|sbu,yes,yes,hot,,,,,pending
+Sam Houston State University,Sam Houston State University,samhoustonstateuniversity|sam-houston-state-university|university|sam|shsu,yes,yes,hot,,,,,pending
+Bayshore Therapies LLC,Bayshore Therapies,bayshoretherapies|bayshore-therapies|therapies|bayshore|bt,yes,yes,hot,,,,,pending
+The People Concern,People Concern,peopleconcern|people-concern|concern|people|pc,yes,yes,hot,,,,,pending
+Tennessee Wesleyan University,Tennessee Wesleyan University,tennesseewesleyanuniversity|tennessee-wesleyan-university|university|tennessee|twu,yes,yes,hot,,,,,pending
+St Josephs University Medical Center,St Josephs University Medical Center,stjosephsuniversitymedicalcenter|st-josephs-university-medical-center|center|st|sjumc,yes,yes,hot,,,,,pending
+Keefe Memorial Health Service District,Keefe Memorial Health Service District,keefememorialhealthservicedistrict|keefe-memorial-health-service-district|district|keefe|kmhsd,yes,yes,hot,,,,,pending
+Drs Ellis Rojas Ross & Debs INC,Drs Ellis Rojas Ross & Debs,drsellisrojasrossdebs|drs-ellis-rojas-ross-debs|debs|drs|derrd,yes,yes,hot,,,,,pending
+Wartburg Theological Seminary,Wartburg Theological Seminary,wartburgtheologicalseminary|wartburg-theological-seminary|seminary|wartburg|wts,yes,yes,hot,,,,,pending
+Garnet Health Doctors PC,Garnet Health Doctors,garnethealthdoctors|garnet-health-doctors|doctors|garnet|ghd,yes,yes,hot,,,,,pending
+Oregon Institute of Technology,Oregon Institute of Technology,oregoninstituteoftechnology|oregon-institute-of-technology|oregoninstitutetechnology|oregon-institute-technology|technology|oregon,yes,yes,hot,,,,,pending
+Clarkson University,Clarkson University,clarksonuniversity|clarkson-university|university|clarkson|cu,yes,yes,hot,,,,,pending
+Texas A&M Engineering Experiment Station,Texas A&M Engineering Experiment Station,texasamengineeringexperimentstation|texas-am-engineering-experiment-station|station|texas|taees,yes,yes,hot,,,,,pending
+Center for Global Development,Center for Global Development,centerforglobaldevelopment|center-for-global-development|centerglobaldevelopment|center-global-development|development|center,yes,yes,hot,,,,,pending
+Kenyon College,Kenyon College,kenyoncollege|kenyon-college|college|kenyon|kc,yes,yes,hot,,,,,pending
+Randolph College,Randolph College,randolphcollege|randolph-college|college|randolph|rc,yes,yes,hot,,,,,pending
+South Broward Hospital District,South Broward Hospital District,southbrowardhospitaldistrict|south-broward-hospital-district|district|south|sbhd,yes,yes,hot,,,,,pending
+Allen Institute for Artificial Intelligence,Allen Institute for Artificial Intelligence,alleninstituteforartificialintelligence|allen-institute-for-artificial-intelligence|alleninstituteartificialintelligence|allen-institute-artificial-intelligence|intelligence|allen,yes,yes,hot,,,,,pending
+Rush Medical Group,Rush Medical,rushmedical|rush-medical|medical|rush|rm,yes,yes,hot,,,,,pending
+Phenome Health,Phenome Health,phenomehealth|phenome-health|health|phenome|ph,yes,yes,hot,,,,,pending
+Vcu Health System Authority,VCU Health System Authority,vcuhealthsystemauthority|vcu-health-system-authority|authority|vcu|vhsa,yes,yes,hot,,,,,pending
+Fort Hays State University,Fort Hays State University,forthaysstateuniversity|fort-hays-state-university|university|fort|fhsu,yes,yes,hot,,,,,pending
+University of Notre Dame Du Lac,University of Notre Dame Du Lac,universityofnotredamedulac|university-of-notre-dame-du-lac|universitynotredamedulac|university-notre-dame-du-lac|lac|university,yes,yes,hot,,,,,pending
+Wael Asi Md PA,Wael Asi Md PA,waelasimdpa|wael-asi-md-pa|pa|wael|wamp,yes,yes,hot,,,,,pending
+Seek Labs INC,Seek Labs,seeklabs|seek-labs|labs|seek|sl,yes,yes,hot,,,,,pending
+Stowers Institute for Medical Research,Stowers Institute for Medical Research,stowersinstituteformedicalresearch|stowers-institute-for-medical-research|stowersinstitutemedicalresearch|stowers-institute-medical-research|research|stowers,yes,yes,hot,,,,,pending
+The Ada Forsyth Institute,Ada Forsyth Institute,adaforsythinstitute|ada-forsyth-institute|institute|ada|afi,yes,yes,hot,,,,,pending
+Meharry Medical College,Meharry Medical College,meharrymedicalcollege|meharry-medical-college|college|meharry|mmc,yes,yes,hot,,,,,pending
+Amazon.com Services LLC,Amazon com Services,amazoncomservices|amazon-com-services|services|amazon|acs,no,yes,warm,,,,,pending
+Ernst & Young U.S. LLP,Ernst & Young U S,ernstyoungus|ernst-young-u-s|s|ernst|eyus,no,yes,warm,,,,,pending
+Cognizant Technology Solutions US CORP,Cognizant Technology Solutions US,cognizanttechnologysolutionsus|cognizant-technology-solutions-us|us|cognizant|ctsu,no,yes,warm,,,,,pending
+Microsoft Corporation,Microsoft,microsoft,no,yes,warm,,,,,pending
+Apple Inc.,Apple,apple,no,yes,warm,,,,,pending
+Deloitte Consulting LLP,Deloitte Consulting,deloitteconsulting|deloitte-consulting|consulting|deloitte|dc,no,yes,warm,,,,,pending
+"Meta Platforms, Inc",Meta Platforms,metaplatforms|meta-platforms|platforms|meta|mp,no,yes,warm,,,,,pending
+Tata Consultancy Services Limited,Tata Consultancy Services,tataconsultancyservices|tata-consultancy-services|services|tata|tcs,no,yes,warm,,,,,pending
+Google LLC,Google,google,no,yes,warm,,,,,pending
+Infosys Limited,Infosys,infosys,no,yes,warm,,,,,pending
+"Amazon Web Services, Inc.",Amazon Web Services,amazonwebservices|amazon-web-services|services|amazon|aws,no,yes,warm,,,,,pending
+"Fidelity Technology Group, LLC d/b/a Fidelity Investments",Fidelity Technology d/b/a Fidelity Investments,fidelitytechnologydbafidelityinvestments|fidelity-technology-dba-fidelity-investments|investments|fidelity|ftdfi,no,yes,warm,,,,,pending
+JPMorgan Chase & Co.,JPMorgan Chase &,jpmorganchase|jpmorgan-chase|chase|jpmorgan|jc,no,yes,warm,,,,,pending
+"Compunnel Software Group, INC",Compunnel Software,compunnelsoftware|compunnel-software|software|compunnel|cs,no,yes,warm,,,,,pending
+NVIDIA Corporation,NVIDIA,nvidia,no,yes,warm,,,,,pending
+Capgemini America Inc,Capgemini,capgemini,no,yes,warm,,,,,pending
+"Grandison Management, Inc.",Grandison Management,grandisonmanagement|grandison-management|management|grandison|gm,no,yes,warm,,,,,pending
+"People Tech Group, Inc",People Tech,peopletech|people-tech|tech|people|pt,no,yes,warm,,,,,pending
+Wipro Limited,Wipro,wipro,no,yes,warm,,,,,pending
+"Salesforce, Inc.",Salesforce,salesforce,no,yes,warm,,,,,pending
+"Wal-Mart Associates, INC.",Wal-Mart Associates,walmartassociates|walmart-associates|associates|walmart|wa,no,yes,warm,,,,,pending
+"Qualcomm Technologies, Inc.",Qualcomm Technologies,qualcommtechnologies|qualcomm-technologies|technologies|qualcomm|qt,no,yes,warm,,,,,pending
+Mphasis Corporation,Mphasis,mphasis,no,yes,warm,,,,,pending
+LinkedIn Corporation,LinkedIn,linkedin,no,yes,warm,,,,,pending
+Accenture LLP,Accenture,accenture,no,yes,warm,,,,,pending
+"Tesla, Inc.",Tesla,tesla,no,yes,warm,,,,,pending
+LTIMindtree Limited,LTIMindtree,ltimindtree,no,yes,warm,,,,,pending
+"Amazon Development Center U.S., Inc.",Amazon Development Center U S,amazondevelopmentcenterus|amazon-development-center-u-s|s|amazon|adcus,no,yes,warm,,,,,pending
+"Citibank, N.A.",Citibank,citibank,no,yes,warm,,,,,pending
+Intel Corporation,Intel,intel,no,yes,warm,,,,,pending
+HCL America INC,HCL,hcl,no,yes,warm,,,,,pending
+"PayPal, Inc.",PayPal,paypal,no,yes,warm,,,,,pending
+Cummins Inc.,Cummins,cummins,no,yes,warm,,,,,pending
+IBM Corporation,IBM,ibm,no,yes,warm,,,,,pending
+"Amazon Data Services, Inc",Amazon Data Services,amazondataservices|amazon-data-services|services|amazon|ads,no,yes,warm,,,,,pending
+"Cisco Systems, Inc.",Cisco Systems,ciscosystems|cisco-systems|systems|cisco|cs,no,yes,warm,,,,,pending
+Ford Motor Company,Ford Motor,fordmotor|ford-motor|motor|ford|fm,no,yes,warm,,,,,pending
+Morgan Stanley Services Group Inc.,Morgan Stanley Services,morganstanleyservices|morgan-stanley-services|services|morgan|mss,no,yes,warm,,,,,pending
+Barclays Services Corp.,Barclays Services,barclaysservices|barclays-services|services|barclays|bs,no,yes,warm,,,,,pending
+"Capital One Services, LLC",Capital One Services,capitaloneservices|capital-one-services|services|capital|cos,no,yes,warm,,,,,pending
+"ServiceNow, Inc.",ServiceNow,servicenow,no,yes,warm,,,,,pending
+U.S. Bank National Association,U S Bank National Association,usbanknationalassociation|u-s-bank-national-association|association|u|usbna,no,yes,warm,,,,,pending
+Kforce INC.,Kforce,kforce,no,yes,warm,,,,,pending
+General Motors,General Motors,generalmotors|general-motors|motors|general|gm,no,yes,warm,,,,,pending
+CGI Technologies and Solutions Inc.,CGI Technologies and Solutions,cgitechnologiesandsolutions|cgi-technologies-and-solutions|cgitechnologiessolutions|cgi-technologies-solutions|solutions|cgi,no,yes,warm,,,,,pending
+"AT&T Services, INC.",AT&T Services,attservices|att-services|services|att|as,no,yes,warm,,,,,pending
+Adobe Inc.,Adobe,adobe,no,yes,warm,,,,,pending
+Intuit Inc.,Intuit,intuit,no,yes,warm,,,,,pending
+"Elevance Health, Inc.",Elevance Health,elevancehealth|elevance-health|health|elevance|eh,no,yes,warm,,,,,pending
+eBay Inc.,eBay,ebay,no,yes,warm,,,,,pending
+"Oracle America, Inc.",Oracle,oracle,no,yes,warm,,,,,pending
+PricewaterhouseCoopers Advisory Services LLC,PricewaterhouseCoopers Advisory Services,pricewaterhousecoopersadvisoryservices|pricewaterhousecoopers-advisory-services|services|pricewaterhousecoopers|pas,no,yes,warm,,,,,pending
+"Uber Technologies, Inc.",Uber Technologies,ubertechnologies|uber-technologies|technologies|uber|ut,no,yes,warm,,,,,pending
+"Randstad Digital, LLC",Randstad Digital,randstaddigital|randstad-digital|digital|randstad|rd,no,yes,warm,,,,,pending
+UST Global Inc,UST Global,ustglobal|ust-global|global|ust|ug,no,yes,warm,,,,,pending
+"Wells Fargo Bank, N.A.",Wells Fargo Bank,wellsfargobank|wells-fargo-bank|bank|wells|wfb,no,yes,warm,,,,,pending
+Deloitte & Touche LLP,Deloitte & Touche,deloittetouche|deloitte-touche|touche|deloitte|dt,no,yes,warm,,,,,pending
+"Tech Mahindra (Americas), INC",Tech Mahindra (),techmahindra|tech-mahindra|mahindra|tech|tm,no,yes,warm,,,,,pending
+First Citizens Bank and Trust Co.,First Citizens Bank and Trust,firstcitizensbankandtrust|first-citizens-bank-and-trust|firstcitizensbanktrust|first-citizens-bank-trust|trust|first,no,yes,warm,,,,,pending
+Government Employee Insurance Company (GEICO),Government Employee Insurance (GEICO),governmentemployeeinsurancegeico|government-employee-insurance-geico|geico|government|geig,no,yes,warm,,,,,pending
+Virtusa Corporation,Virtusa,virtusa,no,yes,warm,,,,,pending
+"Hexaware Technologies, Inc.",Hexaware Technologies,hexawaretechnologies|hexaware-technologies|technologies|hexaware|ht,no,yes,warm,,,,,pending
+"Asml Us, Lp",Asml Us,asmlus|asml-us|us|asml|au,no,yes,warm,,,,,pending
+"Advanced Micro Devices, Inc.",Advanced Micro Devices,advancedmicrodevices|advanced-micro-devices|devices|advanced|amd,no,yes,warm,,,,,pending
+"Expedia, Inc.",Expedia,expedia,no,yes,warm,,,,,pending
+"Charles Schwab & Company, Inc.",Charles Schwab &,charlesschwab|charles-schwab|schwab|charles|cs,no,yes,warm,,,,,pending
+Humana Inc.,Humana,humana,no,yes,warm,,,,,pending
+"T-Mobile USA, Inc.",T-Mobile,tmobile,no,yes,warm,,,,,pending
+"Innova Solutions, INC.",Innova Solutions,innovasolutions|innova-solutions|solutions|innova|is,no,yes,warm,,,,,pending
+Msr Technology Group LLC,Msr Technology,msrtechnology|msr-technology|technology|msr|mt,no,yes,warm,,,,,pending
+"Charter Communications, Inc.",Charter Communications,chartercommunications|charter-communications|communications|charter|cc,no,yes,warm,,,,,pending
+"American Airlines, Inc.",American Airlines,americanairlines|american-airlines|airlines|american|aa,no,yes,warm,,,,,pending
+"V-Soft Consulting Group, INC",V-Soft Consulting,vsoftconsulting|vsoft-consulting|consulting|vsoft|vc,no,yes,warm,,,,,pending
+"The MathWorks, Inc.",MathWorks,mathworks,no,yes,warm,,,,,pending
+"Palo Alto Networks, Inc.",Palo Alto Networks,paloaltonetworks|palo-alto-networks|networks|palo|pan,no,yes,warm,,,,,pending
+DFS Corporate Services LLC,DFS Corporate Services,dfscorporateservices|dfs-corporate-services|services|dfs|dcs,no,yes,warm,,,,,pending
+"Comcast Cable Communications, LLC",Comcast Cable Communications,comcastcablecommunications|comcast-cable-communications|communications|comcast|ccc,no,yes,warm,,,,,pending
+Snowflake Inc.,Snowflake,snowflake,no,yes,warm,,,,,pending
+Eli Lilly and Company,Eli Lilly and,elilillyand|eli-lilly-and|elililly|eli-lilly|lilly|eli,no,yes,warm,,,,,pending
+L&T Technology Services Limited,L&T Technology Services,lttechnologyservices|lt-technology-services|services|lt|lts,no,yes,warm,,,,,pending
+"Optum Services, Inc.",Optum Services,optumservices|optum-services|services|optum|os,no,yes,warm,,,,,pending
+"Databricks, Inc.",Databricks,databricks,no,yes,warm,,,,,pending
+Cigna-Evernorth Services Inc.,Cigna-Evernorth Services,cignaevernorthservices|cignaevernorth-services|services|cignaevernorth|cs,no,yes,warm,,,,,pending
+Truist Bank,Truist Bank,truistbank|truist-bank|bank|truist|tb,no,yes,warm,,,,,pending
+TikTok Inc.,TikTok,tiktok,no,yes,warm,,,,,pending
+"SAP America, Inc.",SAP,sap,no,yes,warm,,,,,pending
+UBS Business Solutions US LLC,UBS Business Solutions US,ubsbusinesssolutionsus|ubs-business-solutions-us|us|ubs|ubsu,no,yes,warm,,,,,pending
+"DoorDash, Inc.",DoorDash,doordash,no,yes,warm,,,,,pending
+Visa Technology & Operations LLC,Visa Technology & Operations,visatechnologyoperations|visa-technology-operations|operations|visa|vto,no,yes,warm,,,,,pending
+Deloitte Tax LLP,Deloitte Tax,deloittetax|deloitte-tax|tax|deloitte|dt,no,yes,warm,,,,,pending
+Federal Express Corporation,Federal Express,federalexpress|federal-express|express|federal|fe,no,yes,warm,,,,,pending
+ByteDance Inc.,ByteDance,bytedance,no,yes,warm,,,,,pending
+"Lucid USA, Inc.",Lucid,lucid,no,yes,warm,,,,,pending
+CVS Shared Services Resources LLC,CVS Shared Services Resources,cvssharedservicesresources|cvs-shared-services-resources|resources|cvs|cssr,no,yes,warm,,,,,pending
+Bank Of America N.A.,Bank Of,bankof|bank-of|bank,no,yes,warm,,,,,pending
+"Medline Industries, LP.",Medline Industries,medlineindustries|medline-industries|industries|medline|mi,no,yes,warm,,,,,pending
+"American Express Travel Related Services Company, Inc.",American Express Travel Related Services,americanexpresstravelrelatedservices|american-express-travel-related-services|services|american|aetrs,no,yes,warm,,,,,pending
+"Lowe's Companies, Inc.",Lowe's Companies,lowescompanies|lowes-companies|companies|lowes|lc,no,yes,warm,,,,,pending
+"Netflix, Inc.",Netflix,netflix,no,yes,warm,,,,,pending
+"Capital One, National Association",Capital One National Association,capitalonenationalassociation|capital-one-national-association|association|capital|cona,no,yes,warm,,,,,pending
+"Infinite Computer Solutions, Inc.",Infinite Computer Solutions,infinitecomputersolutions|infinite-computer-solutions|solutions|infinite|ics,no,yes,warm,,,,,pending
+"Boston Consulting Group, Inc.",Boston Consulting,bostonconsulting|boston-consulting|consulting|boston|bc,no,yes,warm,,,,,pending
+"Fiserv Solutions, LLC",Fiserv Solutions,fiservsolutions|fiserv-solutions|solutions|fiserv|fs,no,yes,warm,,,,,pending
+"OpenAI OpCo, LLC",OpenAI OpCo,openaiopco|openai-opco|opco|openai|oo,no,yes,warm,,,,,pending
+CVS Pharmacy Inc.,CVS Pharmacy,cvspharmacy|cvs-pharmacy|pharmacy|cvs|cp,no,yes,warm,,,,,pending
+Skilltune Technologies INC,Skilltune Technologies,skilltunetechnologies|skilltune-technologies|technologies|skilltune|st,no,yes,warm,,,,,pending
+Gp Technologies LLC,Gp Technologies,gptechnologies|gp-technologies|technologies|gp|gt,no,yes,warm,,,,,pending
+"Atlassian US, Inc.",Atlassian US,atlassianus|atlassian-us|us|atlassian|au,no,yes,warm,,,,,pending
+Yahoo Holdings Inc.,Yahoo,yahoo,no,yes,warm,,,,,pending
+Snap INC.,Snap,snap,no,yes,warm,,,,,pending
+"Mastercard Technologies, LLC",Mastercard Technologies,mastercardtechnologies|mastercard-technologies|technologies|mastercard|mt,no,yes,warm,,,,,pending
+Goldman Sachs & CO. LLC,Goldman Sachs &,goldmansachs|goldman-sachs|sachs|goldman|gs,no,yes,warm,,,,,pending
+Bloomberg L.P.,Bloomberg,bloomberg,no,yes,warm,,,,,pending
+Home Depot Management Company LLC,Home Depot Management,homedepotmanagement|home-depot-management|management|home|hdm,no,yes,warm,,,,,pending
+Coforge Limited,Coforge,coforge,no,yes,warm,,,,,pending
+"Insight Global, LLC",Insight Global,insightglobal|insight-global|global|insight|ig,no,yes,warm,,,,,pending
+"Brillio, LLC",Brillio,brillio,no,yes,warm,,,,,pending
+"J.B. Hunt Transport, Inc.",J B Hunt Transport,jbhunttransport|j-b-hunt-transport|transport|j|jbht,no,yes,warm,,,,,pending
+Populus Group LLC,Populus,populus,no,yes,warm,,,,,pending
+State Street Bank and Trust Company,State Street Bank and Trust,statestreetbankandtrust|state-street-bank-and-trust|statestreetbanktrust|state-street-bank-trust|trust|state,no,yes,warm,,,,,pending
+Equifax Inc.,Equifax,equifax,no,yes,warm,,,,,pending
+"Mastech Digital Technologies, Inc.",Mastech Digital Technologies,mastechdigitaltechnologies|mastech-digital-technologies|technologies|mastech|mdt,no,yes,warm,,,,,pending
+"FedEx Freight, Inc.",FedEx Freight,fedexfreight|fedex-freight|freight|fedex|ff,no,yes,warm,,,,,pending
+GlobalLogic Inc.,GlobalLogic,globallogic,no,yes,warm,,,,,pending
+"NTT DATA Americas, Inc.",NTT DATA,nttdata|ntt-data|data|ntt|nd,no,yes,warm,,,,,pending
+Nokia of America Corporation,Nokia of,nokiaof|nokia-of|nokia,no,yes,warm,,,,,pending
+"Chewy, Inc.",Chewy,chewy,no,yes,warm,,,,,pending
+St. Jude Children's Research Hospital,St Jude Children's Research Hospital,stjudechildrensresearchhospital|st-jude-childrens-research-hospital|hospital|st|sjcrh,yes,yes,hot,,,,,pending
+Caremark LLC,Caremark,caremark,no,yes,warm,,,,,pending
+CitiusTech Inc.,CitiusTech,citiustech,no,yes,warm,,,,,pending
+"Medtronic, Inc.",Medtronic,medtronic,no,yes,warm,,,,,pending
+"Synopsys, Inc.",Synopsys,synopsys,no,yes,warm,,,,,pending
+HCL Global Systems INC,HCL Global Systems,hclglobalsystems|hcl-global-systems|systems|hcl|hgs,no,yes,warm,,,,,pending
+"Rivian Automotive, LLC",Rivian Automotive,rivianautomotive|rivian-automotive|automotive|rivian|ra,no,yes,warm,,,,,pending
+Fca US LLC,Fca US,fcaus|fca-us|us|fca|fu,no,yes,warm,,,,,pending
+"Workday, Inc.",Workday,workday,no,yes,warm,,,,,pending
+Docusign Inc.,Docusign,docusign,no,yes,warm,,,,,pending
+Visa U.S.A. Inc.,Visa U S A,visausa|visa-u-s-a|a|visa|vusa,no,yes,warm,,,,,pending
+"The Vanguard Group, Inc.",Vanguard,vanguard,no,yes,warm,,,,,pending
+"Arm, Inc.",Arm,arm,no,yes,warm,,,,,pending
+"Intraedge, INC.",Intraedge,intraedge,no,yes,warm,,,,,pending
+Memorial Sloan Kettering Cancer Center,Memorial Sloan Kettering Cancer Center,memorialsloanketteringcancercenter|memorial-sloan-kettering-cancer-center|center|memorial|mskcc,no,yes,warm,,,,,pending
+Quadrant Technologies LLC,Quadrant Technologies,quadranttechnologies|quadrant-technologies|technologies|quadrant|qt,no,yes,warm,,,,,pending
+Concentrix CVG Customer Management Group Inc.,Concentrix CVG Customer Management,concentrixcvgcustomermanagement|concentrix-cvg-customer-management|management|concentrix|cccm,no,yes,warm,,,,,pending
+"KPIT Technologies, Inc.",KPIT Technologies,kpittechnologies|kpit-technologies|technologies|kpit|kt,no,yes,warm,,,,,pending
+Rockwell Collins Inc.,Rockwell Collins,rockwellcollins|rockwell-collins|collins|rockwell|rc,no,yes,warm,,,,,pending
+STV Incorporated,STV,stv,no,yes,warm,,,,,pending
+Amgen Inc.,Amgen,amgen,no,yes,warm,,,,,pending
+"Avco Consulting, Inc.",Avco Consulting,avcoconsulting|avco-consulting|consulting|avco|ac,no,yes,warm,,,,,pending
+"Motorola Solutions, Inc.",Motorola Solutions,motorolasolutions|motorola-solutions|solutions|motorola|ms,no,yes,warm,,,,,pending
+"ERP Analysts, Inc.",ERP Analysts,erpanalysts|erp-analysts|analysts|erp|ea,no,yes,warm,,,,,pending
+KPMG LLP,KPMG,kpmg,no,yes,warm,,,,,pending
+Dallas Independent School District,Dallas Independent School District,dallasindependentschooldistrict|dallas-independent-school-district|district|dallas|disd,no,yes,warm,,,,,pending
+Genpact LLC,Genpact,genpact,no,yes,warm,,,,,pending
+"HubSpot, Inc.",HubSpot,hubspot,no,yes,warm,,,,,pending
+"Pinterest, Inc.",Pinterest,pinterest,no,yes,warm,,,,,pending
+"FIS Management Services, LLC",FIS Management Services,fismanagementservices|fis-management-services|services|fis|fms,no,yes,warm,,,,,pending
+Verizon Data Services LLC,Verizon Data Services,verizondataservices|verizon-data-services|services|verizon|vds,no,yes,warm,,,,,pending
+"Stripe, Inc.",Stripe,stripe,no,yes,warm,,,,,pending
+"Synechron, Inc.",Synechron,synechron,no,yes,warm,,,,,pending
+"Citizens Financial Group, Inc.",Citizens Financial,citizensfinancial|citizens-financial|financial|citizens|cf,no,yes,warm,,,,,pending
+Itek Info Inc,Itek Info,itekinfo|itek-info|info|itek|ii,no,yes,warm,,,,,pending
+Slk America INC,Slk,slk,no,yes,warm,,,,,pending
+Elite IT Technologies LLC,Elite IT Technologies,eliteittechnologies|elite-it-technologies|technologies|elite|eit,no,yes,warm,,,,,pending
+TikTok U.S. Data Security Inc.,TikTok U S Data Security,tiktokusdatasecurity|tiktok-u-s-data-security|security|tiktok|tusds,no,yes,warm,,,,,pending
+"Fortinet, Inc.",Fortinet,fortinet,no,yes,warm,,,,,pending
+The Devereux Foundation,Devereux Foundation,devereuxfoundation|devereux-foundation|foundation|devereux|df,no,yes,warm,,,,,pending
+Children's Hospital Corporation,Children's Hospital,childrenshospital|childrens-hospital|hospital|childrens|ch,no,yes,warm,,,,,pending
+"System Soft Technologies, LLC",System Soft Technologies,systemsofttechnologies|system-soft-technologies|technologies|system|sst,no,yes,warm,,,,,pending
+Bristol-Myers Squibb Company,Bristol-Myers Squibb,bristolmyerssquibb|bristolmyers-squibb|squibb|bristolmyers|bs,no,yes,warm,,,,,pending
+"Persistent Systems, INC.",Persistent Systems,persistentsystems|persistent-systems|systems|persistent|ps,no,yes,warm,,,,,pending
+Cardinal Health,Cardinal Health,cardinalhealth|cardinal-health|health|cardinal|ch,no,yes,warm,,,,,pending
+Birlasoft Inc,Birlasoft,birlasoft,no,yes,warm,,,,,pending
+Zoox Inc.,Zoox,zoox,no,yes,warm,,,,,pending
+Waymo LLC,Waymo,waymo,no,yes,warm,,,,,pending
+"Social Finance, LLC",Social Finance,socialfinance|social-finance|finance|social|sf,no,yes,warm,,,,,pending
+Caterpillar Inc.,Caterpillar,caterpillar,no,yes,warm,,,,,pending
+"Autodesk, Inc.",Autodesk,autodesk,no,yes,warm,,,,,pending
+Safeway Inc.,Safeway,safeway,no,yes,warm,,,,,pending
+Roblox Corporation,Roblox,roblox,no,yes,warm,,,,,pending
+Htc Global Services INC.,Htc Global Services,htcglobalservices|htc-global-services|services|htc|hgs,no,yes,warm,,,,,pending
+"Intuitive Surgical Operations, Inc.",Intuitive Surgical Operations,intuitivesurgicaloperations|intuitive-surgical-operations|operations|intuitive|iso,no,yes,warm,,,,,pending
+"ADP Technology Services, Inc.",ADP Technology Services,adptechnologyservices|adp-technology-services|services|adp|ats,no,yes,warm,,,,,pending
+"Applied Materials, Inc",Applied Materials,appliedmaterials|applied-materials|materials|applied|am,no,yes,warm,,,,,pending
+Deloitte Services LP,Deloitte Services,deloitteservices|deloitte-services|services|deloitte|ds,no,yes,warm,,,,,pending
+Dell USA L.P.,Dell,dell,no,yes,warm,,,,,pending
+"Qualcomm Atheros, Inc.",Qualcomm Atheros,qualcommatheros|qualcomm-atheros|atheros|qualcomm|qa,no,yes,warm,,,,,pending
+"Cadence Design Systems, Inc.",Cadence Design Systems,cadencedesignsystems|cadence-design-systems|systems|cadence|cds,no,yes,warm,,,,,pending
+"Tiger Analytics, Inc.",Tiger Analytics,tigeranalytics|tiger-analytics|analytics|tiger|ta,no,yes,warm,,,,,pending
+"F5, Inc.",F5,f5,no,yes,warm,,,,,pending
+Dish Wireless LLC,Dish Wireless,dishwireless|dish-wireless|wireless|dish|dw,no,yes,warm,,,,,pending
+"Digipulse Technologies, INC.",Digipulse Technologies,digipulsetechnologies|digipulse-technologies|technologies|digipulse|dt,no,yes,warm,,,,,pending
+"Crusoe Energy Systems, Inc.",Crusoe Energy Systems,crusoeenergysystems|crusoe-energy-systems|systems|crusoe|ces,no,yes,warm,,,,,pending
+"RELX, Inc.",RELX,relx,no,yes,warm,,,,,pending
+IQVIA Inc.,IQVIA,iqvia,no,yes,warm,,,,,pending
+"Marvell Semiconductor, Inc.",Marvell Semiconductor,marvellsemiconductor|marvell-semiconductor|semiconductor|marvell|ms,no,yes,warm,,,,,pending
+Open Avenues Foundation,Open Avenues Foundation,openavenuesfoundation|open-avenues-foundation|foundation|open|oaf,no,yes,warm,,,,,pending
+"AECOM Technical Services, Inc.",AECOM Technical Services,aecomtechnicalservices|aecom-technical-services|services|aecom|ats,no,yes,warm,,,,,pending
+"Perficient, Inc.",Perficient,perficient,no,yes,warm,,,,,pending
+Atos Syntel INC,Atos Syntel,atossyntel|atos-syntel|syntel|atos|as,no,yes,warm,,,,,pending
+Aetna Resources LLC,Aetna Resources,aetnaresources|aetna-resources|resources|aetna|ar,no,yes,warm,,,,,pending
+"Thermo Fisher Scientific, Inc.",Thermo Fisher Scientific,thermofisherscientific|thermo-fisher-scientific|scientific|thermo|tfs,no,yes,warm,,,,,pending
+"Photon Infotech, INC.",Photon Infotech,photoninfotech|photon-infotech|infotech|photon|pi,no,yes,warm,,,,,pending
+"Pure Storage, INC.",Pure Storage,purestorage|pure-storage|storage|pure|ps,no,yes,warm,,,,,pending
+"Analog Devices, Inc.",Analog Devices,analogdevices|analog-devices|devices|analog|ad,no,yes,warm,,,,,pending
+Goldman Sachs Services LLC,Goldman Sachs Services,goldmansachsservices|goldman-sachs-services|services|goldman|gss,no,yes,warm,,,,,pending
+Annapurna Labs (U.S.) Inc.,Annapurna Labs (U S ),annapurnalabsus|annapurna-labs-u-s|s|annapurna|alus,no,yes,warm,,,,,pending
+Natsoft Corporation,Natsoft,natsoft,no,yes,warm,,,,,pending
+"Coinbase, Inc.",Coinbase,coinbase,no,yes,warm,,,,,pending
+AbbVie Inc.,AbbVie,abbvie,no,yes,warm,,,,,pending
+"Denken Solutions, INC.",Denken Solutions,denkensolutions|denken-solutions|solutions|denken|ds,no,yes,warm,,,,,pending
+Barclays Capital Inc.,Barclays Capital,barclayscapital|barclays-capital|capital|barclays|bc,no,yes,warm,,,,,pending
+"Engineering Technology Associates, Inc.",Engineering Technology Associates,engineeringtechnologyassociates|engineering-technology-associates|associates|engineering|eta,no,yes,warm,,,,,pending
+"Genentech, Inc.",Genentech,genentech,no,yes,warm,,,,,pending
+Siemens Industry Software Inc.,Siemens Industry Software,siemensindustrysoftware|siemens-industry-software|software|siemens|sis,no,yes,warm,,,,,pending
+Infogain Corporation,Infogain,infogain,no,yes,warm,,,,,pending
+"Delta Air Lines, Inc.",Delta Air Lines,deltaairlines|delta-air-lines|lines|delta|dal,no,yes,warm,,,,,pending
+EMC Corporation,EMC,emc,no,yes,warm,,,,,pending
+Sage It INC,Sage It,sageit|sage-it|it|sage|si,no,yes,warm,,,,,pending
+"Pyramid Consulting, Inc.",Pyramid Consulting,pyramidconsulting|pyramid-consulting|consulting|pyramid|pc,no,yes,warm,,,,,pending
+"Burns & McDonnell Engineering Company, Inc.",Burns & McDonnell Engineering,burnsmcdonnellengineering|burns-mcdonnell-engineering|engineering|burns|bme,no,yes,warm,,,,,pending
+Navy Federal Credit Union,Navy Federal Credit Union,navyfederalcreditunion|navy-federal-credit-union|union|navy|nfcu,no,yes,warm,,,,,pending
+DISH Network LLC,DISH Network,dishnetwork|dish-network|network|dish|dn,no,yes,warm,,,,,pending
+KLA Corporation,KLA,kla,no,yes,warm,,,,,pending
+"Best Buy Co., INC.",Best Buy,bestbuy|best-buy|buy|best|bb,no,yes,warm,,,,,pending
+"Experian Information Solutions, Inc.",Experian Information Solutions,experianinformationsolutions|experian-information-solutions|solutions|experian|eis,no,yes,warm,,,,,pending
+"The PNC Financial Services Group, Inc.",PNC Financial Services,pncfinancialservices|pnc-financial-services|services|pnc|pfs,no,yes,warm,,,,,pending
+Tek Leaders Inc,Tek Leaders,tekleaders|tek-leaders|leaders|tek|tl,no,yes,warm,,,,,pending
+"Goin Technology, INC.",Goin Technology,gointechnology|goin-technology|technology|goin|gt,no,yes,warm,,,,,pending
+Costco Wholesale Corporation,Costco Wholesale,costcowholesale|costco-wholesale|wholesale|costco|cw,no,yes,warm,,,,,pending
+Lam Research Corporation,Lam Research,lamresearch|lam-research|research|lam|lr,no,yes,warm,,,,,pending
+The Bank of New York Mellon,Bank of New York Mellon,bankofnewyorkmellon|bank-of-new-york-mellon|banknewyorkmellon|bank-new-york-mellon|mellon|bank,no,yes,warm,,,,,pending
+Health Care Service Corporation,Health Care Service,healthcareservice|health-care-service|service|health|hcs,no,yes,warm,,,,,pending
+Honeywell International Inc.,Honeywell International,honeywellinternational|honeywell-international|international|honeywell|hi,no,yes,warm,,,,,pending
+ARUP Laboratories,ARUP Laboratories,aruplaboratories|arup-laboratories|laboratories|arup|al,no,yes,warm,,,,,pending
+"DB Global Technology, Inc.",DB Global Technology,dbglobaltechnology|db-global-technology|technology|db|dgt,no,yes,warm,,,,,pending
+"Insight Direct USA, Inc.",Insight Direct,insightdirect|insight-direct|direct|insight|id,no,yes,warm,,,,,pending
+"Airbnb, INC.",Airbnb,airbnb,no,yes,warm,,,,,pending
+"Virtusa Consulting Services Pvt., LTD",Virtusa Consulting Services Pvt,virtusaconsultingservicespvt|virtusa-consulting-services-pvt|pvt|virtusa|vcsp,no,yes,warm,,,,,pending
+"Micron Technology, Inc.",Micron Technology,microntechnology|micron-technology|technology|micron|mt,no,yes,warm,,,,,pending
+WSP USA Inc.,WSP,wsp,no,yes,warm,,,,,pending
+Pioneer Consulting Services LLC,Pioneer Consulting Services,pioneerconsultingservices|pioneer-consulting-services|services|pioneer|pcs,no,yes,warm,,,,,pending
+"Axon Enterprise, Inc.",Axon Enterprise,axonenterprise|axon-enterprise|enterprise|axon|ae,no,yes,warm,,,,,pending
+"New Era Technology, LLC",New Era Technology,neweratechnology|new-era-technology|technology|new|net,no,yes,warm,,,,,pending
+Battelle Memorial Institute,Battelle Memorial Institute,battellememorialinstitute|battelle-memorial-institute|institute|battelle|bmi,no,yes,warm,,,,,pending
+"Nordstrom, Inc.",Nordstrom,nordstrom,no,yes,warm,,,,,pending
+Artificial Intelligence LLC,Artificial Intelligence,artificialintelligence|artificial-intelligence|intelligence|artificial|ai,no,yes,warm,,,,,pending
+"Gilead Sciences, Inc.",Gilead Sciences,gileadsciences|gilead-sciences|sciences|gilead|gs,no,yes,warm,,,,,pending
+Sony Interactive Entertainment LLC,Sony Interactive Entertainment,sonyinteractiveentertainment|sony-interactive-entertainment|entertainment|sony|sie,no,yes,warm,,,,,pending
+"Audible, INC.",Audible,audible,no,yes,warm,,,,,pending
+"Manhattan Associates, INC.",Manhattan Associates,manhattanassociates|manhattan-associates|associates|manhattan|ma,no,yes,warm,,,,,pending
+Citadel Securities Americas Services LLC,Citadel Securities Services,citadelsecuritiesservices|citadel-securities-services|services|citadel|css,no,yes,warm,,,,,pending
+"Intellectt, INC.",Intellectt,intellectt,no,yes,warm,,,,,pending
+Northwell Health,Northwell Health,northwellhealth|northwell-health|health|northwell|nh,no,yes,warm,,,,,pending
+Orpine Inc,Orpine,orpine,no,yes,warm,,,,,pending
+Cloud Analytics Technologies LLC,Cloud Analytics Technologies,cloudanalyticstechnologies|cloud-analytics-technologies|technologies|cloud|cat,no,yes,warm,,,,,pending
+Traton R&D US LLC,Traton R&D US,tratonrdus|traton-rd-us|us|traton|tru,no,yes,warm,,,,,pending
+"7-Eleven, Inc.",7-Eleven,7eleven,no,yes,warm,,,,,pending
+"i-Link Solutions, Inc.",i-Link Solutions,ilinksolutions|ilink-solutions|solutions|ilink|is,no,yes,warm,,,,,pending
+Deere & Company,Deere &,deere,no,yes,warm,,,,,pending
+"Akamai Technologies, Inc.",Akamai Technologies,akamaitechnologies|akamai-technologies|technologies|akamai|at,no,yes,warm,,,,,pending
+Ai Technologies LLC,Ai Technologies,aitechnologies|ai-technologies|technologies|ai|at,no,yes,warm,,,,,pending
+Virtual Reality Technologies LLC,Virtual Reality Technologies,virtualrealitytechnologies|virtual-reality-technologies|technologies|virtual|vrt,no,yes,warm,,,,,pending
+City National Bank,City National Bank,citynationalbank|city-national-bank|bank|city|cnb,no,yes,warm,,,,,pending
+"Raymond James & Associates, Inc.",Raymond James & Associates,raymondjamesassociates|raymond-james-associates|associates|raymond|rja,no,yes,warm,,,,,pending
+Hewlett Packard Enterprise Company,Hewlett Packard Enterprise,hewlettpackardenterprise|hewlett-packard-enterprise|enterprise|hewlett|hpe,no,yes,warm,,,,,pending
+Lawrence Berkeley National Laboratory,Lawrence Berkeley National Laboratory,lawrenceberkeleynationallaboratory|lawrence-berkeley-national-laboratory|laboratory|lawrence|lbnl,no,yes,warm,,,,,pending
+Harmony Public Schools,Harmony Public Schools,harmonypublicschools|harmony-public-schools|schools|harmony|hps,no,yes,warm,,,,,pending
+Abbott Laboratories,Abbott Laboratories,abbottlaboratories|abbott-laboratories|laboratories|abbott|al,no,yes,warm,,,,,pending
+"Samsung Electronics America, Inc.",Samsung Electronics,samsungelectronics|samsung-electronics|electronics|samsung|se,no,yes,warm,,,,,pending
+Verton Solutions Inc,Verton Solutions,vertonsolutions|verton-solutions|solutions|verton|vs,no,yes,warm,,,,,pending
+"Qualcomm Innovation Center, Inc.",Qualcomm Innovation Center,qualcomminnovationcenter|qualcomm-innovation-center|center|qualcomm|qic,no,yes,warm,,,,,pending
+Cincinnati Children's Hospital Medical Center,Cincinnati Children's Hospital Medical Center,cincinnatichildrenshospitalmedicalcenter|cincinnati-childrens-hospital-medical-center|center|cincinnati|cchmc,no,yes,warm,,,,,pending
+Wayfair LLC,Wayfair,wayfair,no,yes,warm,,,,,pending
+"Target Enterprise, Inc.",Target Enterprise,targetenterprise|target-enterprise|enterprise|target|te,no,yes,warm,,,,,pending
+"Robinhood Markets, Inc.",Robinhood Markets,robinhoodmarkets|robinhood-markets|markets|robinhood|rm,no,yes,warm,,,,,pending
+"ZS Associates, Inc.",ZS Associates,zsassociates|zs-associates|associates|zs|za,no,yes,warm,,,,,pending
+Dell Products L.P.,Dell Products,dellproducts|dell-products|products|dell|dp,no,yes,warm,,,,,pending
+"St. Jude Medical, Cardiology Division, Inc.",St Jude Medical Cardiology Division,stjudemedicalcardiologydivision|st-jude-medical-cardiology-division|division|st|sjmcd,yes,yes,hot,,,,,pending
+"Intercontinental Exchange Holdings, Inc.",Intercontinental Exchange,intercontinentalexchange|intercontinental-exchange|exchange|intercontinental|ie,no,yes,warm,,,,,pending
+Federal Soft Systems Inc.,Federal Soft Systems,federalsoftsystems|federal-soft-systems|systems|federal|fss,no,yes,warm,,,,,pending
+"Cotiviti, Inc.",Cotiviti,cotiviti,no,yes,warm,,,,,pending
+PwC US Consulting LLP,PwC US Consulting,pwcusconsulting|pwc-us-consulting|consulting|pwc|puc,no,yes,warm,,,,,pending
+"Rivian and Volkswagen Group Technologies, LLC",Rivian and Volkswagen Technologies,rivianandvolkswagentechnologies|rivian-and-volkswagen-technologies|rivianvolkswagentechnologies|rivian-volkswagen-technologies|technologies|rivian,no,yes,warm,,,,,pending
+"Eliassen Group, LLC",Eliassen,eliassen,no,yes,warm,,,,,pending
+"Paycom Payroll, LLC",Paycom Payroll,paycompayroll|paycom-payroll|payroll|paycom|pp,no,yes,warm,,,,,pending
+Robotics Technologies LLC,Robotics Technologies,roboticstechnologies|robotics-technologies|technologies|robotics|rt,no,yes,warm,,,,,pending
+"Nysarc, INC Essex County Chapter",Nysarc Essex County Chapter,nysarcessexcountychapter|nysarc-essex-county-chapter|chapter|nysarc|necc,no,yes,warm,,,,,pending
+Global Payment Holding Company,Global Payment,globalpayment|global-payment|payment|global|gp,no,yes,warm,,,,,pending
+"Ventois, Inc",Ventois,ventois,no,yes,warm,,,,,pending
+"BlackRock Financial Management, Inc.",BlackRock Financial Management,blackrockfinancialmanagement|blackrock-financial-management|management|blackrock|bfm,no,yes,warm,,,,,pending
+"Xilinx, Inc.",Xilinx,xilinx,no,yes,warm,,,,,pending
+"NIKE, Inc.",NIKE,nike,no,yes,warm,,,,,pending
+BorgWarner PDS (USA) Inc.,BorgWarner PDS (),borgwarnerpds|borgwarner-pds|pds|borgwarner|bp,no,yes,warm,,,,,pending
+"Becton, Dickinson and Company",Becton Dickinson and,bectondickinsonand|becton-dickinson-and|bectondickinson|becton-dickinson|dickinson|becton,no,yes,warm,,,,,pending
+LPL Financial LLC,LPL Financial,lplfinancial|lpl-financial|financial|lpl|lf,no,yes,warm,,,,,pending
+Edu Infotech International Resources INC,Edu Infotech International Resources,eduinfotechinternationalresources|edu-infotech-international-resources|resources|edu|eiir,no,yes,warm,,,,,pending
+New York City Department of Education,New York City Department of Education,newyorkcitydepartmentofeducation|new-york-city-department-of-education|newyorkcitydepartmenteducation|new-york-city-department-education|education|new,no,yes,warm,,,,,pending
+McKesson Corporation,McKesson,mckesson,no,yes,warm,,,,,pending
+"Rocket Mortgage, LLC",Rocket Mortgage,rocketmortgage|rocket-mortgage|mortgage|rocket|rm,no,yes,warm,,,,,pending
+"Reddit, Inc.",Reddit,reddit,no,yes,warm,,,,,pending
+Applab Systems INC,Applab Systems,applabsystems|applab-systems|systems|applab|as,no,yes,warm,,,,,pending
+"Anthropic, PBC",Anthropic PBC,anthropicpbc|anthropic-pbc|pbc|anthropic|ap,no,yes,warm,,,,,pending
+"Insurance Services Office, Inc",Insurance Services Office,insuranceservicesoffice|insurance-services-office|office|insurance|iso,no,yes,warm,,,,,pending
+TE Connectivity Corporation,TE Connectivity,teconnectivity|te-connectivity|connectivity|te|tc,no,yes,warm,,,,,pending
+Archer Daniels Midland Company,Archer Daniels Midland,archerdanielsmidland|archer-daniels-midland|midland|archer|adm,no,yes,warm,,,,,pending
+"Zimmer, Inc.",Zimmer,zimmer,no,yes,warm,,,,,pending
+ACE American Insurance Company,ACE American Insurance,aceamericaninsurance|ace-american-insurance|insurance|ace|aai,no,yes,warm,,,,,pending
+Discover Products Inc.,Discover Products,discoverproducts|discover-products|products|discover|dp,no,yes,warm,,,,,pending
+Toyota Material Handling Inc.,Toyota Material Handling,toyotamaterialhandling|toyota-material-handling|handling|toyota|tmh,no,yes,warm,,,,,pending
+PwC US Tax LLP,PwC US Tax,pwcustax|pwc-us-tax|tax|pwc|put,no,yes,warm,,,,,pending
+"McKinsey & Company, Inc. United States",McKinsey & United States,mckinseyunitedstates|mckinsey-united-states|states|mckinsey|mus,no,yes,warm,,,,,pending
+"Point72, L.P.",Point72,point72,no,yes,warm,,,,,pending
+Specs Inc.,Specs,specs,no,yes,warm,,,,,pending
+Hartford Fire Insurance Company,Hartford Fire Insurance,hartfordfireinsurance|hartford-fire-insurance|insurance|hartford|hfi,no,yes,warm,,,,,pending
+"Farmers Group, Inc.",Farmers,farmers,no,yes,warm,,,,,pending
+"Nagarro, INC",Nagarro,nagarro,no,yes,warm,,,,,pending
+Corewell Health,Corewell Health,corewellhealth|corewell-health|health|corewell|ch,no,yes,warm,,,,,pending
+"Staples, Inc.",Staples,staples,no,yes,warm,,,,,pending
+HP Inc.,HP,hp,no,yes,warm,,,,,pending
+The Northern Trust Company,Northern Trust,northerntrust|northern-trust|trust|northern|nt,no,yes,warm,,,,,pending
+Vastek Inc,Vastek,vastek,no,yes,warm,,,,,pending
+"Management Health Systems, LLC",Management Health Systems,managementhealthsystems|management-health-systems|systems|management|mhs,no,yes,warm,,,,,pending
+"Guidewire Software, Inc.",Guidewire Software,guidewiresoftware|guidewire-software|software|guidewire|gs,no,yes,warm,,,,,pending
+Cognier INC,Cognier,cognier,no,yes,warm,,,,,pending
+United Services Automobile Association,United Services Automobile Association,unitedservicesautomobileassociation|united-services-automobile-association|association|united|usaa,no,yes,warm,,,,,pending
+"Resolve AI, Inc.",Resolve AI,resolveai|resolve-ai|ai|resolve|ra,no,yes,warm,,,,,pending
+Northwestern Mutual Life Insurance Company,Northwestern Mutual Life Insurance,northwesternmutuallifeinsurance|northwestern-mutual-life-insurance|insurance|northwestern|nmli,no,yes,warm,,,,,pending
+Horizon International Trd. Inc.,Horizon International Trd,horizoninternationaltrd|horizon-international-trd|trd|horizon|hit,no,yes,warm,,,,,pending
+"Ameriprise Financial, Inc.",Ameriprise Financial,ameriprisefinancial|ameriprise-financial|financial|ameriprise|af,no,yes,warm,,,,,pending
+CyberSource Corporation,CyberSource,cybersource,no,yes,warm,,,,,pending
+Collaborate Solutions Inc.,Collaborate Solutions,collaboratesolutions|collaborate-solutions|solutions|collaborate|cs,no,yes,warm,,,,,pending
+"Avant Healthcare Professionals, LLC.",Avant Healthcare Professionals,avanthealthcareprofessionals|avant-healthcare-professionals|professionals|avant|ahp,no,yes,warm,,,,,pending
+"Sapphire Software Solutions, Inc.",Sapphire Software Solutions,sapphiresoftwaresolutions|sapphire-software-solutions|solutions|sapphire|sss,no,yes,warm,,,,,pending
+"DGN Technologies, Inc",DGN Technologies,dgntechnologies|dgn-technologies|technologies|dgn|dt,no,yes,warm,,,,,pending
+"Block, Inc.",Block,block,no,yes,warm,,,,,pending
+Citadel Americas Services LLC,Citadel Services,citadelservices|citadel-services|services|citadel|cs,no,yes,warm,,,,,pending
+"Aurora Operations, Inc.",Aurora Operations,auroraoperations|aurora-operations|operations|aurora|ao,no,yes,warm,,,,,pending
+X.Ai LLC,X Ai,xai|x-ai|ai|x|xa,no,yes,warm,,,,,pending
+"Figma, Inc.",Figma,figma,no,yes,warm,,,,,pending
+"Scale AI, Inc.",Scale AI,scaleai|scale-ai|ai|scale|sa,no,yes,warm,,,,,pending
+"Chime Financial, Inc.",Chime Financial,chimefinancial|chime-financial|financial|chime|cf,no,yes,warm,,,,,pending
+"Notion Labs, Inc.",Notion Labs,notionlabs|notion-labs|labs|notion|nl,no,yes,warm,,,,,pending
+"People Center, Inc. d/b/a Rippling",People Center d/b/a Rippling,peoplecenterdbarippling|people-center-dba-rippling|rippling|people|pcdr,no,yes,warm,,,,,pending
+"Sierra Technologies, Inc.",Sierra Technologies,sierratechnologies|sierra-technologies|technologies|sierra|st,no,yes,warm,,,,,pending
+Palantir Technologies INC.,Palantir Technologies,palantirtechnologies|palantir-technologies|technologies|palantir|pt,no,yes,warm,,,,,pending
+"Together Computer, Inc.",Together Computer,togethercomputer|together-computer|computer|together|tc,no,yes,warm,,,,,pending
+"Glean Technologies, Inc.",Glean Technologies,gleantechnologies|glean-technologies|technologies|glean|gt,no,yes,warm,,,,,pending
+"Asana, Inc.",Asana,asana,no,yes,warm,,,,,pending
+Cerebras Systems INC.,Cerebras Systems,cerebrassystems|cerebras-systems|systems|cerebras|cs,no,yes,warm,,,,,pending
+Brex Inc.,Brex,brex,no,yes,warm,,,,,pending
+"Magic Leap, Inc.",Magic Leap,magicleap|magic-leap|leap|magic|ml,no,yes,warm,,,,,pending
+"Mistral AI, Inc.",Mistral AI,mistralai|mistral-ai|ai|mistral|ma,no,yes,warm,,,,,pending
+Cruise LLC,Cruise,cruise,no,yes,warm,,,,,pending
+"Writer, Inc.",Writer,writer,no,yes,warm,,,,,pending
+"Cohere Health, Inc.",Cohere Health,coherehealth|cohere-health|health|cohere|ch,no,yes,warm,,,,,pending
+Space Exploration Technologies Corp.,Space Exploration Technologies,spaceexplorationtechnologies|space-exploration-technologies|technologies|space|set,no,yes,warm,,,,,pending
+"Benchling, Inc.",Benchling,benchling,no,yes,warm,,,,,pending
+"Perplexity AI, Inc.",Perplexity AI,perplexityai|perplexity-ai|ai|perplexity|pa,no,yes,warm,,,,,pending
+Replit Inc.,Replit,replit,no,yes,warm,,,,,pending
+"Anyscale, Inc.",Anyscale,anyscale,no,yes,warm,,,,,pending
+"Groq, Inc.",Groq,groq,no,yes,warm,,,,,pending
+"Upscale AI, Inc",Upscale AI,upscaleai|upscale-ai|ai|upscale|ua,no,yes,warm,,,,,pending
+"Cambrex Charles City, Inc.",Cambrex Charles City,cambrexcharlescity|cambrex-charles-city|city|cambrex|ccc,no,yes,warm,,,,,pending
+"Cambrex High Point, Inc.",Cambrex High Point,cambrexhighpoint|cambrex-high-point|point|cambrex|chp,no,yes,warm,,,,,pending
+"Plaid, Inc.",Plaid,plaid,no,yes,warm,,,,,pending
+"Apex.AI, Inc.",Apex AI,apexai|apex-ai|ai|apex|aa,no,yes,warm,,,,,pending

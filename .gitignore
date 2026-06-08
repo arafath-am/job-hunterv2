@@ -1,0 +1,7 @@
+*.db
+*.db-wal
+*.db-shm
+venv/
+__pycache__/
+.env
+*.xlsx
