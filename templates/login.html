@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Sign in — Job Hunter{% endblock %}
+{% block body %}
+<div class="login-wrap">
+  <div class="login-card">
+    <div class="brand">Job<b>Hunter</b><span class="dot">.</span></div>
+    <p class="sub">H-1B sponsor &amp; cap-exempt job radar</p>
+    {% if error %}<div class="err">{{ error }}</div>{% endif %}
+    <form method="post" action="/login">
+      <div class="field">
+        <label>Username</label>
+        <input name="username" autocomplete="username" autofocus required>
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input name="password" type="password" autocomplete="current-password" required>
+      </div>
+      <button class="btn btn-amber" type="submit">Sign in</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

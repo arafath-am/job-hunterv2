@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Job Hunter{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+{% if user %}
+<header class="topbar">
+  <div class="inner">
+    <div class="brand">Job<b>Hunter</b><span class="dot">.</span></div>
+    <nav class="nav">
+      <a href="/" class="{% if active=='jobs' %}active{% endif %}">Jobs</a>
+      <a href="/tracker" class="{% if active=='tracker' %}active{% endif %}">My Tracker</a>
+      <a href="/export.xlsx">Export Excel</a>
+      <a href="/logout">Logout ({{ user.username }})</a>
+    </nav>
+  </div>
+</header>
+{% endif %}
+{% block body %}{% endblock %}
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% set active = 'tracker' %}
+{% block title %}My Tracker — Job Hunter{% endblock %}
+{% block body %}
+<div class="wrap">
+  <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;flex-wrap:wrap">
+    <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:24px">My Applications</h2>
+    <a href="/export.xlsx" class="btn btn-amber" style="margin-left:auto">⬇ Export to Excel</a>
+  </div>
+
+  {% if apps %}
+  <table>
+    <thead>
+      <tr>
+        <th>Company</th><th>Role</th><th class="hide-sm">Location</th>
+        <th>Status</th><th class="hide-sm">Notes</th><th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for a in apps %}
+      <tr data-key="{{ a['job_key'] }}">
+        <td>{{ a['company'] }}</td>
+        <td>{% if a['url'] %}<a href="{{ a['url'] }}" target="_blank" rel="noopener" style="color:var(--blue)">{{ a['title'] }}</a>{% else %}{{ a['title'] }}{% endif %}</td>
+        <td class="hide-sm">{{ a['location'] }}</td>
+        <td>
+          <select class="st-sel" data-key="{{ a['job_key'] }}">
+            {% for s in statuses %}
+            <option value="{{ s }}" {% if a['status']==s %}selected{% endif %}>{{ s|capitalize }}</option>
+            {% endfor %}
+          </select>
+        </td>
+        <td class="hide-sm">
+          <input class="note-in" data-key="{{ a['job_key'] }}" value="{{ a['notes']|e }}"
+                 placeholder="notes…" style="width:100%;padding:6px 8px;border-radius:8px;border:1px solid var(--line);background:var(--ink);color:var(--txt);font-family:inherit">
+        </td>
+        <td><span class="status-pill s-{{ a['status'] }}">{{ a['status']|capitalize }}</span></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <div class="empty">No tracked applications yet. Go to <a href="/" style="color:var(--amber)">Jobs</a> and hit “+ Track”.</div>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function save(key, body){
+  await fetch('/update', {method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify(Object.assign({job_key:key}, body))});
+}
+document.querySelectorAll('.st-sel').forEach(s=>{
+  s.addEventListener('change', ()=>{
+    save(s.dataset.key, {status:s.value});
+    const pill = s.closest('tr').querySelector('.status-pill');
+    pill.className = 'status-pill s-'+s.value;
+    pill.textContent = s.value.charAt(0).toUpperCase()+s.value.slice(1);
+  });
+});
+document.querySelectorAll('.note-in').forEach(n=>{
+  let t; n.addEventListener('input', ()=>{ clearTimeout(t);
+    t=setTimeout(()=>save(n.dataset.key, {notes:n.value}), 600); });
+});
+</script>
+{% endblock %}
