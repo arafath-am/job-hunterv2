@@ -180,30 +180,105 @@ def mark_missing_inactive(con, ats: str, company: str, seen_ext_ids: set):
 
 
 def query_jobs(keyword="", company="", location="", cap_exempt="", days=10,
-               only_active=True, limit=2000):
+               only_active=True, page=1, per_page=50):
     clauses, params = [], []
     if only_active:
         clauses.append("active=1")
     if days:
         clauses.append("first_seen >= datetime('now', ?)")
         params.append(f"-{int(days)} days")
+    _kw_relevance = ""
+    _kw_relevance_params = []
     if keyword:
-        clauses.append("(title LIKE ? OR department LIKE ?)")
-        params += [f"%{keyword}%", f"%{keyword}%"]
+        words = keyword.strip().split()
+        word_clauses = []
+        relevance_parts = []
+        for w in words:
+            if len(w) <= 3:
+                word_clauses.append(
+                    "(' '||UPPER(title)||' ' LIKE ? OR ' '||UPPER(department)||' ' LIKE ?)"
+                )
+                params += [f"% {w.upper()} %", f"% {w.upper()} %"]
+                relevance_parts.append(
+                    f"(CASE WHEN ' '||UPPER(title)||' ' LIKE ? THEN 1 ELSE 0 END)"
+                )
+                _kw_relevance_params.append(f"% {w.upper()} %")
+            else:
+                word_clauses.append("(title LIKE ? OR department LIKE ?)")
+                params += [f"%{w}%", f"%{w}%"]
+                relevance_parts.append(
+                    f"(CASE WHEN UPPER(title) LIKE ? THEN 1 ELSE 0 END)"
+                )
+                _kw_relevance_params.append(f"%{w.upper()}%")
+        clauses.append(f"({' OR '.join(word_clauses)})")
+        _kw_relevance = " (" + " + ".join(relevance_parts) + ") DESC, "
     if company:
         clauses.append("(company LIKE ? OR brand LIKE ?)")
         params += [f"%{company}%", f"%{company}%"]
     if location:
-        clauses.append("location LIKE ?")
-        params.append(f"%{location}%")
-    if cap_exempt in ("yes", "no"):
+        _loc = location.strip().lower()
+        _us_aliases = {"united states", "usa", "us", "u.s.", "u.s.a."}
+        if _loc in _us_aliases:
+            _st = (
+                "AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID",
+                "IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS",
+                "MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK",
+                "OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV",
+                "WI","WY","DC",
+            )
+            _full = (
+                "Alabama","Alaska","Arizona","Arkansas","California","Colorado",
+                "Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho",
+                "Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana",
+                "Maine","Maryland","Massachusetts","Michigan","Minnesota",
+                "Mississippi","Missouri","Montana","Nebraska","Nevada",
+                "New Hampshire","New Jersey","New Mexico","New York",
+                "North Carolina","North Dakota","Ohio","Oklahoma","Oregon",
+                "Pennsylvania","Rhode Island","South Carolina","South Dakota",
+                "Tennessee","Texas","Utah","Vermont","Virginia","Washington",
+                "West Virginia","Wisconsin","Wyoming",
+            )
+            # Non-US places that clash with state abbreviations
+            _excl_cities = (
+                "Bengaluru","Bangalore","Hyderabad","Chennai","Mumbai","Pune",
+                "Delhi","Noida","Gurgaon","Gurugram","Kolkata","Ahmedabad",
+                "Kochi","Coimbatore","Trivandrum","Chandigarh","Jaipur",
+                "Toronto","Vancouver","Montreal","Ottawa","Calgary","Edmonton",
+                "Berlin","Munich","Frankfurt","Hamburg","Dublin","London",
+                "Manchester","Amsterdam","Paris","Singapore","Tokyo","Seoul",
+                "Shanghai","Beijing","Shenzhen","Taipei","Melbourne","Sydney",
+                "Sao Paulo","Mexico City","Zurich","Geneva","Stockholm",
+            )
+            _pats = []
+            # State abbreviation at END of string only: "City, CA"
+            _pats += [f"%, {s}" for s in _st]
+            # State abbreviation before country: "City, CA, United States"
+            _pats += [f"%, {s}, United States%" for s in _st]
+            # Full state names anywhere
+            _pats += [f"%{s}%" for s in _full]
+            # Explicit US markers
+            _pats += ["%United States%", "%, USA%"]
+            _or = " OR ".join(["location LIKE ?" for _ in _pats])
+            # Exclude non-US cities
+            _not_pats = [f"%{c}%" for c in _excl_cities]
+            _not = " AND ".join(["location NOT LIKE ?" for _ in _not_pats])
+            clauses.append(f"(({_or}) AND ({_not}))")
+            params += _pats + _not_pats
+        else:
+            clauses.append("location LIKE ?")
+            params.append(f"%{location}%")
+    if cap_exempt.lower() in ("yes", "no"):
         clauses.append("lower(cap_exempt)=?")
-        params.append(cap_exempt)
+        params.append(cap_exempt.lower())
     where = (" WHERE " + " AND ".join(clauses)) if clauses else ""
-    sql = f"SELECT * FROM jobs{where} ORDER BY first_seen DESC LIMIT ?"
-    params.append(limit)
     with get_conn() as con:
-        return con.execute(sql, params).fetchall()
+        total = con.execute(f"SELECT COUNT(*) FROM jobs{where}", params).fetchone()[0]
+        offset = (max(1, page) - 1) * per_page
+        sql = f"SELECT * FROM jobs{where} ORDER BY{_kw_relevance} first_seen DESC LIMIT ? OFFSET ?"
+        all_params = params + _kw_relevance_params + [per_page, offset]
+        jobs = con.execute(sql, all_params).fetchall()
+    pages = max(1, (total + per_page - 1) // per_page)
+    return {"jobs": jobs, "total": total, "page": max(1, page), "pages": pages, "per_page": per_page}
 
 
 def job_stats():

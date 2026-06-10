@@ -129,3 +129,9 @@ tr:last-child td{border-bottom:none}
   .stat{min-width:calc(50% - 7px)}
   th.hide-sm,td.hide-sm{display:none}
 }
+
+/* ── pagination ── */
+.pager{display:flex;justify-content:space-between;align-items:center;padding:.8rem 0;margin-top:.5rem;border-top:1px solid rgba(255,255,255,.08)}
+.pager-info{color:#888;font-size:.85rem;letter-spacing:.01em}
+.pager-nav{display:flex;gap:.5rem}
+.pager .btn{padding:.35rem .8rem;font-size:.82rem;text-decoration:none}

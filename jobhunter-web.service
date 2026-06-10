@@ -1,0 +1,18 @@
+[Unit]
+Description=Job Hunter — Web Server
+After=network.target
+Wants=jobhunter-collector.service
+
+[Service]
+User=amer_arafath1_gmail_com
+Group=amer_arafath1_gmail_com
+WorkingDirectory=/home/amer_arafath1_gmail_com/job-hunterv2
+Environment="PATH=/home/amer_arafath1_gmail_com/job-hunterv2/venv/bin"
+Environment="PYTHONUNBUFFERED=1"
+Environment="JOBHUNTER_RUN_SCHEDULER=0"
+ExecStart=/home/amer_arafath1_gmail_com/job-hunterv2/venv/bin/python -m uvicorn app:app --host 127.0.0.1 --port 8080
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

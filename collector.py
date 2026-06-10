@@ -1,3 +1,5 @@
+import re
+from datetime import datetime, timedelta, timezone
 """
 collector.py — pulls current postings from each resolved company's feed,
 normalizes them, and diffs them into the jobs table.
@@ -85,6 +87,35 @@ def _fetch(url: str, use_cache=True):
         if r.status_code == 200:
             if use_cache:
                 db.set_cache(url, r.headers.get("ETag"), r.headers.get("Last-Modified"))
+            try:
+                return 200, r.json()
+            except ValueError:
+                return 200, None
+        return r.status_code, None
+    return None, None
+
+
+
+
+def _post_json(url: str, payload: dict):
+    """POST JSON with rate limiting and backoff. For Workday CXS API."""
+    host = urlparse(url).netloc
+    headers = {"User-Agent": UA, "Accept": "application/json", "Content-Type": "application/json"}
+    for attempt in range(MAX_RETRIES + 1):
+        _limiter.wait(host)
+        with _host_counts_lock:
+            _host_counts[host] += 1
+        try:
+            r = requests.post(url, json=payload, headers=headers, timeout=REQUEST_TIMEOUT)
+        except requests.RequestException:
+            time.sleep((2 ** attempt) + random.random())
+            continue
+        if r.status_code in (429, 503):
+            retry_after = r.headers.get("Retry-After")
+            delay = float(retry_after) if (retry_after or "").isdigit() else (2 ** attempt) + random.random()
+            time.sleep(min(delay, 60))
+            continue
+        if r.status_code == 200:
             try:
                 return 200, r.json()
             except ValueError:
@@ -182,6 +213,93 @@ def parse_workable(data):
     return out
 
 
+
+def _parse_workday_date(text):
+    """Convert 'Posted 3 Days Ago' or 'Posted Today' to ISO date."""
+    if not text:
+        return ""
+    t = text.lower().strip()
+    now = datetime.now(timezone.utc)
+    if "today" in t or "just posted" in t:
+        return now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    if "yesterday" in t:
+        return (now - timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    m = re.search(r"(\d+)\+?\s*day", t)
+    if m:
+        return (now - timedelta(days=int(m.group(1)))).strftime("%Y-%m-%dT%H:%M:%SZ")
+    m = re.search(r"(\d+)\+?\s*month", t)
+    if m:
+        return (now - timedelta(days=int(m.group(1)) * 30)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return ""
+
+
+def parse_workday(data, base_url=""):
+    """Parse Workday CXS jobs response."""
+    out = []
+    for j in (data or {}).get("jobPostings", []):
+        ext_path = j.get("externalPath", "")
+        # ext_id = last path segment (usually Title_JR-ID)
+        ext_id = ext_path.rsplit("/", 1)[-1] if ext_path else str(hash(j.get("title", "")))
+        job_url = base_url + ext_path if ext_path else ""
+        out.append({
+            "ext_id": ext_id,
+            "title": j.get("title", ""),
+            "location": j.get("locationsText", ""),
+            "department": "",
+            "url": job_url,
+            "posted_at": _parse_workday_date(j.get("postedOn", "")),
+        })
+    return out
+
+
+def collect_workday(c) -> dict:
+    """Fetch all pages from a Workday CXS endpoint (POST with pagination)."""
+    company, endpoint = c["company_name"], c["endpoint"]
+    # Derive base URL for job links
+    # endpoint: https://mit.wd5.myworkdayjobs.com/wday/cxs/mit/MIT/jobs
+    # base:     https://mit.wd5.myworkdayjobs.com/MIT
+    m = re.match(r"(https?://[\w.-]+)/wday/cxs/[\w-]+/([\w-]+)/jobs", endpoint)
+    base_url = f"{m.group(1)}/{m.group(2)}" if m else ""
+
+    all_postings = []
+    offset = 0
+    PAGE = 20
+    MAX_JOBS = 500
+
+    while offset < MAX_JOBS:
+        payload = {"appliedFacets": {}, "limit": PAGE, "offset": offset, "searchText": ""}
+        status, data = _post_json(endpoint, payload)
+        if status != 200 or not data:
+            if offset == 0:
+                return {"company": company, "status": f"err:{status}", "new": 0}
+            break
+        page = parse_workday(data, base_url)
+        if not page:
+            break
+        all_postings.extend(page)
+        total = data.get("total", 0)
+        offset += PAGE
+        if offset >= total:
+            break
+
+    if not all_postings:
+        return {"company": company, "status": "empty", "new": 0}
+
+    new_count = 0
+    seen_ids = set()
+    with db.get_conn() as con:
+        for p in all_postings:
+            if not p.get("ext_id"):
+                continue
+            seen_ids.add(p["ext_id"])
+            job = {"ats": "workday", "company": company, "brand": c["brand"],
+                   "cap_exempt": c["cap_exempt"], "sponsor": c["sponsor"], **p}
+            if db.upsert_job(con, job):
+                new_count += 1
+        db.mark_missing_inactive(con, "workday", company, seen_ids)
+    return {"company": company, "status": "ok", "new": new_count, "total": len(all_postings)}
+
+
 PARSERS = {
     "greenhouse": parse_greenhouse,
     "lever": parse_lever,
@@ -195,6 +313,10 @@ PARSERS = {
 def collect_company(c) -> dict:
     """Fetch + diff one company. Returns a small summary dict."""
     ats, company, endpoint = c["ats"], c["company_name"], c["endpoint"]
+    if ats == "workday":
+        return collect_workday(c)
+    if ats in ("icims", "taleo", "pageup"):
+        return {"company": company, "status": "skip:playwright", "new": 0}
     parser = PARSERS.get(ats)
     if not parser or not endpoint:
         return {"company": company, "status": "skip", "new": 0}
@@ -257,3 +379,42 @@ def run() -> dict:
 
 if __name__ == "__main__":
     run()
+
+
+def run_playwright() -> dict:
+    """Run Playwright-based collection only (iCIMS, Taleo, PageUp). Called on its own schedule."""
+    db.init_db()
+    companies = db.resolved_companies()
+    pw_companies = [c for c in companies if c["ats"] in ("icims", "taleo", "pageup")]
+    if not pw_companies:
+        print("[collector] No Playwright companies to collect")
+        return {"playwright": 0, "pw_new": 0}
+
+    started = time.time()
+    pw_new = 0
+    try:
+        from playwright_adapter import scrape_batch
+        pw_results = scrape_batch(pw_companies)
+        with db.get_conn() as con:
+            for c in pw_companies:
+                cname = c["company_name"]
+                r = pw_results.get(cname, {})
+                if r.get("status") != "ok":
+                    continue
+                seen_ids = set()
+                for p in r.get("jobs", []):
+                    if not p.get("ext_id"):
+                        continue
+                    seen_ids.add(p["ext_id"])
+                    job = {"ats": c["ats"], "company": cname, "brand": c["brand"],
+                           "cap_exempt": c["cap_exempt"], "sponsor": c["sponsor"], **p}
+                    if db.upsert_job(con, job):
+                        pw_new += 1
+                db.mark_missing_inactive(con, c["ats"], cname, seen_ids)
+    except Exception as e:
+        print(f"[collector] playwright error: {e}")
+
+    elapsed = round(time.time() - started, 1)
+    summary = {"playwright": len(pw_companies), "pw_new": pw_new, "elapsed_s": elapsed}
+    print(f"[collector:playwright] {summary}")
+    return summary

@@ -1,0 +1,16 @@
+[Unit]
+Description=Job Hunter — Collector & Scheduler
+After=network.target
+
+[Service]
+User=amer_arafath1_gmail_com
+Group=amer_arafath1_gmail_com
+WorkingDirectory=/home/amer_arafath1_gmail_com/job-hunterv2
+Environment="PATH=/home/amer_arafath1_gmail_com/job-hunterv2/venv/bin"
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/home/amer_arafath1_gmail_com/job-hunterv2/venv/bin/python scheduler.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

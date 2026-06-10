@@ -58,7 +58,7 @@ def _startup():
             app.state.scheduler = sched
             print("[app] scheduler started")
             # kick off one collection shortly after boot so there's data fast
-            threading.Timer(5.0, scheduler._collect_job).start()
+            threading.Timer(5.0, scheduler._collect_api).start()
         except Exception as e:
             print(f"[app] could not start scheduler: {e}")
 
@@ -92,17 +92,17 @@ def logout(request: Request):
 # ----------------------------------------------------------------- dashboard
 @app.get("/", response_class=HTMLResponse)
 def dashboard(request: Request, keyword: str = "", company: str = "",
-              location: str = "", cap_exempt: str = "", days: int = RETENTION):
+              location: str = "", cap_exempt: str = "", days: int = RETENTION, page: int = 1):
     user = current_user(request)
     if not user:
         return RedirectResponse("/login", status_code=302)
     days = max(1, min(int(days or RETENTION), RETENTION))
-    jobs = db.query_jobs(keyword=keyword, company=company, location=location,
-                         cap_exempt=cap_exempt, days=days)
+    result = db.query_jobs(keyword=keyword, company=company, location=location,
+                           cap_exempt=cap_exempt, days=days, page=page)
     tracked = db.tracked_keys(user["id"])
     stats = db.job_stats()
     return templates.TemplateResponse(request, "jobs.html", {
-        "user": user, "jobs": jobs, "tracked": tracked,
+        "user": user, "result": result, "tracked": tracked,
         "stats": stats, "retention": RETENTION, "statuses": STATUSES,
         "filters": {"keyword": keyword, "company": company, "location": location,
                     "cap_exempt": cap_exempt, "days": days},

@@ -43,9 +43,9 @@
     <button class="btn btn-amber" type="submit">Filter</button>
   </form>
 
-  {% if jobs %}
+  {% if result.jobs %}
   <div class="jobs">
-    {% for j in jobs %}
+    {% for j in result.jobs %}
     {% set key = j['ats'] ~ ':' ~ j['company'] ~ ':' ~ j['ext_id'] %}
     <div class="job" data-firstseen="{{ j['first_seen'] }}">
       <div class="main">
@@ -77,6 +77,18 @@
       </div>
     </div>
     {% endfor %}
+  </div>
+
+  <div class="pager">
+    <span class="pager-info">{{ result.total }} result{{ 's' if result.total != 1 else '' }} · page {{ result.page }} of {{ result.pages }}</span>
+    <div class="pager-nav">
+      {% if result.page > 1 %}
+      <a href="/?keyword={{ filters.keyword|urlencode }}&company={{ filters.company|urlencode }}&location={{ filters.location|urlencode }}&cap_exempt={{ filters.cap_exempt }}&days={{ filters.days }}&page={{ result.page - 1 }}" class="btn">&#8592; Prev</a>
+      {% endif %}
+      {% if result.page < result.pages %}
+      <a href="/?keyword={{ filters.keyword|urlencode }}&company={{ filters.company|urlencode }}&location={{ filters.location|urlencode }}&cap_exempt={{ filters.cap_exempt }}&days={{ filters.days }}&page={{ result.page + 1 }}" class="btn">Next &#8594;</a>
+      {% endif %}
+    </div>
   </div>
   {% else %}
   <div class="empty">
