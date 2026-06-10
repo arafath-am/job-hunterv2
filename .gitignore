@@ -1,7 +1,21 @@
+# Database
 *.db
 *.db-wal
 *.db-shm
+
+# Python
 venv/
 __pycache__/
+*.pyc
+
+# Environment
 .env
+
+# Generated files
 *.xlsx
+discovery_log.txt
+unresolved_companies.csv
+
+# OS
+.DS_Store
+Thumbs.db

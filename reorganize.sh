@@ -1,3 +1,97 @@
+#!/usr/bin/env bash
+# reorganize.sh — Clean up the Job Hunter v2 repo structure
+# Run from the project root: cd ~/job-hunterv2 && bash reorganize.sh
+set -euo pipefail
+
+echo "=== Job Hunter v2 — Repo Reorganization ==="
+echo ""
+
+# Safety check
+if [ ! -f "app.py" ] || [ ! -f "collector.py" ]; then
+    echo "ERROR: Run this from the job-hunterv2 project root (~/job-hunterv2/)"
+    exit 1
+fi
+
+# ── 1. Create directories ──────────────────────────────────────────
+echo "[1/6] Creating directories..."
+mkdir -p tools deploy migrations
+
+# ── 2. Move files with git mv ──────────────────────────────────────
+echo "[2/6] Moving files..."
+
+# Tools — scripts you run manually, not part of production
+for f in discover.py resolver.py resolver_patch.py audit_resolved.py gen_company_report.py; do
+    [ -f "$f" ] && git mv "$f" tools/ && echo "  → tools/$f"
+done
+
+# Deploy — systemd units and deploy scripts
+for f in jobhunter-web.service jobhunter-collector.service deploy_perf.sh; do
+    [ -f "$f" ] && git mv "$f" deploy/ && echo "  → deploy/$f"
+done
+
+# Migrations — one-off fix scripts that already ran
+for f in apply_fixes.py fix_scrapers.py false_positives_fix.sql; do
+    [ -f "$f" ] && git mv "$f" migrations/ && echo "  → migrations/$f"
+done
+
+# ── 3. Remove committed artifacts that should be ignored ───────────
+echo "[3/6] Removing committed artifacts..."
+for f in discovery_log.txt unresolved_companies.csv; do
+    if git ls-files --error-unmatch "$f" &>/dev/null; then
+        git rm --cached "$f" && echo "  ✗ $f (untracked, kept on disk)"
+    fi
+done
+
+# ── 4. Update .gitignore ──────────────────────────────────────────
+echo "[4/6] Writing .gitignore..."
+cat > .gitignore << 'GITIGNORE'
+# Database
+*.db
+*.db-wal
+*.db-shm
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Generated files
+*.xlsx
+discovery_log.txt
+unresolved_companies.csv
+
+# OS
+.DS_Store
+Thumbs.db
+GITIGNORE
+echo "  ✓ .gitignore updated"
+
+# ── 5. Create .env.example ────────────────────────────────────────
+echo "[5/6] Writing .env.example..."
+cat > .env.example << 'ENVFILE'
+# Required — session signing key (generate with: python3 -c "import secrets;print(secrets.token_hex(32))")
+JOBHUNTER_SECRET=
+
+# Required for discovery pipeline (tools/discover.py) — https://serper.dev free tier
+SERPER_API_KEY=
+
+# Optional — override default DB path (default: ./jobhunter.db)
+# JOBHUNTER_DB=/path/to/jobhunter.db
+
+# Optional — set to 0 in the web service so only the collector runs the scheduler
+# JOBHUNTER_RUN_SCHEDULER=0
+
+# Optional — job retention in days (default: 10)
+# JOBHUNTER_RETENTION_DAYS=10
+ENVFILE
+echo "  ✓ .env.example created"
+
+# ── 6. Rewrite README ─────────────────────────────────────────────
+echo "[6/6] Writing README.md..."
+cat > README.md << 'README'
 # Job Hunter v2
 
 A self-hosted job radar that monitors **893 H-1B sponsor and cap-exempt employers** for new postings across 9 ATS platforms. A scheduler polls each company's careers feed on a cadence, diffs new listings into a database, and a login-protected web app lets multiple users filter, browse, track applications, and export progress to Excel.
@@ -158,3 +252,18 @@ See `.env.example` for the full list. Key ones:
 | `SERPER_API_KEY` | For discovery | Serper.dev API key |
 | `JOBHUNTER_RUN_SCHEDULER` | Production | Set to `0` in web service |
 | `JOBHUNTER_RETENTION_DAYS` | No | Days to keep jobs (default: 10) |
+README
+echo "  ✓ README.md rewritten"
+
+# ── Stage everything ───────────────────────────────────────────────
+echo ""
+echo "=== Staging changes ==="
+git add -A
+echo ""
+echo "Done! Review with:"
+echo "  git status"
+echo "  git diff --staged --stat"
+echo ""
+echo "Then commit and push:"
+echo "  git commit -m 'chore: reorganize repo — tools/, deploy/, migrations/, updated README'"
+echo "  git push"
