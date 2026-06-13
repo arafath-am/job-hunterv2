@@ -174,7 +174,7 @@ def _scrape_taleo(page, url):
     if "login" in page.url.lower() or "sso" in page.url.lower() or "idp/" in page.url.lower():
         return []
 
-    # Try 1: click "Search for Jobs" button (Taleo standard ID)
+    # Try to click "Search for Jobs" button (classic Taleo UI)
     try:
         btn = page.locator("[id='basicSearchFooterInterface.searchAction'], input[value*='Search'][type='submit'], button:has-text('Search')")
         if btn.count() > 0 and btn.first.is_visible():
@@ -183,7 +183,8 @@ def _scrape_taleo(page, url):
     except Exception:
         pass
 
-    return page.evaluate("""() => {
+    # Extraction JS — handles alphanumeric job IDs + both table and div layouts
+    _extract_js = """() => {
         const results = [];
         const seen = new Set();
         document.querySelectorAll('a').forEach(a => {
@@ -192,13 +193,14 @@ def _scrape_taleo(page, url):
             const title = a.textContent.trim();
             if (!title || title.length < 5) return;
             let jobId = '';
-            const m = href.match(/job=(\\d+)/) || href.match(/Job_(\\d+)/) || href.match(/requisitionId=(\\d+)/);
+            const m = href.match(/job=([A-Za-z0-9_]+)/) || href.match(/Job_([A-Za-z0-9_]+)/) || href.match(/requisitionId=([A-Za-z0-9_]+)/);
             if (m) jobId = m[1];
             else return;
             if (seen.has(jobId)) return;
             seen.add(jobId);
 
             let location = '';
+            // Table-based layout (classic Taleo)
             const row = a.closest('tr');
             if (row) {
                 const cells = row.querySelectorAll('td');
@@ -209,10 +211,35 @@ def _scrape_taleo(page, url):
                     }
                 }
             }
+            // Div-based layout (newer Taleo) — look for location in sibling/parent spans
+            if (!location) {
+                const parent = a.closest('div[class*="job"], li, article') || a.parentElement;
+                if (parent) {
+                    const spans = parent.querySelectorAll('span, div');
+                    for (const s of spans) {
+                        const t = s.textContent.trim();
+                        if (t && t !== title && t.length > 3 && t.length < 60 && /[A-Z]{2}/.test(t)) {
+                            location = t; break;
+                        }
+                    }
+                }
+            }
             results.push({ext_id: jobId, title, location, url: href, posted_at: '', department: ''});
         });
         return results;
-    }""")
+    }"""
+
+    # Check main frame first, then child frames (some Taleo sites load via AJAX iframe)
+    results = page.evaluate(_extract_js)
+    if not results:
+        for frame in page.frames[1:]:
+            try:
+                results = frame.evaluate(_extract_js)
+                if results:
+                    break
+            except Exception:
+                pass
+    return results
 
 
 SCRAPERS = {"pageup": _scrape_pageup, "icims": _scrape_icims, "taleo": _scrape_taleo}
