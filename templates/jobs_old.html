@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% set active = 'jobs' %}
+{% block title %}Jobs — Job Hunter{% endblock %}
+{% block body %}
+<div class="wrap">
+
+  <div class="stats">
+    <div class="stat"><div class="n mono">{{ stats.total }}</div><div class="l">Open jobs</div></div>
+    <div class="stat"><div class="n mono">{{ stats.last24 }}</div><div class="l">New · last 24h</div></div>
+    <div class="stat"><div class="n mono">{{ stats.companies }}</div><div class="l">Companies hiring</div></div>
+    <div class="stat"><div class="n mono">{{ retention }}d</div><div class="l">History kept</div></div>
+  </div>
+
+  <form class="filters" method="get" action="/">
+    <div class="field wide">
+      <label>Keyword (title / team)</label>
+      <input name="keyword" value="{{ filters.keyword }}" placeholder="e.g. data engineer, nurse, analyst">
+    </div>
+    <div class="field">
+      <label>Company</label>
+      <input name="company" value="{{ filters.company }}" placeholder="any">
+    </div>
+    <div class="field">
+      <label>Location</label>
+      <input name="location" value="{{ filters.location }}" placeholder="any">
+    </div>
+    <div class="field">
+      <label>Cap-exempt</label>
+      <select name="cap_exempt">
+        <option value="" {% if filters.cap_exempt=='' %}selected{% endif %}>All</option>
+        <option value="yes" {% if filters.cap_exempt=='yes' %}selected{% endif %}>Yes</option>
+        <option value="no" {% if filters.cap_exempt=='no' %}selected{% endif %}>No</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Focus</label>
+      <select name="focus">
+        <option value="" {% if filters.focus=='' %}selected{% endif %}>All Jobs</option>
+        <option value="tech" {% if filters.focus=='tech' %}selected{% endif %}>Tech & Professional</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Posted within</label>
+      <select name="days">
+        {% for d in [1,2,3,5,7,retention] %}
+        <option value="{{ d }}" {% if filters.days==d %}selected{% endif %}>{{ d }} day{{ 's' if d>1 }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="field">
+      <label>Sort by</label>
+      <select name="sort">
+        <option value="newest" {% if filters.sort=='newest' %}selected{% endif %}>Newest first</option>
+        <option value="company" {% if filters.sort=='company' %}selected{% endif %}>Company A-Z</option>
+        <option value="openings" {% if filters.sort=='openings' %}selected{% endif %}>Most openings</option>
+      </select>
+    </div>
+    <button class="btn btn-amber" type="submit">Filter</button>
+  </form>
+
+  {% if result.jobs %}
+  <div class="jobs">
+    {% for j in result.jobs %}
+    {% set key = j['ats'] ~ ':' ~ j['company'] ~ ':' ~ j['ext_id'] %}
+    <div class="job" data-firstseen="{{ j['first_seen'] }}">
+      <div class="main">
+        <div class="title">
+          {% if j['url'] %}<a href="{{ j['url'] }}" target="_blank" rel="noopener">{{ j['title'] or 'Untitled role' }}</a>
+          {% else %}{{ j['title'] or 'Untitled role' }}{% endif %}
+          <span class="tag new" style="display:none">NEW</span>
+        </div>
+        <div class="co"><a href="/?company={{ (j['brand'] or j['company'])|urlencode }}&days={{ filters.days }}&focus={{ filters.focus }}" class="co-link">{{ j['brand'] or j['company'] }}</a> <span class="co-count">({{ co_counts.get(j['company'], 0) }})</span></div>
+        <div class="meta">
+          {% if j['location'] %}<span>📍 {{ j['location'] }}</span>{% endif %}
+          {% if j['department'] %}<span>🏷 {{ j['department'] }}</span>{% endif %}
+          {% if (j['cap_exempt'] or '')|lower == 'yes' %}<span class="tag cap">cap-exempt</span>{% endif %}
+        </div>
+      </div>
+      <div class="side">
+        <div class="when" data-firstseen="{{ j['first_seen'] }}">just now</div>
+        <div class="track"
+             data-key="{{ key }}" data-ats="{{ j['ats'] }}" data-company="{{ j['company'] }}"
+             data-extid="{{ j['ext_id'] }}" data-title="{{ j['title']|e }}"
+             data-location="{{ j['location']|e }}" data-url="{{ j['url']|e }}">
+          <select class="track-status">
+            {% for s in statuses %}<option value="{{ s }}">{{ s|capitalize }}</option>{% endfor %}
+          </select>
+          <button class="track-btn {% if key in tracked %}on{% endif %}">
+            {% if key in tracked %}✓ Tracked{% else %}+ Track{% endif %}
+          </button>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="pager">
+    <span class="pager-info">{{ result.total }} result{{ 's' if result.total != 1 else '' }} · page {{ result.page }} of {{ result.pages }}</span>
+    <div class="pager-nav">
+      {% if result.page > 1 %}
+      <a href="/?keyword={{ filters.keyword|urlencode }}&company={{ filters.company|urlencode }}&location={{ filters.location|urlencode }}&cap_exempt={{ filters.cap_exempt }}&days={{ filters.days }}&focus={{ filters.focus }}&sort={{ filters.sort }}&page={{ result.page - 1 }}" class="btn">&#8592; Prev</a>
+      {% endif %}
+      {% if result.page < result.pages %}
+      <a href="/?keyword={{ filters.keyword|urlencode }}&company={{ filters.company|urlencode }}&location={{ filters.location|urlencode }}&cap_exempt={{ filters.cap_exempt }}&days={{ filters.days }}&focus={{ filters.focus }}&sort={{ filters.sort }}&page={{ result.page + 1 }}" class="btn">Next &#8594;</a>
+      {% endif %}
+    </div>
+  </div>
+  {% else %}
+  <div class="empty">
+    No jobs match these filters yet.<br>
+    If the collector hasn't run, jobs will appear within a few minutes of the next scheduled pull.
+  </div>
+  {% endif %}
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function rel(iso){
+  if(!iso) return "";
+  const t = new Date(iso.endsWith('Z')||iso.includes('+')?iso:iso+'Z');
+  const s = (Date.now()-t.getTime())/1000;
+  if (s < 90) return "just now";
+  if (s < 3600) return Math.floor(s/60)+"m ago";
+  if (s < 86400) return Math.floor(s/3600)+"h ago";
+  return Math.floor(s/86400)+"d ago";
+}
+document.querySelectorAll('.job').forEach(card=>{
+  const iso = card.dataset.firstseen;
+  const when = card.querySelector('.when'); if(when) when.textContent = rel(iso);
+  const t = new Date(iso.endsWith('Z')||iso.includes('+')?iso:iso+'Z');
+  if (Date.now()-t.getTime() < 86400000){
+    const b = card.querySelector('.tag.new'); if(b) b.style.display='inline-block';
+  }
+});
+document.querySelectorAll('.track').forEach(box=>{
+  const btn = box.querySelector('.track-btn');
+  const sel = box.querySelector('.track-status');
+  btn.addEventListener('click', async ()=>{
+    const payload = {
+      ats: box.dataset.ats, company: box.dataset.company, ext_id: box.dataset.extid,
+      title: box.dataset.title, location: box.dataset.location, url: box.dataset.url,
+      status: sel.value
+    };
+    const r = await fetch('/track', {method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify(payload)});
+    if (r.ok){ btn.classList.add('on'); btn.textContent = '✓ Tracked'; }
+  });
+});
+</script>
+{% endblock %}
