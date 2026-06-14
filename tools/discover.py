@@ -124,7 +124,7 @@ def verify_lever(slug, target):
 def verify_ashby(slug, target):
     """Check Ashby board name matches target company."""
     try:
-        req = Request(f"https://api.ashbyhq.com/posting-api/posting-board/{slug}",
+        req = Request(f"https://api.ashbyhq.com/posting-api/job-board/{slug}",
                       headers={"User-Agent": "JobHunter-Discover/1.0"})
         with urlopen(req, timeout=10) as r:
             data = json.loads(r.read())
@@ -217,7 +217,7 @@ def extract_params(ats_type, match, url):
         slug = match.group(1)
         return {
             "resolved_token": slug,
-            "endpoint": f"https://api.ashbyhq.com/posting-api/posting-board/{slug}",
+            "endpoint": f"https://api.ashbyhq.com/posting-api/job-board/{slug}",
         }
 
     elif ats_type == "smartrecruiters":
@@ -231,7 +231,7 @@ def extract_params(ats_type, match, url):
         slug = match.group(1)
         return {
             "resolved_token": slug,
-            "endpoint": f"https://apply.workable.com/api/v3/accounts/{slug}/jobs",
+            "endpoint": f"https://apply.workable.com/api/v1/widget/accounts/{slug}",
         }
 
     elif ats_type in ("icims", "taleo", "successfactors", "pageup"):
