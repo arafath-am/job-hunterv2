@@ -135,3 +135,8 @@ tr:last-child td{border-bottom:none}
 .pager-info{color:#888;font-size:.85rem;letter-spacing:.01em}
 .pager-nav{display:flex;gap:.5rem}
 .pager .btn{padding:.35rem .8rem;font-size:.82rem;text-decoration:none}
+
+/* Session 5: company links + counts */
+.co-link{color:var(--amber);text-decoration:none}
+.co-link:hover{text-decoration:underline}
+.co-count{color:var(--dim);font-size:12px}

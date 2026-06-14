@@ -180,13 +180,50 @@ def mark_missing_inactive(con, ats: str, company: str, seen_ext_ids: set):
 
 
 def query_jobs(keyword="", company="", location="", cap_exempt="", days=10,
-               only_active=True, page=1, per_page=50):
+               only_active=True, page=1, per_page=50, focus="", sort="newest"):
     clauses, params = [], []
     if only_active:
         clauses.append("active=1")
     if days:
         clauses.append("first_seen >= datetime('now', ?)")
         params.append(f"-{int(days)} days")
+
+    # Focus filter: exclude clinical/custodial/non-professional roles
+    if focus == "tech":
+        _exclude = [
+            'nurse', 'nursing', ' rn ', ' lpn ', ' cna ', ' np ',
+            'physician', 'surgeon', 'anesthesi', 'cardiolog', 'dermatolog',
+            'neurolog', 'oncolog', 'patholog', 'radiolog', 'urolog',
+            'pediatric', 'obstetric', 'gynecolog', 'neonatal', 'midwife',
+            'pharmacist', 'pharmacy tech', 'phlebotom',
+            'physical therapist', 'occupational therapist',
+            'speech therapist', 'respiratory therapist',
+            'paramedic', ' emt ', 'surgical tech',
+            'medical assistant', 'patient care', 'clinical aide',
+            'patient transport', 'patient access', 'patient registr',
+            'sterile processing', 'home health', 'hospice',
+            'social worker', 'chaplain', 'pastoral',
+            'addiction counselor', 'substance abuse',
+            'dental', 'dentist', 'hygienist', 'orthodont',
+            'dietary', 'food service', 'cafeteria', 'cook ', 'chef ',
+            'cashier', 'barista', 'dishwasher', 'prep cook', 'line cook',
+            'custodian', 'housekeeper', 'housekeeping', 'janitor',
+            'groundskeeper', 'laundry', 'linen ', 'landscap', 'pest control',
+            'security guard', 'parking attendant', 'valet',
+            'bus driver', 'shuttle driver', ' cdl ', 'forklift',
+            'receptionist', 'front desk', 'switchboard',
+            'retail associate', 'stocker',
+            'veterinar', 'kennel',
+            'child care', 'childcare', 'daycare',
+            'medical records', 'medical coder', 'medical coding',
+            'medical billing', 'health information', 'transcriptionist',
+            'lifeguard', 'pool attendant',
+            'cosmetolog', 'beautician',
+            "men's", "women's", 'breeding', 'athletic', 'wound',
+        ]
+        for term in _exclude:
+            clauses.append("UPPER(title) NOT LIKE ?")
+            params.append(f"%{term.upper()}%")
     _kw_relevance = ""
     _kw_relevance_params = []
     if keyword:
@@ -274,7 +311,13 @@ def query_jobs(keyword="", company="", location="", cap_exempt="", days=10,
     with get_conn() as con:
         total = con.execute(f"SELECT COUNT(*) FROM jobs{where}", params).fetchone()[0]
         offset = (max(1, page) - 1) * per_page
-        sql = f"SELECT * FROM jobs{where} ORDER BY{_kw_relevance} first_seen DESC LIMIT ? OFFSET ?"
+        if sort == "company":
+            _order = f"ORDER BY{_kw_relevance} COALESCE(brand, company) ASC, first_seen DESC"
+        elif sort == "openings":
+            _order = f"ORDER BY{_kw_relevance} (SELECT COUNT(*) FROM jobs j2 WHERE j2.active=1 AND j2.company=jobs.company) DESC, first_seen DESC"
+        else:
+            _order = f"ORDER BY{_kw_relevance} first_seen DESC"
+        sql = f"SELECT * FROM jobs{where} {_order} LIMIT ? OFFSET ?"
         all_params = params + _kw_relevance_params + [per_page, offset]
         jobs = con.execute(sql, all_params).fetchall()
     pages = max(1, (total + per_page - 1) // per_page)
@@ -291,13 +334,35 @@ def job_stats():
         return {"total": total, "last24": last24, "companies": companies}
 
 
-def purge_old_jobs(days: int = RETENTION_DAYS) -> int:
-    """Delete jobs older than `days` (by first_seen). Applications are untouched."""
+def company_job_counts():
+    """Return {company_name: job_count} for active jobs."""
     with get_conn() as con:
+        rows = con.execute(
+            "SELECT company, COUNT(*) as cnt FROM jobs WHERE active=1 GROUP BY company"
+        ).fetchall()
+        return {r["company"]: r["cnt"] for r in rows}
+
+
+def purge_old_jobs(days: int = RETENTION_DAYS) -> int:
+    """Archive then delete jobs older than `days` (by first_seen). Applications are untouched."""
+    with get_conn() as con:
+        cutoff = f"-{int(days)} days"
+        con.execute("""
+            INSERT OR IGNORE INTO jobs_archive
+                (id, ats, company, brand, cap_exempt, sponsor, ext_id,
+                 title, location, department, url, posted_at,
+                 first_seen, last_seen, active, archived_at)
+            SELECT id, ats, company, brand, cap_exempt, sponsor, ext_id,
+                   title, location, department, url, posted_at,
+                   first_seen, last_seen, active, datetime('now')
+            FROM jobs WHERE first_seen < datetime('now', ?)
+        """, (cutoff,))
+        archived = con.execute("SELECT changes()").fetchone()[0]
         cur = con.execute(
             "DELETE FROM jobs WHERE first_seen < datetime('now', ?)",
-            (f"-{int(days)} days",),
+            (cutoff,),
         )
+        print(f"[db] archived {archived}, purged {cur.rowcount}")
         return cur.rowcount
 
 

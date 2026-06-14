@@ -33,11 +33,26 @@
       </select>
     </div>
     <div class="field">
+      <label>Focus</label>
+      <select name="focus">
+        <option value="" {% if filters.focus=='' %}selected{% endif %}>All Jobs</option>
+        <option value="tech" {% if filters.focus=='tech' %}selected{% endif %}>Tech & Professional</option>
+      </select>
+    </div>
+    <div class="field">
       <label>Posted within</label>
       <select name="days">
         {% for d in [1,2,3,5,7,retention] %}
         <option value="{{ d }}" {% if filters.days==d %}selected{% endif %}>{{ d }} day{{ 's' if d>1 }}</option>
         {% endfor %}
+      </select>
+    </div>
+    <div class="field">
+      <label>Sort by</label>
+      <select name="sort">
+        <option value="newest" {% if filters.sort=='newest' %}selected{% endif %}>Newest first</option>
+        <option value="company" {% if filters.sort=='company' %}selected{% endif %}>Company A-Z</option>
+        <option value="openings" {% if filters.sort=='openings' %}selected{% endif %}>Most openings</option>
       </select>
     </div>
     <button class="btn btn-amber" type="submit">Filter</button>
@@ -54,7 +69,7 @@
           {% else %}{{ j['title'] or 'Untitled role' }}{% endif %}
           <span class="tag new" style="display:none">NEW</span>
         </div>
-        <div class="co">{{ j['brand'] or j['company'] }}</div>
+        <div class="co"><a href="/?company={{ (j['brand'] or j['company'])|urlencode }}&days={{ filters.days }}&focus={{ filters.focus }}" class="co-link">{{ j['brand'] or j['company'] }}</a> <span class="co-count">({{ co_counts.get(j['company'], 0) }})</span></div>
         <div class="meta">
           {% if j['location'] %}<span>📍 {{ j['location'] }}</span>{% endif %}
           {% if j['department'] %}<span>🏷 {{ j['department'] }}</span>{% endif %}
@@ -83,10 +98,10 @@
     <span class="pager-info">{{ result.total }} result{{ 's' if result.total != 1 else '' }} · page {{ result.page }} of {{ result.pages }}</span>
     <div class="pager-nav">
       {% if result.page > 1 %}
-      <a href="/?keyword={{ filters.keyword|urlencode }}&company={{ filters.company|urlencode }}&location={{ filters.location|urlencode }}&cap_exempt={{ filters.cap_exempt }}&days={{ filters.days }}&page={{ result.page - 1 }}" class="btn">&#8592; Prev</a>
+      <a href="/?keyword={{ filters.keyword|urlencode }}&company={{ filters.company|urlencode }}&location={{ filters.location|urlencode }}&cap_exempt={{ filters.cap_exempt }}&days={{ filters.days }}&focus={{ filters.focus }}&sort={{ filters.sort }}&page={{ result.page - 1 }}" class="btn">&#8592; Prev</a>
       {% endif %}
       {% if result.page < result.pages %}
-      <a href="/?keyword={{ filters.keyword|urlencode }}&company={{ filters.company|urlencode }}&location={{ filters.location|urlencode }}&cap_exempt={{ filters.cap_exempt }}&days={{ filters.days }}&page={{ result.page + 1 }}" class="btn">Next &#8594;</a>
+      <a href="/?keyword={{ filters.keyword|urlencode }}&company={{ filters.company|urlencode }}&location={{ filters.location|urlencode }}&cap_exempt={{ filters.cap_exempt }}&days={{ filters.days }}&focus={{ filters.focus }}&sort={{ filters.sort }}&page={{ result.page + 1 }}" class="btn">Next &#8594;</a>
       {% endif %}
     </div>
   </div>
