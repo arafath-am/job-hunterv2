@@ -310,11 +310,86 @@ PARSERS = {
 
 
 # --------------------------------------------------------- one company
+
+
+# ── Jibe (iCIMS Talent Cloud) JSON API adapter ──────────────────
+
+def parse_jibe(data, base_url=""):
+    """Parse Jibe API response into normalized job dicts."""
+    jobs = []
+    for item in data.get("jobs", []):
+        j = item.get("data", {})
+        slug = j.get("slug", "")
+        job_url = f"{base_url}/{slug}?lang=en-us" if base_url else j.get("apply_url", "")
+        loc_parts = [j.get("city", ""), j.get("state", ""), j.get("country", "")]
+        location = ", ".join(p for p in loc_parts if p and p != "?")
+        if not location:
+            location = j.get("location_name", "") or j.get("full_location", "")
+        jobs.append({
+            "ext_id": str(slug),
+            "title": j.get("title", ""),
+            "location": location,
+            "department": str(j.get("department", "") or ""),
+            "url": job_url,
+            "posted_at": j.get("posted_date", ""),
+        })
+    return jobs
+
+
+def collect_jibe(c) -> dict:
+    """Fetch all jobs from a Jibe (iCIMS Talent Cloud) JSON API."""
+    company, endpoint = c["company_name"], c["endpoint"]
+    m = re.match(r"(https?://[\w.-]+)", endpoint)
+    if not m:
+        return {"company": company, "status": "skip", "new": 0}
+    domain_base = m.group(1)
+    api_url = f"{domain_base}/api/jobs"
+    page_base = endpoint.rstrip("/")
+
+    all_postings = []
+    offset = 0
+    PAGE = 100
+    while True:
+        url = f"{api_url}?limit={PAGE}&offset={offset}"
+        status, data = _fetch(url, use_cache=False)
+        if status != 200 or not isinstance(data, dict):
+            if offset == 0:
+                return {"company": company, "status": f"err:{status}", "new": 0}
+            break
+        batch = parse_jibe(data, page_base)
+        if not batch:
+            break
+        all_postings.extend(batch)
+        total = data.get("count", 0) or data.get("totalCount", 0)
+        offset += PAGE
+        if offset >= total:
+            break
+
+    if not all_postings:
+        return {"company": company, "status": "empty", "new": 0}
+
+    new_count = 0
+    seen_ids = set()
+    with db.get_conn() as con:
+        for p in all_postings:
+            if not p.get("ext_id"):
+                continue
+            seen_ids.add(p["ext_id"])
+            job = {"ats": "jibe", "company": company, "brand": c["brand"],
+                   "cap_exempt": c["cap_exempt"], "sponsor": c["sponsor"], **p}
+            if db.upsert_job(con, job):
+                new_count += 1
+        db.mark_missing_inactive(con, "jibe", company, seen_ids)
+    return {"company": company, "status": "ok", "new": new_count, "total": len(all_postings)}
+
+
 def collect_company(c) -> dict:
     """Fetch + diff one company. Returns a small summary dict."""
     ats, company, endpoint = c["ats"], c["company_name"], c["endpoint"]
     if ats == "workday":
         return collect_workday(c)
+    if ats == "jibe":
+        return collect_jibe(c)
     if ats in ("icims", "taleo", "pageup"):
         return {"company": company, "status": "skip:playwright", "new": 0}
     parser = PARSERS.get(ats)
