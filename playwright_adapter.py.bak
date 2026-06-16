@@ -54,87 +54,10 @@ def _scrape_pageup(page, url):
     }""")
 
 
-
-def _scrape_jibe_waf(page, base_url):
-    """Scrape iCIMS Talent Cloud sites with custom domains.
-    These don't expose /api/jobs JSON — scrape the rendered listing page instead."""
-    listing_url = base_url.rstrip("/") + "/en-us/listing/"
-    try:
-        page.goto(listing_url, timeout=30000, wait_until="networkidle")
-        page.wait_for_timeout(4000)
-    except Exception as e:
-        print(f"    [jibe_dom] navigation failed: {e}")
-        return []
-
-    # Scroll down to trigger any lazy-loading
-    for _ in range(3):
-        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-        page.wait_for_timeout(1500)
-
-    # Click "Show More" / "Load More" if present
-    for _ in range(10):
-        try:
-            btn = page.locator("a:has-text('Show More'), button:has-text('Show More'), a:has-text('Load More'), button:has-text('Load More')")
-            if btn.count() > 0 and btn.first.is_visible():
-                btn.first.click()
-                page.wait_for_timeout(2000)
-            else:
-                break
-        except Exception:
-            break
-
-    jobs = page.evaluate("""(baseUrl) => {
-        const results = [];
-        const seen = new Set();
-        document.querySelectorAll('a[href*="/en-us/job/"]').forEach(a => {
-            const href = a.href;
-            const m = href.match(/\/en-us\/job\/(\d+)/);
-            if (!m || seen.has(m[1])) return;
-            seen.add(m[1]);
-            const title = a.textContent.trim();
-            if (!title || title.length < 3) return;
-            // Find location in nearby parent elements
-            let parent = a.parentElement;
-            for (let i = 0; i < 5; i++) { if (parent) parent = parent.parentElement; }
-            let location = '';
-            if (parent) {
-                const locEl = parent.querySelector('[class*="location"], [class*="Location"]');
-                if (locEl) location = locEl.textContent.trim();
-                if (!location) {
-                    const spans = parent.querySelectorAll('span, div, p');
-                    for (const s of spans) {
-                        const t = s.textContent.trim();
-                        if (t.match(/,\s*[A-Z]{2}$/) && t.length < 60) {
-                            location = t;
-                            break;
-                        }
-                    }
-                }
-            }
-            results.push({
-                ext_id: m[1],
-                title: title,
-                location: location,
-                url: href.split('?')[0],
-                posted_at: '',
-                department: ''
-            });
-        });
-        return results;
-    }""", base_url)
-
-    return jobs
-
 def _scrape_icims(page, url):
     base_match = re.match(r"(https?://[\w.-]+\.icims\.com)", url)
     if not base_match:
-        # Custom domain iCIMS Talent Cloud (e.g., jobs.boisestate.edu)
-        # Behind CloudFront WAF — use Playwright to solve challenge, then call Jibe API
-        domain_match = re.match(r"(https?://[\w.-]+)", url)
-        if not domain_match:
-            return []
-        base_url = domain_match.group(1)
-        return _scrape_jibe_waf(page, base_url)
+        return []
     base = base_match.group(1)
     search_url = base + "/jobs/search?ss=1"
     page.goto(search_url, timeout=TIMEOUT, wait_until="networkidle")
