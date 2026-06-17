@@ -19,3 +19,7 @@ unresolved_companies.csv
 # OS
 .DS_Store
 Thumbs.db
+
+# Discovery/scraper reports
+auto_resolve_report.*
+universal_scraper_report*
