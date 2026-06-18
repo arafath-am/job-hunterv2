@@ -26,6 +26,7 @@ from fastapi.templating import Jinja2Templates
 from starlette.middleware.sessions import SessionMiddleware
 
 import db
+import monitoring
 import export
 
 SECRET = os.environ.get("JOBHUNTER_SECRET", "change-me-please-set-JOBHUNTER_SECRET")
@@ -95,7 +96,7 @@ def dashboard(request: Request, keyword: str = "", company: str = "",
               location: str = "", cap_exempt: str = "", days: int = RETENTION,
               page: int = 1, focus: str = "", sort: str = "newest"):
     user = current_user(request)
-    if not user:
+    if not user or user.get("id") != 1:  # admin only
         return RedirectResponse("/login", status_code=302)
     days = max(1, min(int(days or RETENTION), RETENTION))
     result = db.query_jobs(keyword=keyword, company=company, location=location,
@@ -115,7 +116,7 @@ def dashboard(request: Request, keyword: str = "", company: str = "",
 @app.post("/track")
 async def track(request: Request):
     user = current_user(request)
-    if not user:
+    if not user or user.get("id") != 1:  # admin only
         raise HTTPException(401)
     data = await request.json()
     job = {k: data.get(k, "") for k in
@@ -130,7 +131,7 @@ async def track(request: Request):
 @app.post("/update")
 async def update(request: Request):
     user = current_user(request)
-    if not user:
+    if not user or user.get("id") != 1:  # admin only
         raise HTTPException(401)
     data = await request.json()
     db.update_application(user["id"], data["job_key"],
@@ -141,7 +142,7 @@ async def update(request: Request):
 @app.get("/tracker", response_class=HTMLResponse)
 def tracker(request: Request):
     user = current_user(request)
-    if not user:
+    if not user or user.get("id") != 1:  # admin only
         return RedirectResponse("/login", status_code=302)
     apps = db.list_applications(user["id"])
     return templates.TemplateResponse(request, "tracker.html", {
@@ -151,7 +152,7 @@ def tracker(request: Request):
 @app.get("/export.xlsx")
 def export_xlsx(request: Request):
     user = current_user(request)
-    if not user:
+    if not user or user.get("id") != 1:  # admin only
         return RedirectResponse("/login", status_code=302)
     data = export.build_tracker_xlsx(user["id"], user["username"])
     return Response(
@@ -181,6 +182,18 @@ def _cli():
         print("created" if ok else "user already exists")
         sys.exit(0)
 
+
+
+
+# ── Health Dashboard ──
+@app.get("/health", response_class=HTMLResponse)
+async def health_page(request: Request):
+    user = current_user(request)
+    if not user or user.get("id") != 1:  # admin only
+        return RedirectResponse("/login", 303)
+    monitoring.init_monitoring()
+    data = monitoring.get_health_data()
+    return templates.TemplateResponse(request, "health.html", {"data": data, "user": user, "active": "health"})
 
 if __name__ == "__main__":
     _cli()

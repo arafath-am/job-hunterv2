@@ -1,0 +1,334 @@
+{% extends "base.html" %}
+{% block title %}System Health{% endblock %}
+{% block body %}
+<style>
+    .health-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+    .health-card {
+        background: #1e1e2e;
+        border: 1px solid #2a2a3e;
+        border-radius: 10px;
+        padding: 18px;
+    }
+    .health-card h3 {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #888;
+        margin: 0 0 12px 0;
+    }
+    .stat-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 0;
+        border-bottom: 1px solid #2a2a3e;
+        font-size: 14px;
+    }
+    .stat-row:last-child { border-bottom: none; }
+    .stat-label { color: #aaa; }
+    .stat-value { color: #e0e0e0; font-weight: 600; font-variant-numeric: tabular-nums; }
+    .stat-big {
+        font-size: 28px;
+        font-weight: 700;
+        color: #e0e0e0;
+        line-height: 1;
+    }
+    .stat-sub { font-size: 12px; color: #888; margin-top: 4px; }
+
+    /* Status badges */
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+    .badge-success  { background: #1a3a2a; color: #4ade80; }
+    .badge-partial  { background: #3a3a1a; color: #facc15; }
+    .badge-failed   { background: #3a1a1a; color: #f87171; }
+    .badge-running  { background: #1a2a3a; color: #60a5fa; }
+    .badge-empty    { background: #2a2a2a; color: #888; }
+
+    /* Health status */
+    .health-healthy  { color: #4ade80; }
+    .health-unknown  { color: #888; }
+    .health-degraded { color: #facc15; }
+    .health-stale    { color: #fb923c; }
+    .health-dead     { color: #f87171; }
+
+    /* Progress bar */
+    .bar-bg {
+        width: 100%;
+        height: 8px;
+        background: #2a2a3e;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-top: 6px;
+    }
+    .bar-fill {
+        height: 100%;
+        border-radius: 4px;
+        transition: width 0.3s;
+    }
+    .bar-ok    { background: #4ade80; }
+    .bar-warn  { background: #facc15; }
+    .bar-crit  { background: #f87171; }
+
+    /* Table */
+    .health-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+    }
+    .health-table th {
+        text-align: left;
+        padding: 8px 10px;
+        color: #888;
+        font-weight: 600;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-bottom: 1px solid #2a2a3e;
+    }
+    .health-table td {
+        padding: 8px 10px;
+        color: #ccc;
+        border-bottom: 1px solid #1a1a2a;
+    }
+    .health-table tr:hover td { background: #252538; }
+
+    .section-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #e0e0e0;
+        margin: 28px 0 14px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #2a2a3e;
+    }
+    .error-text { color: #f87171; font-size: 12px; word-break: break-all; }
+    .time-ago { color: #888; font-size: 12px; }
+    .back-link { color: #60a5fa; text-decoration: none; font-size: 14px; }
+    .back-link:hover { text-decoration: underline; }
+
+    .health-donut {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .donut-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 14px;
+    }
+    .donut-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+</style>
+
+<div style="max-width:1100px; margin:0 auto; padding:16px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+        <h1 style="font-size:22px; color:#e0e0e0; margin:0;">System Health</h1>
+        <a href="/" class="back-link">← Dashboard</a>
+    </div>
+
+    <!-- ═══ Top Stats ═══ -->
+    <div class="health-grid">
+        <div class="health-card">
+            <h3>Active Jobs</h3>
+            <div class="stat-big">{{ "{:,}".format(data.total_jobs) }}</div>
+            <div class="stat-sub">across {{ data.total_companies }} companies ({{ data.total_all }} total tracked)</div>
+        </div>
+        <div class="health-card">
+            <h3>System</h3>
+            <div class="stat-row">
+                <span class="stat-label">Disk</span>
+                <span class="stat-value">{{ data.system.disk_used_gb }}GB / {{ data.system.disk_total_gb }}GB</span>
+            </div>
+            <div class="bar-bg">
+                <div class="bar-fill {% if data.system.disk_pct > 80 %}bar-crit{% elif data.system.disk_pct > 60 %}bar-warn{% else %}bar-ok{% endif %}"
+                     style="width:{{ data.system.disk_pct }}%"></div>
+            </div>
+            <div class="stat-row" style="margin-top:8px;">
+                <span class="stat-label">Memory</span>
+                <span class="stat-value">{{ data.system.mem_used_mb }}MB / {{ data.system.mem_total_mb }}MB</span>
+            </div>
+            <div class="bar-bg">
+                <div class="bar-fill {% if data.system.mem_pct > 85 %}bar-crit{% elif data.system.mem_pct > 70 %}bar-warn{% else %}bar-ok{% endif %}"
+                     style="width:{{ data.system.mem_pct }}%"></div>
+            </div>
+            <div class="stat-row" style="margin-top:8px;">
+                <span class="stat-label">DB</span>
+                <span class="stat-value">{{ data.system.db_size_mb }}MB (+{{ data.system.wal_size_mb }}MB WAL)</span>
+            </div>
+            <div class="stat-row">
+                <span class="stat-label">Uptime</span>
+                <span class="stat-value">{{ data.system.uptime_hours }}h</span>
+            </div>
+        </div>
+        <div class="health-card">
+            <h3>Company Health</h3>
+            <div class="health-donut">
+                {% for status, color in [('healthy','#4ade80'),('unknown','#888'),('degraded','#facc15'),('stale','#fb923c'),('dead','#f87171')] %}
+                {% if data.health_summary.get(status, 0) > 0 %}
+                <div class="donut-item">
+                    <span class="donut-dot" style="background:{{ color }}"></span>
+                    <span style="color:{{ color }}; font-weight:600;">{{ data.health_summary.get(status, 0) }}</span>
+                    <span style="color:#888;">{{ status }}</span>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ Last Runs ═══ -->
+    <h2 class="section-title">Last Collection Runs</h2>
+    <div class="health-grid">
+        {% for rtype in ['api', 'playwright', 'universal'] %}
+        <div class="health-card">
+            <h3>{{ rtype | upper }}</h3>
+            {% if rtype in data.last_runs %}
+            {% set run = data.last_runs[rtype] %}
+            <div class="stat-row">
+                <span class="stat-label">Status</span>
+                <span class="badge badge-{{ run.status }}">{{ run.status }}</span>
+            </div>
+            <div class="stat-row">
+                <span class="stat-label">Companies</span>
+                <span class="stat-value">{{ run.companies_succeeded }}/{{ run.companies_attempted }}
+                    {% if run.companies_failed > 0 %}
+                    <span style="color:#f87171;">({{ run.companies_failed }} failed)</span>
+                    {% endif %}
+                </span>
+            </div>
+            <div class="stat-row">
+                <span class="stat-label">New Jobs</span>
+                <span class="stat-value">{{ run.jobs_inserted or 0 }}</span>
+            </div>
+            <div class="stat-row">
+                <span class="stat-label">Duration</span>
+                <span class="stat-value">{{ "%.1f"|format(run.duration_secs or 0) }}s</span>
+            </div>
+            <div class="stat-row">
+                <span class="stat-label">When</span>
+                <span class="time-ago">{{ run.finished_at or run.started_at }}</span>
+            </div>
+            {% else %}
+            <div style="color:#888; font-size:14px; padding:12px 0;">No runs recorded yet</div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- ═══ Jobs by ATS ═══ -->
+    <h2 class="section-title">Jobs by ATS</h2>
+    <div class="health-card">
+        <table class="health-table">
+            <thead><tr><th>ATS</th><th style="text-align:right">Active Jobs</th><th style="text-align:right">% of Total</th></tr></thead>
+            <tbody>
+            {% for ats, count in data.ats_counts.items() %}
+            <tr>
+                <td>{{ ats }}</td>
+                <td style="text-align:right; font-variant-numeric:tabular-nums;">{{ "{:,}".format(count) }}</td>
+                <td style="text-align:right; color:#888;">{{ "%.1f"|format(count / data.total_jobs * 100 if data.total_jobs else 0) }}%</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ═══ 24h / 7d Stats ═══ -->
+    {% if data.stats_24h %}
+    <h2 class="section-title">Last 24 Hours</h2>
+    <div class="health-card">
+        <table class="health-table">
+            <thead><tr><th>Type</th><th style="text-align:right">Runs</th><th style="text-align:right">Succeeded</th><th style="text-align:right">Failed</th><th style="text-align:right">New Jobs</th><th style="text-align:right">Avg Duration</th></tr></thead>
+            <tbody>
+            {% for s in data.stats_24h %}
+            <tr>
+                <td>{{ s.run_type }}</td>
+                <td style="text-align:right">{{ s.runs }}</td>
+                <td style="text-align:right; color:#4ade80;">{{ s.succeeded or 0 }}</td>
+                <td style="text-align:right; color:{% if s.failed %}#f87171{% else %}#888{% endif %};">{{ s.failed or 0 }}</td>
+                <td style="text-align:right">{{ s.inserted or 0 }}</td>
+                <td style="text-align:right; color:#888;">{{ s.avg_duration or 0 }}s</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+
+    <!-- ═══ Problem Companies ═══ -->
+    {% if data.problem_companies %}
+    <h2 class="section-title">Problem Companies ({{ data.problem_companies|length }})</h2>
+    <div class="health-card" style="overflow-x:auto;">
+        <table class="health-table">
+            <thead><tr><th>Company</th><th>ATS</th><th>Status</th><th style="text-align:right">Failures</th><th>Last Error</th><th>Last Success</th></tr></thead>
+            <tbody>
+            {% for c in data.problem_companies %}
+            <tr>
+                <td>{{ c.brand or c.company_name }}</td>
+                <td>{{ c.ats or '—' }}</td>
+                <td><span class="health-{{ c.health_status }}">{{ c.health_status }}</span></td>
+                <td style="text-align:right">{{ c.consecutive_failures or 0 }}</td>
+                <td class="error-text">{{ (c.last_error or '—')[:60] }}</td>
+                <td class="time-ago">{{ c.last_successful_at or 'never' }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+
+    <!-- ═══ Recent Runs Log ═══ -->
+    <h2 class="section-title">Recent Collection Runs</h2>
+    <div class="health-card" style="overflow-x:auto;">
+        <table class="health-table">
+            <thead><tr><th>Time</th><th>Type</th><th>Status</th><th style="text-align:right">Companies</th><th style="text-align:right">New Jobs</th><th style="text-align:right">Duration</th></tr></thead>
+            <tbody>
+            {% for run in data.recent_runs %}
+            <tr>
+                <td class="time-ago">{{ run.started_at }}</td>
+                <td>{{ run.run_type }}</td>
+                <td><span class="badge badge-{{ run.status }}">{{ run.status }}</span></td>
+                <td style="text-align:right">{{ run.companies_succeeded or 0 }}/{{ run.companies_attempted or 0 }}</td>
+                <td style="text-align:right">{{ run.jobs_inserted or 0 }}</td>
+                <td style="text-align:right; color:#888;">{{ "%.1f"|format(run.duration_secs or 0) }}s</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ═══ Endpoint Checks ═══ -->
+    {% if data.recent_checks %}
+    <h2 class="section-title">Recent Endpoint Checks</h2>
+    <div class="health-card" style="overflow-x:auto;">
+        <table class="health-table">
+            <thead><tr><th>Company</th><th>HTTP</th><th style="text-align:right">Jobs Found</th><th>Drift?</th><th>Notes</th><th>Checked</th></tr></thead>
+            <tbody>
+            {% for ch in data.recent_checks %}
+            <tr>
+                <td>{{ ch.company_name }}</td>
+                <td>
+                    {% if ch.http_status == 200 %}<span style="color:#4ade80;">200</span>
+                    {% elif ch.http_status %}<span style="color:#f87171;">{{ ch.http_status }}</span>
+                    {% else %}<span style="color:#888;">—</span>{% endif %}
+                </td>
+                <td style="text-align:right">{{ ch.jobs_found or 0 }}</td>
+                <td>{% if ch.drift_detected %}<span style="color:#f87171;">YES</span>{% else %}—{% endif %}</td>
+                <td class="error-text">{{ (ch.notes or '')[:60] }}</td>
+                <td class="time-ago">{{ ch.checked_at }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
