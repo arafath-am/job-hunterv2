@@ -4,18 +4,27 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GCP VM
-        uses: appleboy/ssh-action@v1
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
         with:
-          host: ${{ secrets.VM_HOST }}
-          username: ${{ secrets.VM_USER }}
-          key: ${{ secrets.VM_SSH_KEY }}
-          script: |
-            cd ~/job-hunterv2
-            git pull origin main
-            sudo systemctl restart jobhunter-collector
-            sudo systemctl restart jobhunter-web
+          workload_identity_provider: projects/43818012462/locations/global/workloadIdentityPools/github-pool/providers/github-provider
+          service_account: github-actions-deployer@job-hunter-498800.iam.gserviceaccount.com
+
+      - name: Set up gcloud
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Deploy via IAP tunnel
+        run: |
+          gcloud compute ssh amer_arafath1_gmail_com@secure-app-vm \
+            --project=job-hunter-498800 \
+            --zone=us-central1-a \
+            --tunnel-through-iap \
+            --command="cd ~/job-hunterv2 && git pull origin main && sudo systemctl restart jobhunter-collector && sudo systemctl restart jobhunter-web"
