@@ -21,21 +21,13 @@ jobs:
       - name: Set up gcloud
         uses: google-github-actions/setup-gcloud@v2
 
-      - name: Add SSH key to VM metadata
-        run: |
-          echo "${{ secrets.VM_SSH_PUB }}" > /tmp/deploy_key.pub
-          gcloud compute instances add-metadata secure-app-vm \
-            --project=job-hunter-498800 \
-            --zone=us-central1-a \
-            --metadata="ssh-keys=amer_arafath1_gmail_com:$(cat /tmp/deploy_key.pub)"
-
-      - name: Deploy via IAP + SSH
+      - name: Deploy via IAP tunnel
         run: |
           echo "${{ secrets.VM_SSH_KEY }}" > /tmp/deploy_key
           chmod 600 /tmp/deploy_key
-          gcloud compute ssh amer_arafath1_gmail_com@secure-app-vm \
+          gcloud compute ssh amer_arafath1@secure-app-vm \
             --project=job-hunter-498800 \
             --zone=us-central1-a \
             --tunnel-through-iap \
-            --ssh-flag="-i /tmp/deploy_key" \
-            --command="cd /home/amer_arafath1_gmail_com/job-hunterv2 && git pull origin main && sudo systemctl restart jobhunter-collector && sudo systemctl restart jobhunter-web"
+            --ssh-flag="-i /tmp/deploy_key -o StrictHostKeyChecking=no" \
+            --command="cd /home/amer_arafath1/job-hunterv2 && git pull origin main && sudo systemctl restart jobhunter-collector && sudo systemctl restart jobhunter-web"
