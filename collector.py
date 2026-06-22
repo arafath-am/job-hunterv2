@@ -438,6 +438,17 @@ def _run_api() -> dict:
     db.init_db()
     monitoring.init_monitoring()
     run_id = monitoring.start_run("api")
+    try:
+        return _run_api_inner(run_id)
+    except Exception as e:
+        monitoring.finish_run(run_id, {
+            "run_type": "api", "companies_attempted": 0, "companies_succeeded": 0,
+            "companies_failed": 0, "jobs_inserted": 0, "duration_secs": 0,
+            "errors": [{"company": "GLOBAL", "error": str(e)}], "notes": "crashed",
+        })
+        raise
+
+def _run_api_inner(run_id):
     companies = db.resolved_companies()
     started = time.time()
     results = []
@@ -497,6 +508,17 @@ def _run_playwright_inner() -> dict:
     db.init_db()
     monitoring.init_monitoring()
     run_id = monitoring.start_run("playwright")
+    try:
+        return _run_pw_inner(run_id)
+    except Exception as e:
+        monitoring.finish_run(run_id, {
+            "run_type": "playwright", "companies_attempted": 0, "companies_succeeded": 0,
+            "companies_failed": 0, "jobs_inserted": 0, "duration_secs": 0,
+            "errors": [{"company": "GLOBAL", "error": str(e)}], "notes": "crashed",
+        })
+        raise
+
+def _run_pw_inner(run_id):
     companies = db.resolved_companies()
     pw_companies = [c for c in companies if c["ats"] in ("icims", "taleo", "pageup")]
     if not pw_companies:

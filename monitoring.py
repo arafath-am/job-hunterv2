@@ -100,7 +100,7 @@ def finish_run(run_id: int, results: dict):
 
     if attempted == 0:
         status = "empty"
-    elif failed == 0:
+    elif failed == 0 and succeeded >= attempted:
         status = "success"
     elif succeeded > 0:
         status = "partial"

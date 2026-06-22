@@ -228,6 +228,8 @@ if __name__ == "__main__":
     monitoring.init_monitoring()
     s = build_scheduler()
     s.start()
+    for j in s.get_jobs():
+        print(f"[scheduler] job={j.id} next_run={j.next_run_time}")
     print("[scheduler] started — Job Hunter v2")
     print()
     print("  ── MORNING BLITZ (10 AM - 1 PM ET) ──")
